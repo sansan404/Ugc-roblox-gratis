@@ -306,7 +306,7 @@ export function classify(it, gameDesc = "") {
 
 function guideFor(it) {
   const manual = GUIDES[String(it.id)];
-  if (manual) return Array.isArray(manual) ? manual.join("\n") : String(manual);
+  if (manual && manual !== false) return Array.isArray(manual) ? manual.join("\n") : String(manual);
   const g = it.games?.[0] && GAMES[it.games[0].universeId];
   const tips = g ? mapTips(g.description) : [];
   if (tips.length) return "Dari deskripsi map:\n• " + tips.slice(0, 4).join("\n• ");
@@ -479,7 +479,9 @@ async function main() {
   for (const it of tracked) {
     const u = it.games?.[0]?.universeId;
     const c = classify(it, u ? store.games[u]?.description : "");
-    if (GUIDES[String(it.id)]) { c.type = "misi"; c.why = "Misi ditulis manual"; }
+    const g = GUIDES[String(it.id)];
+    if (g === false) { c.type = "beli"; c.why = "Disembunyikan manual"; }
+    else if (g) { c.type = "misi"; c.why = "Misi ditulis manual"; }
     it.claimType = c.type;
     it.claimWhy = c.why;
   }

@@ -1,4 +1,4 @@
 {
- "_cara_pakai": "Tulis misi sendiri di sini kalau penjelasan dari pembuat item kurang jelas. Format: \"ID item\": \"langkah-langkahnya\". ID ada di link item, contoh roblox.com/catalog/123456 -> 123456.",
+ "_cara_pakai": "Tulis misi sendiri untuk item tertentu. Format: \"ID item\": [\"langkah 1\", \"langkah 2\"]. Item yang ditulis di sini PASTI tampil. Untuk menyembunyikan item yang ternyata harus beli, tulis \"ID item\": false. ID ada di link item, contoh roblox.com/catalog/123456 -> 123456.",
  "123456": ["Masuk ke game", "Selesaikan obby sampai stage 20", "Ambil hadiah di peti emas"]
 }
