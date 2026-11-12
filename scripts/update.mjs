@@ -521,6 +521,16 @@ async function main() {
 
   // Notifikasi
   GAMES = games;
+  if (process.env.SEND_ALL === "true") {
+    const all = items.filter(isShown).reverse();
+    log(`Kirim SEMUA item yang tampil: ${all.length}`);
+    for (const it of all) {
+      await sendTelegram(it);
+      await sendDiscord(it);
+      await sleep(2000);
+    }
+    return;
+  }
   if (process.env.TEST_NOTIF === "true") {
     const sample = items.find(isShown);
     if (sample) {

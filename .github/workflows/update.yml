@@ -9,6 +9,10 @@ on:
         description: "Kirim 1 notif tes ke Telegram/Discord"
         type: boolean
         default: false
+      send_all:
+        description: "Kirim SEMUA UGC yang sedang tampil ke Telegram/Discord (sekali saja)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths-ignore: ["data/items.json"]
@@ -44,6 +48,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           TEST_NOTIF: ${{ inputs.test_notif }}
+          SEND_ALL: ${{ inputs.send_all }}
           SEARCH_PAGES: ${{ vars.SEARCH_PAGES }}
           MAX_NOTIF: ${{ vars.MAX_NOTIF }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
