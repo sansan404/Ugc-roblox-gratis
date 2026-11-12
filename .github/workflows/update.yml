@@ -2,7 +2,7 @@ name: Update UGC Gratis
 
 on:
   schedule:
-    - cron: "7 * * * *" # tiap jam, menit ke-7 (waktu UTC)
+    - cron: "*/5 * * * *" # tiap 5 menit (cek penuh tiap jam, sisanya cek cepat)
   workflow_dispatch: # bisa dijalankan manual dari tab Actions
   push:
     branches: [main]
@@ -46,8 +46,14 @@ jobs:
           git config user.name "ugc-bot"
           git config user.email "ugc-bot@users.noreply.github.com"
           git add data/items.json
-          git diff --cached --quiet || git commit -m "Update data UGC $(date -u +'%Y-%m-%d %H:%M') UTC"
-          git push
+          # commit hanya kalau ada perubahan selain jam update (biar riwayat repo nggak penuh)
+          if git diff --cached -U0 | grep -E '^[+-] ' | grep -vq '"updatedAt"'; then
+            git commit -m "Update data UGC $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase -q origin main || true
+            git push
+          else
+            echo "Tidak ada perubahan data."
+          fi
 
       - name: Siapkan website
         run: |

@@ -68,7 +68,7 @@ Setelah ini robot jalan sendiri tiap jam. Jalan pertama **tidak** kirim notif (s
 
 ## Pengaturan tambahan
 
-- **Jadwal:** ubah baris `cron` di `.github/workflows/update.yml`. `"7 * * * *"` = tiap jam. `"*/30 * * * *"` = tiap 30 menit.
+- **Jadwal:** sekarang tiap 5 menit (paling cepat yang diizinkan GitHub). Cek penuh tiap awal jam, sisanya cek cepat item terbaru. Ubah di baris `cron` di `.github/workflows/update.yml`.
 - **Jumlah item dicek:** di **Settings → Secrets and variables → Actions → tab Variables**, tambah `SEARCH_PAGES` (default 3 halaman = 360 item terbaru).
 - **Batas notif per jam:** variabel `MAX_NOTIF` (default 15).
 

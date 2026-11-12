@@ -17,11 +17,14 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA_FILE = join(ROOT, "data", "items.json");
 const GUIDE_FILE = join(ROOT, "data", "cara-klaim.json"); // catatan misi yang kamu tulis sendiri
 
+// Cek penuh di 5 menit pertama tiap jam; selain itu cek cepat (hanya item terbaru)
+const FULL = process.env.FULL === "1" || new Date().getUTCMinutes() < 5 || process.env.GITHUB_EVENT_NAME === "workflow_dispatch" || process.env.GITHUB_EVENT_NAME === "push";
+
 const CONFIG = {
-  pages: Number(process.env.SEARCH_PAGES || 3), // 1 halaman = 120 item
+  pages: FULL ? Number(process.env.SEARCH_PAGES || 3) : 1, // 1 halaman = 120 item
   keepDays: Number(process.env.KEEP_DAYS || 30), // simpan riwayat berapa hari
   maxNotifPerRun: Number(process.env.MAX_NOTIF || 15),
-  recheckLimit: 60, // maks item lama yang dicek ulang per jalan
+  recheckLimit: FULL ? 60 : 10, // maks item yang dicek ulang lewat API economy per jalan
   delayMs: 1200, // jeda antar request supaya "sopan"
   minStock: Number(process.env.MIN_STOCK || 5), // item limited dengan total stok <= ini dianggap item kode (disembunyikan)
   gameRefreshHours: 6, // deskripsi map diperbarui tiap berapa jam
@@ -383,6 +386,7 @@ async function main() {
   const firstRun = store.items.length === 0;
   const byKey = new Map(store.items.map((i) => [i.key, i]));
 
+  log(FULL ? "Cek penuh." : "Cek cepat (item terbaru saja).");
   log("Mencari item gratis...");
   const raw = await searchFreeItems();
   log(`Dapat ${raw.length} item gratis yang masih dijual.`);
