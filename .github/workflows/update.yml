@@ -31,6 +31,8 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main # selalu pakai data paling baru
 
       - uses: actions/setup-node@v4
         with:
@@ -55,8 +57,9 @@ jobs:
           # commit hanya kalau ada perubahan selain jam update (biar riwayat repo nggak penuh)
           if git diff --cached -U0 | grep -E '^[+-] ' | grep -vq '"updatedAt"'; then
             git commit -m "Update data UGC $(date -u +'%Y-%m-%d %H:%M') UTC"
-            git pull --rebase -q origin main || true
-            git push
+            # kalau bentrok, pakai data hasil jalan ini (paling baru)
+            git pull --rebase -X theirs -q origin main || git rebase --abort || true
+            git push || echo "Push gagal, data dipakai di jalan berikutnya."
           else
             echo "Tidak ada perubahan data."
           fi
