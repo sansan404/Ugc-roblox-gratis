@@ -297,6 +297,7 @@ export function classify(it, gameDesc = "") {
   const text = `${gameName}\n${gameDesc}\n${it.description || ""}`;
   const buy = count(RE_BUY, text), mission = count(RE_MISSION, text), code = count(RE_CODE, text);
   if (it.where === "shop") return { type: "shop", why: "Diambil langsung di Marketplace (tanpa misi)" };
+  if (/(\bcodes?\b|\bkode\b|redeem)/i.test(gameName)) return { type: "kode", why: "Game kode redeem" };
   if (RE_SHOPGAME.test(gameName)) return { type: "beli", why: "Game toko/katalog avatar" };
   if (buy > 0 && buy >= mission) return { type: "beli", why: "Deskripsi menyebut Robux/beli" };
   if (mission > 0) return { type: "misi", why: "Deskripsi menyebut misi/stage/kumpulkan" };
