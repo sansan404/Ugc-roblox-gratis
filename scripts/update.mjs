@@ -15,6 +15,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA_FILE = join(ROOT, "data", "items.json");
+const GUIDE_FILE = join(ROOT, "data", "cara-klaim.json"); // catatan misi yang kamu tulis sendiri
 
 const CONFIG = {
   pages: Number(process.env.SEARCH_PAGES || 3), // 1 halaman = 120 item
@@ -137,6 +138,11 @@ function claimWhere(loc) {
   }
 }
 
+function cleanText(text, max) {
+  const t = String(text || "").replace(/\r/g, "").replace(/\n{3,}/g, "\n\n").trim();
+  return t.length > max ? t.slice(0, max).trimEnd() + "…" : t;
+}
+
 function gameIdsFromText(text = "") {
   const ids = [...String(text).matchAll(/roblox\.com\/(?:[a-z]{2}\/)?games\/(\d+)/gi)].map((m) => Number(m[1]));
   return [...new Set(ids)];
@@ -151,7 +157,7 @@ async function fetchGames(universeIds) {
   for (let i = 0; i < universeIds.length; i += 50) {
     const chunk = universeIds.slice(i, i + 50);
     const json = await getJSON(`https://games.roblox.com/v1/games?universeIds=${chunk.join(",")}`);
-    for (const g of json?.data || []) out.set(g.id, { name: g.name, placeId: g.rootPlaceId });
+    for (const g of json?.data || []) out.set(g.id, { name: g.name, placeId: g.rootPlaceId, playing: g.playing ?? null, description: cleanText(g.description, 600) });
     await sleep(CONFIG.delayMs);
   }
   return out;
@@ -193,6 +199,7 @@ function toItem(raw, now) {
     offSaleDeadline: raw.offSaleDeadline || null,
     where: claimWhere(loc),
     games: [],
+    description: cleanText(raw.description, 1200),
     gameHints: gameIdsFromText(raw.description),
     image: null,
     createdAt: raw.itemCreatedUtc || null,
@@ -218,6 +225,16 @@ async function saveStore(store) {
 }
 
 // ---------- 4. Notifikasi ----------
+let GUIDES = {};
+async function loadGuides() {
+  try { GUIDES = JSON.parse(await readFile(GUIDE_FILE, "utf8")); } catch { GUIDES = {}; }
+}
+function guideFor(it) {
+  const manual = GUIDES[String(it.id)];
+  if (manual) return Array.isArray(manual) ? manual.join("\n") : String(manual);
+  return it.description || "";
+}
+
 function captionText(it) {
   const lines = [`🆓 <b>UGC GRATIS BARU</b>`, ``, `<b>${esc(it.name)}</b>`, `oleh ${esc(it.creator || "?")}${it.creatorVerified ? " ✅" : ""}`];
   if (it.limited && it.total) lines.push(`📦 Stok: ${fmt(it.remaining ?? 0)} / ${fmt(it.total)}`);
@@ -225,6 +242,8 @@ function captionText(it) {
   if (it.where === "game") lines.push(`🎮 Klaim di dalam game${it.games[0]?.name ? `: ${esc(it.games[0].name)}` : ""}`);
   else if (it.where === "both") lines.push(`🛒 Klaim di Marketplace atau di game`);
   else lines.push(`🛒 Klaim langsung di Marketplace`);
+  const guide = guideFor(it);
+  if (guide) lines.push(``, `📝 <b>Cara klaim / misi:</b>`, esc(guide.length > 350 ? guide.slice(0, 350) + "…" : guide));
   if (it.offSaleDeadline) lines.push(`⏰ Berakhir: ${new Date(it.offSaleDeadline).toLocaleString("id-ID", { timeZone: "Asia/Jakarta" })} WIB`);
   return lines.join("\n");
 }
@@ -247,7 +266,7 @@ async function sendTelegram(it) {
     reply_markup: { inline_keyboard: [buttons(it)] },
   };
   const method = it.image ? "sendPhoto" : "sendMessage";
-  if (it.image) Object.assign(body, { photo: it.image, caption: captionText(it) });
+  if (it.image) Object.assign(body, { photo: it.image, caption: captionText(it).slice(0, 1020) });
   else body.text = captionText(it);
   const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/${method}`, {
     method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body),
@@ -281,6 +300,7 @@ async function sendDiscord(it) {
 async function main() {
   const now = new Date().toISOString();
   const store = await loadStore();
+  await loadGuides();
   const firstRun = store.items.length === 0;
   const byKey = new Map(store.items.map((i) => [i.key, i]));
 
@@ -328,7 +348,7 @@ async function main() {
     const old = byKey.get(it.key);
     if (old) {
       Object.assign(old, {
-        name: it.name, remaining: it.remaining, total: it.total, offSaleDeadline: it.offSaleDeadline,
+        name: it.name, description: it.description, remaining: it.remaining, total: it.total, offSaleDeadline: it.offSaleDeadline,
         lastSeen: now, available: !(it.limited && it.remaining === 0),
       });
       if (!old.image) old.image = thumbs.get(it.key) || null;

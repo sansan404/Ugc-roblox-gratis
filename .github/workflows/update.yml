@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # bisa dijalankan manual dari tab Actions
   push:
     branches: [main]
-    paths-ignore: ["data/**"]
+    paths-ignore: ["data/items.json"]
 
 permissions:
   contents: write
@@ -54,6 +54,7 @@ jobs:
           mkdir -p _site/data
           cp index.html config.json _site/
           cp data/items.json _site/data/
+          cp data/cara-klaim.json _site/data/ 2>/dev/null || true
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
