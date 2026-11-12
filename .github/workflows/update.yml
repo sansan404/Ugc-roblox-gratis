@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/5 * * * *" # tiap 5 menit (cek penuh tiap jam, sisanya cek cepat)
   workflow_dispatch: # bisa dijalankan manual dari tab Actions
+    inputs:
+      test_notif:
+        description: "Kirim 1 notif tes ke Telegram/Discord"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths-ignore: ["data/items.json"]
@@ -36,6 +41,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TEST_NOTIF: ${{ inputs.test_notif }}
           SEARCH_PAGES: ${{ vars.SEARCH_PAGES }}
           MAX_NOTIF: ${{ vars.MAX_NOTIF }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/

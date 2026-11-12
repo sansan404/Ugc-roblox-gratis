@@ -372,10 +372,12 @@ async function sendDiscord(it) {
       timestamp: new Date().toISOString(),
     }],
   };
+  log("Kirim ke Discord:", it.name);
   const res = await fetch(DISCORD_WEBHOOK, {
     method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body),
   }).catch((e) => ({ ok: false, statusText: e.message }));
   if (!res.ok) log("Discord gagal:", res.status || "", res.statusText || "");
+  else log("Discord OK");
 }
 
 // ---------- Main ----------
@@ -519,6 +521,15 @@ async function main() {
 
   // Notifikasi
   GAMES = games;
+  if (process.env.TEST_NOTIF === "true") {
+    const sample = items.find(isShown);
+    if (sample) {
+      log("Kirim notif TES untuk:", sample.name);
+      await sendTelegram(sample);
+      await sendDiscord(sample);
+    } else log("Tidak ada item untuk notif tes.");
+    return;
+  }
   if (firstRun) {
     log("Jalan pertama: tidak kirim notif supaya channel tidak dibanjiri.");
     return;
