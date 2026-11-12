@@ -1,0 +1,63 @@
+name: Update UGC Gratis
+
+on:
+  schedule:
+    - cron: "7 * * * *" # tiap jam, menit ke-7 (waktu UTC)
+  workflow_dispatch: # bisa dijalankan manual dari tab Actions
+  push:
+    branches: [main]
+    paths-ignore: ["data/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-ugc
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Ambil data UGC gratis
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SEARCH_PAGES: ${{ vars.SEARCH_PAGES }}
+          MAX_NOTIF: ${{ vars.MAX_NOTIF }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: node scripts/update.mjs
+
+      - name: Simpan data ke repo
+        run: |
+          git config user.name "ugc-bot"
+          git config user.email "ugc-bot@users.noreply.github.com"
+          git add data/items.json
+          git diff --cached --quiet || git commit -m "Update data UGC $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push
+
+      - name: Siapkan website
+        run: |
+          mkdir -p _site/data
+          cp index.html config.json _site/
+          cp data/items.json _site/data/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

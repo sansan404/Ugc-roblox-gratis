@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UGC Gratis Hari Ini</title>
+<meta name="description" content="Daftar UGC gratis Roblox terbaru yang masih bisa diklaim, diperbarui otomatis tiap jam.">
+<meta name="theme-color" content="#0f1115">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+<style>
+  :root {
+    --bg: #0f1115; --card: #181b22; --line: #262a33; --text: #eef0f4; --muted: #9aa1ad;
+    --accent: #22c55e; --accent-ink: #052e14; --warn: #f59e0b; --bad: #ef4444; --blue: #3b82f6;
+    --r: 14px;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 14px 40px; }
+  header { padding: 22px 0 10px; }
+  h1 { margin: 0; font-size: 24px; letter-spacing: -.3px; }
+  .tag { color: var(--muted); margin: 4px 0 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--line); color: var(--muted); font-size: 13px; text-decoration: none; }
+  a.pill:hover { border-color: var(--muted); color: var(--text); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px #22c55e33; }
+  .dot.stale { background: var(--warn); box-shadow: 0 0 0 3px #f59e0b33; }
+
+  .bar { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(8px); padding: 10px 0; display: grid; gap: 10px; }
+  .tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+  .tabs button { flex: none; border: 1px solid var(--line); background: var(--card); color: var(--muted);
+    padding: 8px 14px; border-radius: 999px; font: inherit; font-weight: 600; cursor: pointer; }
+  .tabs button[aria-selected="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .tabs .n { opacity: .65; font-weight: 500; margin-left: 4px; }
+  .search { width: 100%; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line);
+    background: var(--card); color: var(--text); font: inherit; }
+  .search:focus { outline: 2px solid var(--blue); outline-offset: 0; }
+
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); margin-top: 4px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden;
+    display: flex; flex-direction: column; }
+  .card.gone { opacity: .55; }
+  .thumb { position: relative; aspect-ratio: 1; background: #1f232c; }
+  .thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .badges { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; gap: 4px; flex-wrap: wrap; }
+  .b { font-size: 11px; font-weight: 700; padding: 3px 7px; border-radius: 6px; background: #000a; color: #fff; }
+  .b.free { background: var(--accent); color: var(--accent-ink); }
+  .b.lim { background: #a855f7; }
+  .b.new { background: var(--blue); }
+  .b.out { background: var(--bad); }
+  .body { padding: 10px 11px 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .name { font-weight: 700; font-size: 14px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden; }
+  .by { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .stock { font-size: 12px; color: var(--muted); }
+  .meter { height: 6px; background: #2a2f3a; border-radius: 99px; overflow: hidden; margin-top: 3px; }
+  .meter i { display: block; height: 100%; background: var(--accent); }
+  .meter i.low { background: var(--warn); }
+  .meter i.zero { background: var(--bad); }
+  .where { font-size: 12px; color: var(--muted); }
+  .time { font-size: 11.5px; color: var(--muted); }
+  .actions { display: flex; gap: 6px; margin-top: auto; padding-top: 4px; }
+  .btn { flex: 1; text-align: center; text-decoration: none; padding: 8px 6px; border-radius: 10px;
+    font-weight: 700; font-size: 13px; background: #262b35; white-space: nowrap; }
+  .btn.main { flex: 2; }
+  .btn.main { background: var(--accent); color: var(--accent-ink); }
+  .empty, .err { text-align: center; color: var(--muted); padding: 50px 10px; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 30px; line-height: 1.6; }
+  @media (min-width: 700px) { h1 { font-size: 30px; } .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="title">🎁 UGC Gratis Hari Ini</h1>
+    <p class="tag" id="tagline">Info UGC gratis Roblox terbaru, dicek otomatis tiap jam</p>
+    <div class="meta">
+      <span class="pill"><span class="dot" id="dot"></span><span id="updated">Memuat…</span></span>
+      <a class="pill" id="tg" hidden target="_blank" rel="noopener">📣 Notif Telegram</a>
+      <a class="pill" id="dc" hidden target="_blank" rel="noopener">💬 Discord</a>
+    </div>
+  </header>
+
+  <div class="bar">
+    <div class="tabs" role="tablist">
+      <button role="tab" data-tab="claim" aria-selected="true">✅ Bisa Diklaim<span class="n" id="n-claim"></span></button>
+      <button role="tab" data-tab="new" aria-selected="false">🆕 Terbaru<span class="n" id="n-new"></span></button>
+      <button role="tab" data-tab="limited" aria-selected="false">💎 Limited<span class="n" id="n-limited"></span></button>
+      <button role="tab" data-tab="gone" aria-selected="false">⛔ Sudah Habis<span class="n" id="n-gone"></span></button>
+    </div>
+    <input class="search" id="q" type="search" placeholder="Cari nama item, kreator, atau game…" autocomplete="off">
+  </div>
+
+  <main id="list" class="grid"></main>
+
+  <footer>
+    Data diambil otomatis dari Marketplace Roblox. Stok bisa berubah cepat, jadi selalu cek di game.<br>
+    Situs ini <b>tidak berafiliasi dengan Roblox Corporation</b>. Jangan pernah kasih password akunmu ke siapa pun.
+  </footer>
+</div>
+
+<script>
+const state = { items: [], tab: "claim", q: "" };
+const $ = (id) => document.getElementById(id);
+const DAY = 86400e3;
+
+const nf = new Intl.NumberFormat("id-ID");
+function ago(iso) {
+  if (!iso) return "";
+  const s = Math.max(0, (Date.now() - new Date(iso)) / 1000);
+  if (s < 60) return "baru saja";
+  if (s < 3600) return Math.floor(s / 60) + " menit lalu";
+  if (s < 86400) return Math.floor(s / 3600) + " jam lalu";
+  return Math.floor(s / 86400) + " hari lalu";
+}
+function until(iso) {
+  const s = (new Date(iso) - Date.now()) / 1000;
+  if (s <= 0) return "sudah lewat";
+  if (s < 3600) return Math.ceil(s / 60) + " menit lagi";
+  if (s < 86400) return Math.floor(s / 3600) + " jam lagi";
+  return Math.floor(s / 86400) + " hari lagi";
+}
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function filtered() {
+  const q = state.q.trim().toLowerCase();
+  let list = state.items;
+  if (state.tab === "claim") list = list.filter((i) => i.available);
+  if (state.tab === "limited") list = list.filter((i) => i.limited && i.available);
+  if (state.tab === "gone") list = list.filter((i) => !i.available);
+  if (state.tab === "new") list = [...list].sort((a, b) => b.firstSeen.localeCompare(a.firstSeen));
+  if (q) list = list.filter((i) => [i.name, i.creator, ...(i.games || []).map((g) => g.name)].join(" ").toLowerCase().includes(q));
+  return list;
+}
+
+function card(i) {
+  const isNew = Date.now() - new Date(i.firstSeen) < DAY;
+  const game = (i.games || [])[0];
+  const badges = [
+    i.available ? '<span class="b free">GRATIS</span>' : '<span class="b out">HABIS</span>',
+    i.limited ? '<span class="b lim">LIMITED</span>' : "",
+    isNew && i.available ? '<span class="b new">BARU</span>' : "",
+  ].join("");
+
+  let stock = "";
+  if (i.limited && i.total) {
+    const rem = i.remaining ?? 0;
+    const pct = Math.max(0, Math.min(100, (rem / i.total) * 100));
+    const cls = rem === 0 ? "zero" : pct < 20 ? "low" : "";
+    stock = `<div class="stock">Sisa <b>${nf.format(rem)}</b> / ${nf.format(i.total)}
+      <div class="meter"><i class="${cls}" style="width:${pct}%"></i></div></div>`;
+  }
+  const where = i.where === "game"
+    ? `🎮 Klaim di game${game?.name ? `: <b>${esc(game.name)}</b>` : ""}`
+    : i.where === "both" ? "🛒 Marketplace / 🎮 game" : "🛒 Klaim di Marketplace";
+  const deadline = i.offSaleDeadline && i.available ? `<div class="time">⏰ Berakhir ${until(i.offSaleDeadline)}</div>` : "";
+
+  const mainBtn = game
+    ? `<a class="btn main" href="https://www.roblox.com/games/${game.placeId}" target="_blank" rel="noopener">Buka Game</a>
+       <a class="btn" href="${esc(i.url)}" target="_blank" rel="noopener">Item</a>`
+    : `<a class="btn main" href="${esc(i.url)}" target="_blank" rel="noopener">Lihat Item</a>`;
+
+  return `<article class="card${i.available ? "" : " gone"}">
+    <div class="thumb">${i.image ? `<img loading="lazy" src="${esc(i.image)}" alt="${esc(i.name)}">` : ""}
+      <div class="badges">${badges}</div></div>
+    <div class="body">
+      <div class="name">${esc(i.name)}</div>
+      <div class="by">oleh ${esc(i.creator || "?")}${i.creatorVerified ? " ✅" : ""}</div>
+      ${stock}
+      <div class="where">${where}</div>
+      ${deadline}
+      <div class="time">Ditemukan ${ago(i.firstSeen)}</div>
+      <div class="actions">${mainBtn}</div>
+    </div></article>`;
+}
+
+function render() {
+  const list = filtered();
+  $("list").innerHTML = list.length
+    ? list.map(card).join("")
+    : `<div class="empty" style="grid-column:1/-1">${state.q ? "Nggak ketemu item dengan kata itu." : "Belum ada item di sini. Cek lagi nanti ya!"}</div>`;
+  const all = state.items;
+  $("n-claim").textContent = all.filter((i) => i.available).length;
+  $("n-new").textContent = all.filter((i) => Date.now() - new Date(i.firstSeen) < DAY).length;
+  $("n-limited").textContent = all.filter((i) => i.limited && i.available).length;
+  $("n-gone").textContent = all.filter((i) => !i.available).length;
+}
+
+document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => {
+  document.querySelectorAll(".tabs button").forEach((x) => x.setAttribute("aria-selected", x === b));
+  state.tab = b.dataset.tab;
+  render();
+}));
+$("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+
+async function load() {
+  try {
+    const cfg = await fetch("config.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : {}).catch(() => ({}));
+    if (cfg.siteName) { $("title").textContent = "🎁 " + cfg.siteName; document.title = cfg.siteName; }
+    if (cfg.tagline) $("tagline").textContent = cfg.tagline;
+    if (cfg.telegramUrl) { $("tg").href = cfg.telegramUrl; $("tg").hidden = false; }
+    if (cfg.discordUrl) { $("dc").href = cfg.discordUrl; $("dc").hidden = false; }
+
+    const data = window.__DATA__ || await fetch("data/items.json", { cache: "no-store" }).then((r) => r.json());
+    state.items = data.items || [];
+    const stale = !data.updatedAt || Date.now() - new Date(data.updatedAt) > 3 * 3600e3;
+    $("dot").classList.toggle("stale", stale);
+    $("updated").textContent = data.updatedAt ? "Diperbarui " + ago(data.updatedAt) : "Belum ada data";
+    render();
+  } catch (e) {
+    $("list").innerHTML = '<div class="err" style="grid-column:1/-1">Gagal memuat data. Coba refresh sebentar lagi.</div>';
+    $("updated").textContent = "Gagal memuat";
+  }
+}
+load();
+setInterval(load, 10 * 60e3); // muat ulang data tiap 10 menit
+</script>
+</body>
+</html>
