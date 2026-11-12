@@ -26,6 +26,11 @@
   .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px;
     background: var(--card); border: 1px solid var(--line); color: var(--muted); font-size: 13px; text-decoration: none; }
   a.pill:hover { border-color: var(--muted); color: var(--text); }
+  a.pill.cta { background: #5865f2; border-color: #5865f2; color: #fff; font-weight: 700; font-size: 14px; padding: 9px 16px;
+    box-shadow: 0 0 0 0 #5865f288; animation: pulse 2.2s infinite; }
+  a.pill.cta#tg { background: #229ed9; border-color: #229ed9; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 #5865f288; } 70% { box-shadow: 0 0 0 10px #5865f200; } 100% { box-shadow: 0 0 0 0 #5865f200; } }
+  @media (prefers-reduced-motion: reduce) { a.pill.cta { animation: none; } }
   .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px #22c55e33; }
   .dot.stale { background: var(--warn); box-shadow: 0 0 0 3px #f59e0b33; }
 
@@ -107,8 +112,8 @@
     <p class="tag" id="tagline">UGC gratis lewat misi, tanpa Robux. Dicek otomatis tiap 5 menit</p>
     <div class="meta">
       <span class="pill"><span class="dot" id="dot"></span><span id="updated">Memuat…</span></span>
-      <a class="pill" id="tg" hidden target="_blank" rel="noopener">📣 Notif Telegram</a>
-      <a class="pill" id="dc" hidden target="_blank" rel="noopener">💬 Gabung Discord (notif UGC baru)</a>
+      <a class="pill cta" id="tg" hidden target="_blank" rel="noopener">📣 Notif UGC Gratis di Telegram</a>
+      <a class="pill cta" id="dc" hidden target="_blank" rel="noopener">🔔 Hidupkan Notif UGC Gratis</a>
     </div>
   </header>
 
