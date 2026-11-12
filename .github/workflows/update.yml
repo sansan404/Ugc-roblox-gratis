@@ -32,7 +32,7 @@ jobs:
     timeout-minutes: 20
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy2.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -64,7 +64,7 @@ jobs:
             git commit -m "Update data UGC $(date -u +'%Y-%m-%d %H:%M') UTC"
             # kalau bentrok, pakai data hasil jalan ini (paling baru)
             git pull --rebase -X theirs -q origin main || git rebase --abort || true
-            git push || echo "Push gagal, data dipakai di jalan berikutnya."
+            git push || (sleep 10 && git pull --rebase -X theirs -q origin main && git push) || echo "Push gagal, data dipakai di jalan berikutnya."
           else
             echo "Tidak ada perubahan data."
           fi
@@ -81,4 +81,11 @@ jobs:
         with:
           path: _site
       - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true # server GitHub kadang error sesaat
+      - name: Tunggu sebentar lalu coba deploy lagi
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 30
+      - id: deploy2
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
