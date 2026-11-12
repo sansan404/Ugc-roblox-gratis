@@ -23,6 +23,8 @@ const CONFIG = {
   maxNotifPerRun: Number(process.env.MAX_NOTIF || 15),
   recheckLimit: 60, // maks item lama yang dicek ulang per jalan
   delayMs: 1200, // jeda antar request supaya "sopan"
+  minStock: Number(process.env.MIN_STOCK || 5), // item limited dengan total stok <= ini dianggap item kode (disembunyikan)
+  gameRefreshHours: 6, // deskripsi map diperbarui tiap berapa jam
 };
 
 const TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "";
@@ -67,6 +69,27 @@ async function getJSON(url, opts = {}) {
   }
   return null;
 }
+async function postJSON(url, data) {
+  if (MOCK) return mockFetch(url);
+  let csrf = "";
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json", "user-agent": "ugc-gratis-tracker/1.0", ...(csrf ? { "x-csrf-token": csrf } : {}) },
+        body: JSON.stringify(data),
+      });
+      if (res.status === 403 && res.headers.get("x-csrf-token") && !csrf) { csrf = res.headers.get("x-csrf-token"); attempt--; continue; }
+      if (res.status === 429 || res.status >= 500) { await sleep(attempt * 5000); continue; }
+      if (!res.ok) { log(`HTTP ${res.status} POST ${short(url)}`); return null; }
+      return await res.json();
+    } catch (e) {
+      log(`Gagal POST ${short(url)}: ${e.message}`);
+      await sleep(attempt * 3000);
+    }
+  }
+  return null;
+}
 const short = (u) => u.replace(/^https:\/\//, "").slice(0, 90);
 
 async function mockFetch(url) {
@@ -76,6 +99,7 @@ async function mockFetch(url) {
     [/games\.roblox\.com\/v1\/games\?/, "games.json"],
     [/thumbnails\.roblox\.com\/v1\/assets\?/, "thumbs.json"],
     [/thumbnails\.roblox\.com\/v1\/bundles/, "thumbs.json"],
+    [/marketplace-items/, "market.json"],
   ];
   for (const [re, file] of map) {
     const m = url.match(re);
@@ -152,12 +176,34 @@ async function fetchEconomy(assetId) {
   return getJSON(`https://economy.roblox.com/v2/assets/${assetId}/details`);
 }
 
+// Stok paling akurat + daftar game tempat klaim
+async function fetchMarket(collectibleIds) {
+  const out = new Map();
+  for (let i = 0; i < collectibleIds.length; i += 30) {
+    const chunk = collectibleIds.slice(i, i + 30);
+    const json = await postJSON("https://apis.roblox.com/marketplace-items/v1/items/details", { itemIds: chunk });
+    for (const m of Array.isArray(json) ? json : json?.data || []) {
+      if (!m?.collectibleItemId) continue;
+      out.set(m.collectibleItemId, {
+        units: m.unitsAvailableForConsumption,
+        stock: m.assetStock,
+        sales: m.sales ?? null,
+        perUser: m.quantityLimitPerUser || null,
+        universeIds: m.universeIds || (m.experiences || []).map((e) => e.id),
+        price: m.price ?? m.lowestPrice ?? 0,
+      });
+    }
+    await sleep(CONFIG.delayMs);
+  }
+  return out;
+}
+
 async function fetchGames(universeIds) {
   const out = new Map();
   for (let i = 0; i < universeIds.length; i += 50) {
     const chunk = universeIds.slice(i, i + 50);
     const json = await getJSON(`https://games.roblox.com/v1/games?universeIds=${chunk.join(",")}`);
-    for (const g of json?.data || []) out.set(g.id, { name: g.name, placeId: g.rootPlaceId, playing: g.playing ?? null, description: cleanText(g.description, 600) });
+    for (const g of json?.data || []) out.set(g.id, { name: g.name, placeId: g.rootPlaceId, playing: g.playing ?? null, description: cleanText(g.description, 2500), fetchedAt: new Date().toISOString() });
     await sleep(CONFIG.delayMs);
   }
   return out;
@@ -195,6 +241,8 @@ function toItem(raw, now) {
     limited: total > 0 || (raw.itemRestrictions || []).some((r) => /limited|collectible/i.test(String(r))),
     total: total || null,
     remaining: total ? raw.unitsAvailableForConsumption ?? null : null,
+    collectibleItemId: raw.collectibleItemId || null,
+    universeIds: [],
     perUser: raw.quantityLimitPerUser || null,
     offSaleDeadline: raw.offSaleDeadline || null,
     where: claimWhere(loc),
@@ -229,9 +277,39 @@ let GUIDES = {};
 async function loadGuides() {
   try { GUIDES = JSON.parse(await readFile(GUIDE_FILE, "utf8")); } catch { GUIDES = {}; }
 }
+let GAMES = {};
+// Ambil baris-baris penting dari deskripsi map (yang membahas UGC / kode / cara dapat)
+export function mapTips(desc = "") {
+  const KEY = /(ugc|free|gratis|claim|klaim|code|kode|redeem|reward|hadiah|limited|stock|stok|stage|level|obby|quest|misi|mission|collect|kumpul|badge|win|menang|reach|complete|selesai|join|group|grup|like|favorite|spin|egg|chest|peti|token|coin|koin|minute|menit|hour|jam|play|main|unlock|get|dapat)/i;
+  return String(desc).split(/\n+/).map((l) => l.trim())
+    .filter((l) => l.length >= 4 && l.length <= 220 && KEY.test(l) && !/^(https?:|discord\.gg)/i.test(l))
+    .slice(0, 6);
+}
+// Klasifikasi cara dapat: "misi" (gratis lewat misi), "beli" (perlu Robux/gamepass), "kode", atau "?"
+const RE_BUY = /(robux|\bR\$|\bbuy\b|\bbeli\b|purchas|gamepass|game ?pass|donat|\bpay\b|bayar|\bprice\b|harga|\bcost\b|premium|developer product|\bvip\b|\bsale\b|discount|diskon)/gi;
+const RE_SHOPGAME = /(avatar|catalog|katalog|\bshop\b|\bstore\b|outfit|marketplace|mall|boutique|\btoko\b)/i;
+const RE_CODE = /(\bcodes?\b|\bkode\b|redeem)/gi;
+const RE_MISSION = /(stage|obby|quest|mission|\bmisi\b|badge|collect|kumpul|\bfind\b|\bcari\b|reach|complete|selesai|play (for|\d)|minutes|menit|\bwin\b|menang|level|tower|escape|survive|defeat|parkour|hunt|\begg|token|checkpoint|finish|race|maze|puzzle|battle|fight|boss|explore|treasure|harta)/gi;
+const count = (re, t) => (String(t).match(re) || []).length;
+
+export function classify(it, gameDesc = "") {
+  const gameName = it.games?.[0]?.name || "";
+  const text = `${gameName}\n${gameDesc}\n${it.description || ""}`;
+  const buy = count(RE_BUY, text), mission = count(RE_MISSION, text), code = count(RE_CODE, text);
+  if (it.where === "shop") return { type: "shop", why: "Diambil langsung di Marketplace (tanpa misi)" };
+  if (RE_SHOPGAME.test(gameName)) return { type: "beli", why: "Game toko/katalog avatar" };
+  if (buy > 0 && buy >= mission) return { type: "beli", why: "Deskripsi menyebut Robux/beli" };
+  if (mission > 0) return { type: "misi", why: "Deskripsi menyebut misi/stage/kumpulkan" };
+  if (code > 0) return { type: "kode", why: "Butuh kode" };
+  return { type: "?", why: "Belum jelas cara dapatnya" };
+}
+
 function guideFor(it) {
   const manual = GUIDES[String(it.id)];
   if (manual) return Array.isArray(manual) ? manual.join("\n") : String(manual);
+  const g = it.games?.[0] && GAMES[it.games[0].universeId];
+  const tips = g ? mapTips(g.description) : [];
+  if (tips.length) return "Dari deskripsi map:\n• " + tips.slice(0, 4).join("\n• ");
   return it.description || "";
 }
 
@@ -318,64 +396,103 @@ async function main() {
   const currentKeys = new Set(current.map((i) => i.key));
   const newOnes = current.filter((i) => !byKey.has(i.key));
 
-  // Lengkapi info item BARU (game & gambar). Item lama cukup update stok.
-  const universeIds = new Set();
-  for (const it of newOnes) {
-    if (it.type === "asset" && it.where !== "shop") {
-      const eco = await fetchEconomy(it.id);
-      for (const u of eco?.SaleLocation?.UniverseIds || []) universeIds.add(u);
-      it._universes = eco?.SaleLocation?.UniverseIds || [];
-      await sleep(CONFIG.delayMs);
-    }
-  }
-  const games = universeIds.size ? await fetchGames([...universeIds]) : new Map();
-  for (const it of newOnes) {
-    it.games = (it._universes || []).map((u) => games.get(u)).filter(Boolean).slice(0, 3);
-    if (!it.games.length && it.gameHints.length) {
-      it.games = it.gameHints.slice(0, 1).map((placeId) => ({ name: null, placeId }));
-    }
-    delete it._universes;
-  }
-
-  const needThumb = current.filter((i) => !(byKey.get(i.key)?.image));
-  const thumbs = await fetchThumbs(
-    [...new Set(needThumb.filter((i) => i.type === "asset").map((i) => i.id))],
-    [...new Set(needThumb.filter((i) => i.type === "bundle").map((i) => i.id))],
-  );
-
-  // Gabungkan
+  // Gabungkan data pencarian dengan data lama
   for (const it of current) {
     const old = byKey.get(it.key);
     if (old) {
       Object.assign(old, {
-        name: it.name, description: it.description, remaining: it.remaining, total: it.total, offSaleDeadline: it.offSaleDeadline,
-        lastSeen: now, available: !(it.limited && it.remaining === 0),
+        name: it.name, description: it.description, remaining: it.remaining, total: it.total,
+        offSaleDeadline: it.offSaleDeadline, perUser: it.perUser, lastSeen: now,
+        collectibleItemId: it.collectibleItemId || old.collectibleItemId || null,
       });
-      if (!old.image) old.image = thumbs.get(it.key) || null;
+      old.gameHints = it.gameHints;
+      old.available = true;
     } else {
-      it.image = thumbs.get(it.key) || null;
-      it.available = !(it.limited && it.remaining === 0);
       byKey.set(it.key, it);
     }
   }
+  const tracked = [...byKey.values()].filter((i) => currentKeys.has(i.key) || i.available);
 
-  // Item lama yang tidak muncul lagi: cek ulang apakah masih dijual
-  const missing = [...byKey.values()].filter((i) => i.available && !currentKeys.has(i.key));
+  // 1) Cek stok akurat lewat API marketplace (sekaligus dapat daftar game)
+  const market = await fetchMarket([...new Set(tracked.map((i) => i.collectibleItemId).filter(Boolean))]);
+  log(`Stok akurat didapat untuk ${market.size} item.`);
+  for (const it of tracked) {
+    const m = it.collectibleItemId && market.get(it.collectibleItemId);
+    if (m) {
+      if (typeof m.units === "number") it.remaining = m.units;
+      if (m.stock) it.total = m.stock;
+      it.sold = m.sales;
+      if (m.perUser) it.perUser = m.perUser;
+      if (m.universeIds?.length) it.universeIds = m.universeIds;
+    }
+  }
+
+  // 2) Item tanpa data marketplace: pakai API economy (maks recheckLimit per jalan)
   let checked = 0;
-  for (const it of missing) {
-    const deadlinePassed = it.offSaleDeadline && new Date(it.offSaleDeadline) < new Date();
-    if (deadlinePassed) { it.available = false; continue; }
+  for (const it of tracked) {
     if (it.type !== "asset" || checked >= CONFIG.recheckLimit) continue;
+    const hasMarket = it.collectibleItemId && market.has(it.collectibleItemId);
+    const needGame = it.where !== "shop" && !it.universeIds?.length;
+    const vanished = !currentKeys.has(it.key);
+    if (hasMarket || (!needGame && !vanished)) continue;
     checked++;
     const eco = await fetchEconomy(it.id);
     if (eco) {
-      const remaining = eco.Remaining;
-      const free = (eco.PriceInRobux ?? 0) === 0;
-      it.available = !!eco.IsForSale && free && remaining !== 0;
-      if (typeof remaining === "number") it.remaining = remaining;
+      if (eco.SaleLocation?.UniverseIds?.length) it.universeIds = eco.SaleLocation.UniverseIds;
+      if (vanished) it.available = !!eco.IsForSale && (eco.PriceInRobux ?? 0) === 0;
+      if (typeof eco.Remaining === "number" && it.limited) it.remaining = eco.Remaining;
+    } else if (vanished) {
+      it.available = false;
     }
     await sleep(CONFIG.delayMs);
   }
+
+  // 3) Status bisa diklaim
+  for (const it of tracked) {
+    const deadlinePassed = it.offSaleDeadline && new Date(it.offSaleDeadline) < new Date();
+    const soldOut = it.limited && it.remaining === 0;
+    if (deadlinePassed || soldOut) it.available = false;
+    it.tiny = !!(it.limited && it.total && it.total <= CONFIG.minStock);
+  }
+
+  // 4) Info map / game (nama, deskripsi, jumlah pemain) disimpan di cache
+  store.games = store.games || {};
+  const wantU = new Set(tracked.filter((i) => i.available).flatMap((i) => i.universeIds || []));
+  const stale = [...wantU].filter((u) => {
+    const g = store.games[u];
+    return !g || !g.fetchedAt || Date.now() - new Date(g.fetchedAt) > CONFIG.gameRefreshHours * 3600e3;
+  });
+  if (stale.length) {
+    const fresh = await fetchGames(stale);
+    for (const [u, g] of fresh) store.games[u] = g;
+    log(`Info map diperbarui: ${fresh.size}.`);
+  }
+  for (const it of tracked) {
+    it.games = (it.universeIds || []).map((u) => {
+      const g = store.games[u];
+      return g && { universeId: u, name: g.name, placeId: g.placeId, playing: g.playing ?? null };
+    }).filter(Boolean).slice(0, 3);
+    if (!it.games.length && it.gameHints?.length) it.games = [{ name: null, placeId: it.gameHints[0] }];
+  }
+
+  // 4b) Cek: benar-benar gratis lewat misi?
+  for (const it of tracked) {
+    const u = it.games?.[0]?.universeId;
+    const c = classify(it, u ? store.games[u]?.description : "");
+    if (GUIDES[String(it.id)]) { c.type = "misi"; c.why = "Misi ditulis manual"; }
+    it.claimType = c.type;
+    it.claimWhy = c.why;
+  }
+  // tampil di website hanya: masih bisa diklaim + bukan item kode kecil + lewat misi
+  const isShown = (i) => i.available && !i.tiny && i.claimType === "misi";
+
+  // 5) Gambar
+  const needThumb = tracked.filter((i) => !i.image);
+  const thumbs = await fetchThumbs(
+    [...new Set(needThumb.filter((i) => i.type === "asset").map((i) => i.id))],
+    [...new Set(needThumb.filter((i) => i.type === "bundle").map((i) => i.id))],
+  );
+  for (const it of needThumb) it.image = thumbs.get(it.key) || null;
 
   // Buang yang terlalu lama
   const cutoff = Date.now() - CONFIG.keepDays * 86400e3;
@@ -383,16 +500,23 @@ async function main() {
     .filter((i) => new Date(i.firstSeen).getTime() > cutoff || i.available)
     .sort((a, b) => (b.createdAt || b.firstSeen).localeCompare(a.createdAt || a.firstSeen));
   for (const i of items) delete i.gameHints;
+  const usedU = new Set(items.filter((i) => i.available).flatMap((i) => i.universeIds || []));
+  const games = Object.fromEntries(Object.entries(store.games || {}).filter(([u]) => usedU.has(Number(u))));
 
-  await saveStore({ updatedAt: now, items });
-  log(`Tersimpan ${items.length} item (${items.filter((i) => i.available).length} masih bisa diklaim). Baru: ${newOnes.length}.`);
+  await saveStore({ updatedAt: now, items, games });
+  const shown = items.filter(isShown).length;
+  const byType = {};
+  for (const i of items.filter((x) => x.available && !x.tiny)) byType[i.claimType] = (byType[i.claimType] || 0) + 1;
+  log("Jenis item yang masih bisa diklaim:", JSON.stringify(byType));
+  log(`Tersimpan ${items.length} item. Tampil di website: ${shown}. Baru: ${newOnes.length}.`);
 
   // Notifikasi
+  GAMES = games;
   if (firstRun) {
     log("Jalan pertama: tidak kirim notif supaya channel tidak dibanjiri.");
     return;
   }
-  const toNotify = newOnes.filter((i) => i.available).slice(0, CONFIG.maxNotifPerRun).reverse();
+  const toNotify = newOnes.filter(isShown).slice(0, CONFIG.maxNotifPerRun).reverse();
   for (const it of toNotify) {
     await sendTelegram(it);
     await sendDiscord(it);

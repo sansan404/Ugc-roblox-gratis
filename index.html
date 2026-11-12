@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>UGC Gratis Hari Ini</title>
-<meta name="description" content="Daftar UGC gratis Roblox terbaru yang masih bisa diklaim, diperbarui otomatis tiap jam.">
+<meta name="description" content="Daftar UGC gratis Roblox lewat misi (tanpa Robux) yang masih bisa diklaim, diperbarui otomatis tiap jam.">
 <meta name="theme-color" content="#0f1115">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
 <style>
@@ -89,7 +89,10 @@
   .steps { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
   .note { white-space: pre-wrap; word-break: break-word; background: #11141a; border: 1px solid var(--line);
     border-radius: 12px; padding: 12px; font-size: 14px; }
-  .note a { color: #7fb4ff; }
+  .note a, .tips a { color: #7fb4ff; }
+  .tips { list-style: "✔️  "; }
+  details summary { cursor: pointer; list-style: none; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #11141a; }
+  details summary::-webkit-details-marker { display: none; }
   .src { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
   .sheet .actions { padding: 6px 16px 0; }
   .sheet .btn { padding: 12px; font-size: 15px; }
@@ -129,7 +132,7 @@
 <div class="sheet-bg" id="sheet" hidden></div>
 
 <script>
-const state = { items: [], guides: {}, tab: "claim", q: "" };
+const state = { items: [], guides: {}, games: {}, tab: "claim", q: "" };
 const $ = (id) => document.getElementById(id);
 const DAY = 86400e3;
 
@@ -221,6 +224,12 @@ function linkify(t) {
   });
 }
 
+const TIP_KEY = /(ugc|free|gratis|claim|klaim|code|kode|redeem|reward|hadiah|limited|stock|stok|stage|level|obby|quest|misi|mission|collect|kumpul|badge|win|menang|reach|complete|selesai|join|group|grup|like|favorite|spin|egg|chest|peti|token|coin|koin|minute|menit|hour|jam|play|main|unlock|get|dapat)/i;
+function mapTips(desc) {
+  return String(desc || "").split(/\n+/).map((l) => l.trim())
+    .filter((l) => l.length >= 4 && l.length <= 220 && TIP_KEY.test(l) && !/^(https?:|discord\.gg)/i.test(l)).slice(0, 8);
+}
+
 function autoSteps(i, game) {
   const s = [];
   if (i.where === "game" || i.where === "both") {
@@ -240,8 +249,10 @@ function openSheet(key) {
   if (!i) return;
   const game = (i.games || [])[0];
   const manual = state.guides[String(i.id)];
+  const gameInfo = game ? { ...(state.games[game.universeId] || {}), ...game, description: state.games[game.universeId]?.description || game.description } : null;
+  const tips = mapTips(gameInfo?.description);
   const manualSteps = manual ? (Array.isArray(manual) ? manual : String(manual).split(/\n+/)) : null;
-  const stock = i.limited && i.total ? `Sisa <b>${nf.format(i.remaining ?? 0)}</b> dari ${nf.format(i.total)}` : "Stok tidak terbatas";
+  const stock = i.limited && i.total ? `Sisa <b>${nf.format(i.remaining ?? 0)}</b> dari ${nf.format(i.total)}${i.sold ? ` · ${nf.format(i.sold)} sudah diklaim` : ""}` : "Stok tidak terbatas";
   const gameUrl = game ? `https://www.roblox.com/games/${game.placeId}` : null;
   $("sheet").innerHTML = `<div class="sheet" role="dialog" aria-modal="true">
     <div class="top"><b>Cara klaim &amp; misi</b><button class="x" aria-label="Tutup">✕</button></div>
@@ -251,11 +262,14 @@ function openSheet(key) {
       ${i.offSaleDeadline ? `<div class="time">⏰ Berakhir ${until(i.offSaleDeadline)}</div>` : ""}</div></div>
     ${manualSteps ? `<div class="sec"><h3>Misi</h3><ol class="steps">${manualSteps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol></div>` : ""}
     <div class="sec"><h3>Langkah klaim</h3><ol class="steps">${autoSteps(i, game).map((x) => `<li>${x}</li>`).join("")}</ol></div>
-    ${i.description ? `<div class="sec"><h3>Petunjuk dari pembuat item</h3><div class="note">${linkify(i.description)}</div>
+    ${tips.length ? `<div class="sec"><h3>🔎 Cara dapat UGC (dari deskripsi map)</h3><ul class="steps tips">${tips.map((x) => `<li>${linkify(x)}</li>`).join("")}</ul>
+      <div class="src">Diambil otomatis dari deskripsi map${gameInfo?.name ? " " + esc(gameInfo.name) : ""}. Cek juga di dalam game.</div></div>` : ""}
+    ${gameInfo?.description ? `<div class="sec"><details${tips.length ? "" : " open"}><summary><b>📜 Deskripsi lengkap map${gameInfo.name ? ": " + esc(gameInfo.name) : ""}</b></summary>
+      <div class="note" style="margin-top:8px">${linkify(gameInfo.description)}</div></details>
+      ${gameInfo.playing ? `<div class="src">👥 ${nf.format(gameInfo.playing)} orang sedang main</div>` : ""}</div>` : ""}
+    ${i.description ? `<div class="sec"><h3>Catatan dari pembuat item</h3><div class="note">${linkify(i.description)}</div>
       <div class="src">Ditulis oleh pembuat item, biasanya berbahasa Inggris.</div></div>` : ""}
-    ${game?.description ? `<div class="sec"><h3>Tentang game${game.name ? ": " + esc(game.name) : ""}</h3><div class="note">${linkify(game.description)}</div>
-      ${game.playing ? `<div class="src">${nf.format(game.playing)} orang sedang main</div>` : ""}</div>` : ""}
-    ${!manualSteps && !i.description && !game?.description ? `<div class="sec"><div class="note">Pembuat item belum menulis detail misinya. Coba buka game-nya, biasanya ada papan petunjuk atau NPC yang menjelaskan.</div></div>` : ""}
+    ${!manualSteps && !i.description && !gameInfo?.description ? `<div class="sec"><div class="note">Pembuat item belum menulis detail misinya. Coba buka game-nya, biasanya ada papan petunjuk atau NPC yang menjelaskan.</div></div>` : ""}
     <div class="actions">${gameUrl ? `<a class="btn main" href="${gameUrl}" target="_blank" rel="noopener">🎮 Buka Game</a>` : ""}
       <a class="btn${gameUrl ? "" : " main"}" href="${esc(i.url)}" target="_blank" rel="noopener">👕 Lihat Item</a></div>
   </div>`;
@@ -288,7 +302,9 @@ async function load() {
 
     const data = window.__DATA__ || await fetch("data/items.json", { cache: "no-store" }).then((r) => r.json());
     // hanya tampilkan yang masih bisa diklaim
-    state.items = (data.items || []).filter((i) => i.available && !(i.offSaleDeadline && new Date(i.offSaleDeadline) < Date.now()));
+    // hanya yang masih bisa diklaim, dan bukan item kode stok sangat kecil (tiny)
+    state.items = (data.items || []).filter((i) => i.available && !i.tiny && i.claimType === "misi" && !(i.offSaleDeadline && new Date(i.offSaleDeadline) < Date.now()));
+    state.games = data.games || {};
     state.guides = await fetch("data/cara-klaim.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : {}).catch(() => ({}));
     const stale = !data.updatedAt || Date.now() - new Date(data.updatedAt) > 3 * 3600e3;
     $("dot").classList.toggle("stale", stale);
