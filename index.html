@@ -116,7 +116,7 @@
   <header>
     <h1 id="title">🎁 UGC Gratis Hari Ini</h1>
     <p class="tag" id="tagline">UGC gratis lewat misi, tanpa Robux. Dicek otomatis tiap 5 menit</p>
-    <div class="credit">Created by <b>Sans.inc</b><a id="yt" hidden target="_blank" rel="noopener">▶ YouTube Sans.inc</a></div>
+    <div class="credit">Created by <b>Sans.inc</b></div>
     <div class="meta">
       <span class="pill"><span class="dot" id="dot"></span><span id="updated">Memuat…</span></span>
       <a class="pill cta" id="tg" hidden target="_blank" rel="noopener">📣 Notif UGC Gratis di Telegram</a>
@@ -315,7 +315,7 @@ async function load() {
     if (cfg.siteName) { $("title").textContent = "🎁 " + cfg.siteName; document.title = cfg.siteName; }
     if (cfg.tagline) $("tagline").textContent = cfg.tagline;
     if (cfg.telegramUrl) { $("tg").href = cfg.telegramUrl; $("tg").hidden = false; }
-    if (cfg.youtubeUrl) { for (const id of ["yt", "yt2"]) { $(id).href = cfg.youtubeUrl; $(id).hidden = false; } }
+    if (cfg.youtubeUrl) { for (const id of ["yt2"]) { $(id).href = cfg.youtubeUrl; $(id).hidden = false; } }
     if (cfg.discordUrl) { $("dc").href = cfg.discordUrl; $("dc").hidden = false; }
 
     const data = window.__DATA__ || await fetch("data/items.json", { cache: "no-store" }).then((r) => r.json());
