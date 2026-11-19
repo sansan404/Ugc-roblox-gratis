@@ -152,6 +152,29 @@ async function searchFreeItems() {
     found.push({ ...it, _official: true });
   }
 
+  // Item UNLIMITED dari SEMUA kreator yang dibagikan lewat game (cek penuh saja, biar hemat request)
+  if (FULL) {
+    let cur = "";
+    for (const sort of ["0", "1"]) {
+      cur = "";
+      for (let page = 0; page < 2; page++) {
+        await sleep(CONFIG.delayMs * 2);
+        const up = new URLSearchParams({ Category: "1", SalesTypeFilter: "1", SortType: sort, MinPrice: "0", MaxPrice: "0", IncludeNotForSale: "false", Limit: "120" });
+        if (cur) up.set("Cursor", cur);
+        const uj = await getJSON(`https://catalog.roblox.com/v2/search/items/details?${up}`);
+        for (const it of uj?.data || []) {
+          const loc = locationName(it.saleLocationType);
+          if (it.totalQuantity || !/Experiences/.test(loc) || /^ShopAndAll/.test(loc)) continue;
+          if (seen.has(`${it.itemType}:${it.id}`)) continue;
+          seen.add(`${it.itemType}:${it.id}`);
+          found.push(it);
+        }
+        cur = uj?.nextPageCursor;
+        if (!cur) break;
+      }
+    }
+  }
+
   // pastikan benar-benar gratis & masih dijual
   return found.filter((it) => {
     const free = it.price === 0 || it.lowestPrice === 0 || String(it.priceStatus).toLowerCase() === "free";
