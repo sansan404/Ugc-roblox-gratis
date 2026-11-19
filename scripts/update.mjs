@@ -451,7 +451,7 @@ async function findGameByName(name) {
 function gameGuesses(desc) {
   const out = [];
   // pola "Complete the Jailbreak chapter" -> Jailbreak
-  for (const m of desc.matchAll(/(?:the\s+)?([A-Z][\w'’ ]{2,40}?)\s+chapter\b/g)) if (!/^(all|every|each|this|that|final|first|last)$/i.test(m[1].trim())) out.push(m[1].trim());
+  for (const m of desc.matchAll(/\bthe\s+([A-Z][\w'’ ]{2,40}?)\s+chapter\b/g)) if (!/^(all|every|each|this|that|final|first|last)$/i.test(m[1].trim())) out.push(m[1].trim());
   const re = /(?:chapters? of|quests? in|in|di|at|from|dari)\s+(?:the\s+)?([A-Z0-9][^.!,\n]{2,60}?)(?:\s+(?:experience|game|event))?(?:[.!,\n]|$)/g;
   let m;
   while ((m = re.exec(desc)) && out.length < 4) {
