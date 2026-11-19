@@ -423,6 +423,58 @@ async function sendDiscord(it) {
 }
 
 // ---------- Main ----------
+// ---------- Hadiah event Roblox (Off Sale, didapat dari misi event) ----------
+const EVENTS_FILE = join(ROOT, "data", "events.json");
+async function updateEvents() {
+  const cutoff = Date.now() - Number(process.env.EVENT_DAYS || 75) * 86400e3;
+  const out = [];
+  let cursor = "";
+  for (let page = 0; page < 3; page++) {
+    const p = new URLSearchParams({
+      Category: "1", SalesTypeFilter: "1", SortType: "3", IncludeNotForSale: "true",
+      Limit: "120", CreatorTargetId: "1", CreatorType: "1",
+    });
+    if (cursor) p.set("Cursor", cursor);
+    const json = await getJSON(`https://catalog.roblox.com/v2/search/items/details?${p}`);
+    for (const it of json?.data || []) {
+      const off = it.isOffSale || /off sale/i.test(String(it.priceStatus));
+      const created = new Date(it.itemCreatedUtc || 0).getTime();
+      if (!off || created < cutoff) continue;
+      const desc = cleanText(it.description, 800);
+      const m = desc.match(/(?:in|di|at|from|dari)\s+(?:the\s+)?([A-Z0-9][^.!\n]{2,40}?)(?:\s+(?:experience|game|event))?[.!\n]/);
+      out.push({
+        key: `${String(it.itemType).toLowerCase() === "bundle" ? "bundle" : "asset"}:${it.id}`,
+        id: it.id,
+        type: String(it.itemType).toLowerCase() === "bundle" ? "bundle" : "asset",
+        name: it.name,
+        description: desc,
+        createdAt: it.itemCreatedUtc,
+        placeIds: gameIdsFromText(it.description).slice(0, 2),
+        gameGuess: m ? m[1].trim() : null,
+        url: `https://www.roblox.com/${String(it.itemType).toLowerCase() === "bundle" ? "bundles" : "catalog"}/${it.id}`,
+        image: null,
+      });
+    }
+    cursor = json?.nextPageCursor;
+    if (!cursor) break;
+    await sleep(CONFIG.delayMs * 2);
+  }
+  // gambar (pakai lagi yang lama kalau ada)
+  let old = [];
+  try { old = JSON.parse(await readFile(EVENTS_FILE, "utf8")).items || []; } catch {}
+  const oldImg = new Map(old.map((e) => [e.key, e.image]));
+  for (const e of out) e.image = oldImg.get(e.key) || null;
+  const need = out.filter((e) => !e.image);
+  const thumbs = await fetchThumbs(
+    need.filter((e) => e.type === "asset").map((e) => e.id),
+    need.filter((e) => e.type === "bundle").map((e) => e.id),
+  );
+  for (const e of need) e.image = thumbs.get(e.key) || null;
+  out.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+  if (out.length || !old.length) await writeFile(EVENTS_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), items: out }, null, 1) + "\n");
+  log(`Hadiah event Roblox: ${out.length} item.`);
+}
+
 async function main() {
   const now = new Date().toISOString();
   const store = await loadStore();
@@ -565,6 +617,7 @@ async function main() {
   const games = Object.fromEntries(Object.entries(store.games || {}).filter(([u]) => usedU.has(Number(u))));
 
   await saveStore({ updatedAt: now, items, games });
+  if (FULL) { try { await updateEvents(); } catch (e) { log("Gagal update event:", e.message); } }
   const shown = items.filter(isShown).length;
   const byType = {};
   for (const i of items.filter((x) => x.available && !x.tiny)) byType[i.claimType] = (byType[i.claimType] || 0) + 1;

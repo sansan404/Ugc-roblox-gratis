@@ -58,7 +58,7 @@ jobs:
         run: |
           git config user.name "ugc-bot"
           git config user.email "ugc-bot@users.noreply.github.com"
-          git add data/items.json
+          git add data/items.json data/events.json 2>/dev/null || git add data/items.json
           # commit hanya kalau ada perubahan selain jam update (biar riwayat repo nggak penuh)
           if git diff --cached -U0 | grep -E '^[+-] ' | grep -vq '"updatedAt"'; then
             git commit -m "Update data UGC $(date -u +'%Y-%m-%d %H:%M') UTC"
@@ -75,6 +75,7 @@ jobs:
           cp index.html config.json _site/
           cp data/items.json _site/data/
           cp data/cara-klaim.json _site/data/ 2>/dev/null || true
+          cp data/events.json _site/data/ 2>/dev/null || true
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

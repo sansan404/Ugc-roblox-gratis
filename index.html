@@ -58,6 +58,10 @@
   .b.lim { background: #a855f7; }
   .b.new { background: var(--blue); }
   .b.unl { background: #0ea5e9; }
+  .b.ev { background: #f59e0b; color: #1c1300; }
+  .card.ev { cursor: default; }
+  .evdesc { font-size: 12px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .evnote { background: #2a2310; border: 1px solid #f59e0b55; color: #fde68a; border-radius: 12px; padding: 10px 12px; font-size: 13px; }
   .b.off { background: #111827; border: 1px solid #fff5; }
   .b.out { background: var(--bad); }
   .body { padding: 10px 11px 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
@@ -131,6 +135,7 @@
       <button role="tab" data-tab="new" aria-selected="false">🆕 Baru (3 hari)<span class="n" id="n-new"></span></button>
       <button role="tab" data-tab="limited" aria-selected="false">💎 Limited<span class="n" id="n-limited"></span></button>
       <button role="tab" data-tab="unlimited" aria-selected="false">♾️ Unlimited<span class="n" id="n-unlimited"></span></button>
+      <button role="tab" data-tab="events" aria-selected="false">🏆 Event Roblox<span class="n" id="n-events"></span></button>
     </div>
     <input class="search" id="q" type="search" placeholder="Cari nama item, kreator, atau game…" autocomplete="off">
   </div>
@@ -146,7 +151,7 @@
 <div class="sheet-bg" id="sheet" hidden></div>
 
 <script>
-const state = { items: [], guides: {}, games: {}, tab: "claim", q: "" };
+const state = { items: [], events: [], guides: {}, games: {}, tab: "claim", q: "" };
 const $ = (id) => document.getElementById(id);
 const DAY = 86400e3;
 
@@ -222,7 +227,31 @@ function card(i) {
     </div></article>`;
 }
 
+function eventCard(e) {
+  const place = (e.placeIds || [])[0];
+  const desc = e.description ? esc(e.description.length > 220 ? e.description.slice(0, 220) + "…" : e.description) : "";
+  return `<article class="card ev">
+    <div class="thumb">${e.image ? `<img loading="lazy" src="${esc(e.image)}" alt="${esc(e.name)}">` : ""}
+      <div class="badges"><span class="b ev">🏆 EVENT</span><span class="b off">✔ RESMI ROBLOX</span></div></div>
+    <div class="body">
+      <div class="name">${esc(e.name)}</div>
+      ${e.gameGuess ? `<div class="where">🎮 Kemungkinan di: <b>${esc(e.gameGuess)}</b></div>` : ""}
+      ${desc ? `<div class="evdesc">${desc}</div>` : ""}
+      <div class="time">Dirilis ${ago(e.createdAt)} · cek di game apakah event masih jalan</div>
+      <div class="actions">${place ? `<a class="btn main" href="https://www.roblox.com/games/${place}" target="_blank" rel="noopener">Buka Game</a>` : ""}
+        <a class="btn${place ? "" : " main"}" href="${esc(e.url)}" target="_blank" rel="noopener">Lihat Item</a></div>
+    </div></article>`;
+}
+
 function render() {
+  if (state.tab === "events") {
+    const q = state.q.trim().toLowerCase();
+    const ev = state.events.filter((e) => !q || `${e.name} ${e.description} ${e.gameGuess || ""}`.toLowerCase().includes(q));
+    $("list").innerHTML = `<div class="evnote" style="grid-column:1/-1">🏆 Hadiah event resmi Roblox yang didapat dari misi. Roblox nggak memberi tahu apakah event-nya masih jalan, jadi <b>cek dulu di game</b> sebelum ikut.</div>` +
+      (ev.length ? ev.map(eventCard).join("") : `<div class="empty" style="grid-column:1/-1">Belum ada hadiah event terbaru.</div>`);
+    $("n-events").textContent = state.events.length;
+    return;
+  }
   const list = filtered();
   $("list").innerHTML = list.length
     ? list.map(card).join("")
@@ -232,6 +261,7 @@ function render() {
   $("n-new").textContent = all.filter((i) => Date.now() - new Date(i.firstSeen) < 3 * DAY).length;
   $("n-limited").textContent = all.filter((i) => i.limited).length;
   $("n-unlimited").textContent = all.filter((i) => !i.limited).length;
+  $("n-events").textContent = state.events.length;
 }
 
 function linkify(t) {
@@ -323,6 +353,7 @@ async function load() {
     // hanya yang masih bisa diklaim, dan bukan item kode stok sangat kecil (tiny)
     state.items = (data.items || []).filter((i) => i.available && !i.tiny && !i.stale && i.claimType === "misi" && !(i.offSaleDeadline && new Date(i.offSaleDeadline) < Date.now()));
     state.games = data.games || {};
+    state.events = await fetch("data/events.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : { items: [] }).then((j) => j.items || []).catch(() => []);
     state.guides = await fetch("data/cara-klaim.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : {}).catch(() => ({}));
     const stale = !data.updatedAt || Date.now() - new Date(data.updatedAt) > 3 * 3600e3;
     $("dot").classList.toggle("stale", stale);
