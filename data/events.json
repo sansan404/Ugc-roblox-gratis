@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T22:20:36.618Z",
+ "updatedAt": "2026-11-19T22:23:04.773Z",
  "items": [
   {
    "key": "asset:84933653753631",
@@ -22,7 +22,7 @@
    "description": "Complete the Jailbreak chapter of The Takeback",
    "createdAt": "2026-11-16T16:20:07.461Z",
    "placeIds": [],
-   "gameGuess": "Complete the Jailbreak",
+   "gameGuess": "Jailbreak",
    "games": [
     {
      "name": "Jailbreak ⛓️‍💥",
@@ -42,7 +42,7 @@
    "description": "Complete the Notoriety chapter of The Takeback",
    "createdAt": "2026-11-16T16:19:36.199Z",
    "placeIds": [],
-   "gameGuess": "Complete the Notoriety",
+   "gameGuess": "Notoriety",
    "games": [],
    "url": "https://www.roblox.com/catalog/106825313795697",
    "image": "https://tr.rbxcdn.com/180DAY-aff291af64fa22e60c30a24b7ec2c94c/420/420/FaceAccessory/Png/noFilter"
@@ -55,7 +55,7 @@
    "description": "Complete the Emergency Hamburg chapter of The Takeback",
    "createdAt": "2026-11-16T16:18:59.226Z",
    "placeIds": [],
-   "gameGuess": "Complete the Emergency Hamburg",
+   "gameGuess": "Emergency Hamburg",
    "games": [
     {
      "name": "Emergency Hamburg",
@@ -185,6 +185,18 @@
    "placeId": 100862092707544,
    "universeId": 10036955953,
    "playing": 99
+  },
+  "Jailbreak": {
+   "name": "Jailbreak ⛓️‍💥",
+   "placeId": 606849621,
+   "universeId": 245662005,
+   "playing": 7389
+  },
+  "Emergency Hamburg": {
+   "name": "Emergency Hamburg",
+   "placeId": 7711635737,
+   "universeId": 2992873140,
+   "playing": 9443
   }
  }
 }
