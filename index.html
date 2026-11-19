@@ -60,6 +60,7 @@
   .b.unl { background: #0ea5e9; }
   .b.ev { background: #f59e0b; color: #1c1300; }
   .card.ev { cursor: default; }
+  .where a { color: #7fb4ff; text-decoration: none; }
   .evdesc { font-size: 12px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
   .evnote { background: #2a2310; border: 1px solid #f59e0b55; color: #fde68a; border-radius: 12px; padding: 10px 12px; font-size: 13px; }
   .b.off { background: #111827; border: 1px solid #fff5; }
@@ -228,14 +229,16 @@ function card(i) {
 }
 
 function eventCard(e) {
-  const place = (e.placeIds || [])[0];
+  const games = e.games || [];
+  const place = games[0]?.placeId || (e.placeIds || [])[0];
   const desc = e.description ? esc(e.description.length > 220 ? e.description.slice(0, 220) + "…" : e.description) : "";
   return `<article class="card ev">
     <div class="thumb">${e.image ? `<img loading="lazy" src="${esc(e.image)}" alt="${esc(e.name)}">` : ""}
       <div class="badges"><span class="b ev">🏆 EVENT</span><span class="b off">✔ RESMI ROBLOX</span></div></div>
     <div class="body">
       <div class="name">${esc(e.name)}</div>
-      ${e.gameGuess ? `<div class="where">🎮 Kemungkinan di: <b>${esc(e.gameGuess)}</b></div>` : ""}
+      ${games.some((g) => g.name) ? `<div class="where">🎮 Game: ${games.filter((g) => g.name).map((g) => `<a href="https://www.roblox.com/games/${g.placeId}" target="_blank" rel="noopener"><b>${esc(g.name)}</b></a>`).join(", ")}</div>`
+        : e.gameGuess ? `<div class="where">🎮 Kemungkinan di: <b>${esc(e.gameGuess)}</b></div>` : `<div class="where">🎮 Game belum diketahui. Cek deskripsi item</div>`}
       ${desc ? `<div class="evdesc">${desc}</div>` : ""}
       <div class="time">Dirilis ${ago(e.createdAt)} · cek di game apakah event masih jalan</div>
       <div class="actions">${place ? `<a class="btn main" href="https://www.roblox.com/games/${place}" target="_blank" rel="noopener">Buka Game</a>` : ""}

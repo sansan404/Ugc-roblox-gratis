@@ -423,6 +423,36 @@ async function sendDiscord(it) {
 }
 
 // ---------- Main ----------
+// Cari game berdasarkan nama (pencarian Roblox), ambil hasil game teratas
+const gameSearchCache = new Map();
+async function findGameByName(name) {
+  const q = String(name || "").trim();
+  if (!q || q.length < 3) return null;
+  if (gameSearchCache.has(q)) return gameSearchCache.get(q);
+  const sid = (globalThis.crypto?.randomUUID?.() || "00000000-0000-4000-8000-000000000000");
+  const j = await getJSON(`https://apis.roblox.com/search-api/omni-search?searchQuery=${encodeURIComponent(q)}&sessionId=${sid}&pageType=all`);
+  let hit = null;
+  for (const grp of j?.searchResults || []) {
+    for (const c of grp.contents || []) {
+      if ((c.contentType === "Game" || grp.contentGroupType === "Game") && c.rootPlaceId) { hit = { name: c.name, placeId: c.rootPlaceId, universeId: c.universeId, playing: c.playerCount ?? null }; break; }
+    }
+    if (hit) break;
+  }
+  gameSearchCache.set(q, hit);
+  await sleep(CONFIG.delayMs);
+  return hit;
+}
+function gameGuesses(desc) {
+  const out = [];
+  const re = /(?:chapters? of|quests? in|in|di|at|from|dari)\s+(?:the\s+)?([A-Z0-9][^.!,\n]{2,60}?)(?:\s+(?:experience|game|event))?(?:[.!,\n]|$)/g;
+  let m;
+  while ((m = re.exec(desc)) && out.length < 4) {
+    let g = m[1].replace(/\s+(before|until|by|on|sampai|hingga)\b.*$/i, "").trim();
+    for (const part of g.split(/\s+(?:and|&|dan)\s+|\s*\/\s*/)) if (part.length >= 3 && !out.includes(part)) out.push(part);
+  }
+  return out;
+}
+
 // ---------- Hadiah event Roblox (Off Sale, didapat dari misi event) ----------
 const EVENTS_FILE = join(ROOT, "data", "events.json");
 async function updateEvents() {
@@ -444,7 +474,7 @@ async function updateEvents() {
       // hanya yang deskripsinya menyebut cara dapat lewat misi/event (bukan item jualan yang sudah tutup)
       const isReward = /(complete|earn|quest|unlock|chapter|obtain|collect|reward|challenge|mission|misi|dapatkan|selesaikan|\bplay\b|\bhunt\b|\bevent\b|experience)/i.test(desc) || gameIdsFromText(it.description).length;
       if (!isReward || /(awarded (during|to)|thanks for|developers who|creators who)/i.test(desc)) continue;
-      const m = desc.match(/(?:chapters? of|quests? in|in|di|at|from|dari)\s+(?:the\s+)?([A-Z0-9][^.!,\n]{2,40}?)(?:\s+(?:experience|game|event))?(?:[.!,\n]|$)/);
+      const guesses = gameGuesses(desc);
       out.push({
         key: `${String(it.itemType).toLowerCase() === "bundle" ? "bundle" : "asset"}:${it.id}`,
         id: it.id,
@@ -453,7 +483,9 @@ async function updateEvents() {
         description: desc,
         createdAt: it.itemCreatedUtc,
         placeIds: gameIdsFromText(it.description).slice(0, 2),
-        gameGuess: m ? m[1].trim() : null,
+        gameGuess: guesses[0] || null,
+        guesses,
+        games: [],
         url: `https://www.roblox.com/${String(it.itemType).toLowerCase() === "bundle" ? "bundles" : "catalog"}/${it.id}`,
         image: null,
       });
@@ -462,6 +494,17 @@ async function updateEvents() {
     if (!cursor) break;
     await sleep(CONFIG.delayMs * 2);
   }
+  // cari game-nya lewat pencarian Roblox
+  for (const e of out) {
+    for (const gname of e.guesses.slice(0, 2)) {
+      const g = await findGameByName(gname);
+      if (g && !e.games.some((x) => x.placeId === g.placeId)) e.games.push(g);
+    }
+    for (const pid of e.placeIds) if (!e.games.some((x) => x.placeId === pid)) e.games.push({ name: null, placeId: pid });
+    delete e.guesses;
+  }
+  log(`Event dengan game ketemu: ${out.filter((e) => e.games.length).length}/${out.length}`);
+
   // gambar (pakai lagi yang lama kalau ada)
   let old = [];
   try { old = JSON.parse(await readFile(EVENTS_FILE, "utf8")).items || []; } catch {}
