@@ -322,6 +322,7 @@ export function classify(it, gameDesc = "") {
   if (RE_SHOPGAME.test(gameName)) return { type: "beli", why: "Game toko/katalog avatar" };
   if (buy > 0 && buy >= mission) return { type: "beli", why: "Deskripsi menyebut Robux/beli" };
   if (mission > 0) return { type: "misi", why: "Deskripsi menyebut misi/stage/kumpulkan" };
+  if (/(free ?ugc|free ?item|ugc ?gratis|gratis)/i.test(`${gameName} ${it.name}`)) return { type: "misi", why: "Game/item ditandai FREE UGC" };
   if (code > 0) return { type: "kode", why: "Butuh kode" };
   return { type: "?", why: "Belum jelas cara dapatnya" };
 }
