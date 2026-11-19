@@ -101,6 +101,8 @@
   .src { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
   .sheet .actions { padding: 6px 16px 0; }
   .sheet .btn { padding: 12px; font-size: 15px; }
+  .credit { font-size: 14px; color: var(--text); margin-bottom: 10px; display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap; }
+  .credit a { background: #ff0033; color: #fff; text-decoration: none; font-weight: 700; padding: 6px 12px; border-radius: 999px; font-size: 13px; }
   footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 30px; line-height: 1.6; }
   @media (min-width: 700px) { h1 { font-size: 30px; } .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
 </style>
@@ -129,6 +131,7 @@
   <main id="list" class="grid"></main>
 
   <footer>
+    <div class="credit">Created by <b>Sans.inc</b><a id="yt" hidden target="_blank" rel="noopener">▶ YouTube Sans.inc</a></div>
     Data diambil otomatis dari Marketplace Roblox. Stok bisa berubah cepat, jadi selalu cek di game.<br>
     Situs ini <b>tidak berafiliasi dengan Roblox Corporation</b>. Jangan pernah kasih password akunmu ke siapa pun.
   </footer>
@@ -206,7 +209,7 @@ function card(i) {
       <div class="where">${where}</div>
       ${deadline}
       <div class="time">Ditemukan ${ago(i.firstSeen)}</div>
-      <button class="howbtn" data-key="${esc(i.key)}">📝 Cara klaim &amp; misi</button>
+      <button class="howbtn" data-key="${esc(i.key)}">📝 Deskripsi</button>
       <div class="actions">${mainBtn}</div>
     </div></article>`;
 }
@@ -260,7 +263,7 @@ function openSheet(key) {
   const stock = i.limited && i.total ? `Sisa <b>${nf.format(i.remaining ?? 0)}</b> dari ${nf.format(i.total)}${i.sold ? ` · ${nf.format(i.sold)} sudah diklaim` : ""}` : "Stok tidak terbatas";
   const gameUrl = game ? `https://www.roblox.com/games/${game.placeId}` : null;
   $("sheet").innerHTML = `<div class="sheet" role="dialog" aria-modal="true">
-    <div class="top"><b>Cara klaim &amp; misi</b><button class="x" aria-label="Tutup">✕</button></div>
+    <div class="top"><b>Deskripsi</b><button class="x" aria-label="Tutup">✕</button></div>
     <div class="hero">${i.image ? `<img src="${esc(i.image)}" alt="">` : '<div class="ph"></div>'}
       <div><h2>${esc(i.name)}</h2><div class="by">oleh ${esc(i.creator || "?")}${i.creatorVerified ? " ✅" : ""}</div>
       <div class="stock" style="margin-top:4px">${stock}</div>
@@ -303,6 +306,7 @@ async function load() {
     if (cfg.siteName) { $("title").textContent = "🎁 " + cfg.siteName; document.title = cfg.siteName; }
     if (cfg.tagline) $("tagline").textContent = cfg.tagline;
     if (cfg.telegramUrl) { $("tg").href = cfg.telegramUrl; $("tg").hidden = false; }
+    if (cfg.youtubeUrl) { $("yt").href = cfg.youtubeUrl; $("yt").hidden = false; }
     if (cfg.discordUrl) { $("dc").href = cfg.discordUrl; $("dc").hidden = false; }
 
     const data = window.__DATA__ || await fetch("data/items.json", { cache: "no-store" }).then((r) => r.json());
