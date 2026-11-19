@@ -424,26 +424,34 @@ async function sendDiscord(it) {
 
 // ---------- Main ----------
 // Cari game berdasarkan nama (pencarian Roblox), ambil hasil game teratas
-const gameSearchCache = new Map();
+let gameSearchCache = new Map(); // diisi dari events.json supaya nggak cari ulang tiap jam
+const norm = (t) => String(t || "").toLowerCase().replace(/\[[^\]]*\]|\([^)]*\)/g, "").replace(/[^a-z0-9]+/g, "");
 async function findGameByName(name) {
   const q = String(name || "").trim();
   if (!q || q.length < 3) return null;
   if (gameSearchCache.has(q)) return gameSearchCache.get(q);
   const sid = (globalThis.crypto?.randomUUID?.() || "00000000-0000-4000-8000-000000000000");
   const j = await getJSON(`https://apis.roblox.com/search-api/omni-search?searchQuery=${encodeURIComponent(q)}&sessionId=${sid}&pageType=all`);
+  if (!j) return null; // gagal/rate limit: jangan simpan ke cache, coba lagi lain kali
   let hit = null;
+  const nq = norm(q);
   for (const grp of j?.searchResults || []) {
     for (const c of grp.contents || []) {
-      if ((c.contentType === "Game" || grp.contentGroupType === "Game") && c.rootPlaceId) { hit = { name: c.name, placeId: c.rootPlaceId, universeId: c.universeId, playing: c.playerCount ?? null }; break; }
+      if (!c.rootPlaceId) continue;
+      const nn = norm(c.name);
+      // hanya terima kalau nama game benar-benar cocok (hindari salah game)
+      if (nn && (nn.includes(nq) || (nq.includes(nn) && nn.length >= 5))) { hit = { name: c.name, placeId: c.rootPlaceId, universeId: c.universeId, playing: c.playerCount ?? null }; break; }
     }
     if (hit) break;
   }
   gameSearchCache.set(q, hit);
-  await sleep(CONFIG.delayMs);
+  await sleep(4000);
   return hit;
 }
 function gameGuesses(desc) {
   const out = [];
+  // pola "Complete the Jailbreak chapter" -> Jailbreak
+  for (const m of desc.matchAll(/(?:the\s+)?([A-Z][\w'’ ]{2,40}?)\s+chapter\b/g)) if (!/^(all|every|each|this|that|final|first|last)$/i.test(m[1].trim())) out.push(m[1].trim());
   const re = /(?:chapters? of|quests? in|in|di|at|from|dari)\s+(?:the\s+)?([A-Z0-9][^.!,\n]{2,60}?)(?:\s+(?:experience|game|event))?(?:[.!,\n]|$)/g;
   let m;
   while ((m = re.exec(desc)) && out.length < 4) {
@@ -494,7 +502,11 @@ async function updateEvents() {
     if (!cursor) break;
     await sleep(CONFIG.delayMs * 2);
   }
-  // cari game-nya lewat pencarian Roblox
+  // cari game-nya lewat pencarian Roblox (pakai cache dari jalan sebelumnya)
+  try {
+    const prev = JSON.parse(await readFile(EVENTS_FILE, "utf8"));
+    gameSearchCache = new Map(Object.entries(prev.gameCache || {}));
+  } catch {}
   for (const e of out) {
     for (const gname of e.guesses.slice(0, 2)) {
       const g = await findGameByName(gname);
@@ -517,7 +529,7 @@ async function updateEvents() {
   );
   for (const e of need) e.image = thumbs.get(e.key) || null;
   out.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
-  if (out.length || !old.length) await writeFile(EVENTS_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), items: out }, null, 1) + "\n");
+  if (out.length || !old.length) await writeFile(EVENTS_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), items: out, gameCache: Object.fromEntries(gameSearchCache) }, null, 1) + "\n");
   log(`Hadiah event Roblox: ${out.length} item.`);
 }
 
