@@ -57,6 +57,8 @@
   .b.free { background: var(--accent); color: var(--accent-ink); }
   .b.lim { background: #a855f7; }
   .b.new { background: var(--blue); }
+  .b.unl { background: #0ea5e9; }
+  .b.off { background: #111827; border: 1px solid #fff5; }
   .b.out { background: var(--bad); }
   .body { padding: 10px 11px 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
   .name { font-weight: 700; font-size: 14px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2;
@@ -128,6 +130,7 @@
       <button role="tab" data-tab="claim" aria-selected="true">✅ Bisa Diklaim<span class="n" id="n-claim"></span></button>
       <button role="tab" data-tab="new" aria-selected="false">🆕 Baru (3 hari)<span class="n" id="n-new"></span></button>
       <button role="tab" data-tab="limited" aria-selected="false">💎 Limited<span class="n" id="n-limited"></span></button>
+      <button role="tab" data-tab="unlimited" aria-selected="false">♾️ Unlimited<span class="n" id="n-unlimited"></span></button>
     </div>
     <input class="search" id="q" type="search" placeholder="Cari nama item, kreator, atau game…" autocomplete="off">
   </div>
@@ -169,6 +172,7 @@ function filtered() {
   const q = state.q.trim().toLowerCase();
   let list = state.items;
   if (state.tab === "limited") list = list.filter((i) => i.limited);
+  if (state.tab === "unlimited") list = list.filter((i) => !i.limited);
   if (state.tab === "new") list = list.filter((i) => Date.now() - new Date(i.firstSeen) < 3 * DAY)
     .sort((a, b) => b.firstSeen.localeCompare(a.firstSeen));
   if (q) list = list.filter((i) => [i.name, i.creator, ...(i.games || []).map((g) => g.name)].join(" ").toLowerCase().includes(q));
@@ -180,7 +184,8 @@ function card(i) {
   const game = (i.games || [])[0];
   const badges = [
     '<span class="b free">GRATIS</span>',
-    i.limited ? '<span class="b lim">LIMITED</span>' : "",
+    i.limited ? '<span class="b lim">LIMITED</span>' : '<span class="b unl">♾️ UNLIMITED</span>',
+    i.official ? '<span class="b off">✔ RESMI ROBLOX</span>' : "",
     isNew ? '<span class="b new">BARU</span>' : "",
   ].join("");
 
@@ -226,6 +231,7 @@ function render() {
   $("n-claim").textContent = all.length;
   $("n-new").textContent = all.filter((i) => Date.now() - new Date(i.firstSeen) < 3 * DAY).length;
   $("n-limited").textContent = all.filter((i) => i.limited).length;
+  $("n-unlimited").textContent = all.filter((i) => !i.limited).length;
 }
 
 function linkify(t) {
@@ -263,7 +269,7 @@ function openSheet(key) {
   const gameInfo = game ? { ...(state.games[game.universeId] || {}), ...game, description: state.games[game.universeId]?.description || game.description } : null;
   const tips = mapTips(gameInfo?.description);
   const manualSteps = manual ? (Array.isArray(manual) ? manual : String(manual).split(/\n+/)) : null;
-  const stock = i.limited && i.total ? `Sisa <b>${nf.format(i.remaining ?? 0)}</b> dari ${nf.format(i.total)}${i.sold ? ` · ${nf.format(i.sold)} sudah diklaim` : ""}` : "Stok tidak terbatas";
+  const stock = i.limited && i.total ? `Sisa <b>${nf.format(i.remaining ?? 0)}</b> dari ${nf.format(i.total)}${i.sold ? ` · ${nf.format(i.sold)} sudah diklaim` : ""}` : "♾️ Stok tidak terbatas";
   const gameUrl = game ? `https://www.roblox.com/games/${game.placeId}` : null;
   $("sheet").innerHTML = `<div class="sheet" role="dialog" aria-modal="true">
     <div class="top"><b>Deskripsi</b><button class="x" aria-label="Tutup">✕</button></div>

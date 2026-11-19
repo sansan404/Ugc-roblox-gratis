@@ -137,6 +137,21 @@ async function searchFreeItems() {
     if (!cursor) break;
     await sleep(CONFIG.delayMs);
   }
+  // Item RESMI buatan Roblox yang dibagikan gratis lewat game (biasanya stok tak terbatas)
+  await sleep(CONFIG.delayMs);
+  const op = new URLSearchParams({
+    Category: "1", SalesTypeFilter: "1", SortType: "3", MinPrice: "0", MaxPrice: "0",
+    IncludeNotForSale: "false", Limit: "120", CreatorTargetId: "1", CreatorType: "1",
+  });
+  const official = await getJSON(`https://catalog.roblox.com/v2/search/items/details?${op}`);
+  const seen = new Set(found.map((i) => `${i.itemType}:${i.id}`));
+  for (const it of official?.data || []) {
+    const loc = locationName(it.saleLocationType);
+    if (!/Experiences/.test(loc) || /^ShopAndAll/.test(loc)) continue; // hanya yang dibagikan lewat game tertentu
+    if (seen.has(`${it.itemType}:${it.id}`)) continue;
+    found.push({ ...it, _official: true });
+  }
+
   // pastikan benar-benar gratis & masih dijual
   return found.filter((it) => {
     const free = it.price === 0 || it.lowestPrice === 0 || String(it.priceStatus).toLowerCase() === "free";
@@ -242,7 +257,8 @@ function toItem(raw, now) {
     name: raw.name,
     creator: raw.creatorName,
     creatorVerified: !!raw.creatorHasVerifiedBadge,
-    limited: total > 0 || (raw.itemRestrictions || []).some((r) => /limited|collectible/i.test(String(r))),
+    limited: total > 0,
+    official: !!raw._official || raw.creatorTargetId === 1,
     total: total || null,
     remaining: total ? raw.unitsAvailableForConsumption ?? null : null,
     collectibleItemId: raw.collectibleItemId || null,
@@ -301,6 +317,7 @@ export function classify(it, gameDesc = "") {
   const text = `${gameName}\n${gameDesc}\n${it.description || ""}`;
   const buy = count(RE_BUY, text), mission = count(RE_MISSION, text), code = count(RE_CODE, text);
   if (it.where === "shop") return { type: "shop", why: "Diambil langsung di Marketplace (tanpa misi)" };
+  if (it.official) return { type: "misi", why: "Item resmi Roblox, dibagikan gratis lewat game" };
   if (/(\bcodes?\b|\bkode\b|redeem)/i.test(gameName)) return { type: "kode", why: "Game kode redeem" };
   if (RE_SHOPGAME.test(gameName)) return { type: "beli", why: "Game toko/katalog avatar" };
   if (buy > 0 && buy >= mission) return { type: "beli", why: "Deskripsi menyebut Robux/beli" };
@@ -415,6 +432,7 @@ async function main() {
         name: it.name, description: it.description, remaining: it.remaining, total: it.total,
         offSaleDeadline: it.offSaleDeadline, perUser: it.perUser, lastSeen: now,
         collectibleItemId: it.collectibleItemId || old.collectibleItemId || null,
+        official: it.official || old.official || false, limited: it.limited,
       });
       old.gameHints = it.gameHints;
       old.available = true;
@@ -432,6 +450,7 @@ async function main() {
     if (m) {
       if (typeof m.units === "number") it.remaining = m.units;
       if (m.stock) it.total = m.stock;
+      it.limited = !!it.total;
       it.sold = m.sales;
       if (m.perUser) it.perUser = m.perUser;
       if (m.universeIds?.length) it.universeIds = m.universeIds;
