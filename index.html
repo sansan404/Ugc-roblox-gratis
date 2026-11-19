@@ -308,7 +308,7 @@ async function load() {
     const data = window.__DATA__ || await fetch("data/items.json", { cache: "no-store" }).then((r) => r.json());
     // hanya tampilkan yang masih bisa diklaim
     // hanya yang masih bisa diklaim, dan bukan item kode stok sangat kecil (tiny)
-    state.items = (data.items || []).filter((i) => i.available && !i.tiny && i.claimType === "misi" && !(i.offSaleDeadline && new Date(i.offSaleDeadline) < Date.now()));
+    state.items = (data.items || []).filter((i) => i.available && !i.tiny && !i.stale && i.claimType === "misi" && !(i.offSaleDeadline && new Date(i.offSaleDeadline) < Date.now()));
     state.games = data.games || {};
     state.guides = await fetch("data/cara-klaim.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : {}).catch(() => ({}));
     const stale = !data.updatedAt || Date.now() - new Date(data.updatedAt) > 3 * 3600e3;

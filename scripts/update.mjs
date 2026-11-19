@@ -28,6 +28,7 @@ const CONFIG = {
   delayMs: 1200, // jeda antar request supaya "sopan"
   minStock: Number(process.env.MIN_STOCK || 5), // item limited dengan total stok <= ini dianggap item kode (disembunyikan)
   gameRefreshHours: 6, // deskripsi map diperbarui tiap berapa jam
+  staleHours: Number(process.env.STALE_HOURS || 24), // stok nggak berkurang sama sekali selama ini = dianggap sudah nggak bisa diklaim
 };
 
 const TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "";
@@ -403,6 +404,9 @@ async function main() {
   const currentKeys = new Set(current.map((i) => i.key));
   const newOnes = current.filter((i) => !byKey.has(i.key));
 
+  // Simpan stok sebelumnya untuk tahu kapan terakhir ada yang klaim
+  const prevRemaining = new Map(store.items.map((i) => [i.key, i.remaining]));
+
   // Gabungkan data pencarian dengan data lama
   for (const it of current) {
     const old = byKey.get(it.key);
@@ -456,6 +460,11 @@ async function main() {
 
   // 3) Status bisa diklaim
   for (const it of tracked) {
+    // catat kapan terakhir stok berubah (ada yang klaim / restock)
+    if (!it.stockChangedAt) it.stockChangedAt = now;
+    else if (prevRemaining.has(it.key) && prevRemaining.get(it.key) !== it.remaining) it.stockChangedAt = now;
+    // Stok sama sekali nggak bergerak lama -> biasanya event di game sudah selesai / stok dikunci pembuatnya
+    it.stale = !!(it.limited && Date.now() - new Date(it.stockChangedAt) > CONFIG.staleHours * 3600e3);
     const deadlinePassed = it.offSaleDeadline && new Date(it.offSaleDeadline) < new Date();
     const soldOut = it.limited && it.remaining === 0;
     if (deadlinePassed || soldOut) it.available = false;
@@ -493,7 +502,7 @@ async function main() {
     it.claimWhy = c.why;
   }
   // tampil di website hanya: masih bisa diklaim + bukan item kode kecil + lewat misi
-  const isShown = (i) => i.available && !i.tiny && i.claimType === "misi";
+  const isShown = (i) => i.available && !i.tiny && !i.stale && i.claimType === "misi";
 
   // 5) Gambar
   const needThumb = tracked.filter((i) => !i.image);
