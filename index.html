@@ -29,6 +29,7 @@
   a.pill.cta { background: #5865f2; border-color: #5865f2; color: #fff; font-weight: 700; font-size: 14px; padding: 9px 16px;
     box-shadow: 0 0 0 0 #5865f288; animation: pulse 2.2s infinite; }
   a.pill.cta#tg { background: #229ed9; border-color: #229ed9; }
+  a.pill.yt { background: #ff0033; border-color: #ff0033; color: #fff; font-weight: 700; font-size: 14px; padding: 9px 16px; }
   @keyframes pulse { 0% { box-shadow: 0 0 0 0 #5865f288; } 70% { box-shadow: 0 0 0 10px #5865f200; } 100% { box-shadow: 0 0 0 0 #5865f200; } }
   @media (prefers-reduced-motion: reduce) { a.pill.cta { animation: none; } }
   .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px #22c55e33; }
@@ -118,6 +119,7 @@
       <span class="pill"><span class="dot" id="dot"></span><span id="updated">Memuat…</span></span>
       <a class="pill cta" id="tg" hidden target="_blank" rel="noopener">📣 Notif UGC Gratis di Telegram</a>
       <a class="pill cta" id="dc" hidden target="_blank" rel="noopener">🔔 Hidupkan Notif UGC Gratis</a>
+      <a class="pill yt" id="yt2" hidden target="_blank" rel="noopener">▶ Subscribe YouTube Sans.inc</a>
     </div>
   </header>
 
@@ -307,7 +309,7 @@ async function load() {
     if (cfg.siteName) { $("title").textContent = "🎁 " + cfg.siteName; document.title = cfg.siteName; }
     if (cfg.tagline) $("tagline").textContent = cfg.tagline;
     if (cfg.telegramUrl) { $("tg").href = cfg.telegramUrl; $("tg").hidden = false; }
-    if (cfg.youtubeUrl) { $("yt").href = cfg.youtubeUrl; $("yt").hidden = false; }
+    if (cfg.youtubeUrl) { for (const id of ["yt", "yt2"]) { $(id).href = cfg.youtubeUrl; $(id).hidden = false; } }
     if (cfg.discordUrl) { $("dc").href = cfg.discordUrl; $("dc").hidden = false; }
 
     const data = window.__DATA__ || await fetch("data/items.json", { cache: "no-store" }).then((r) => r.json());
