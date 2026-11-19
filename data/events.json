@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T21:53:29.749Z",
+ "updatedAt": "2026-11-19T22:18:04.142Z",
  "items": [
   {
    "key": "asset:84933653753631",
@@ -10,6 +10,14 @@
    "createdAt": "2026-11-17T18:11:03.772Z",
    "placeIds": [],
    "gameGuess": "The Takeback",
+   "games": [
+    {
+     "name": "The Block",
+     "placeId": 95047916580305,
+     "universeId": 8292068736,
+     "playing": 1231
+    }
+   ],
    "url": "https://www.roblox.com/catalog/84933653753631",
    "image": "https://tr.rbxcdn.com/180DAY-e80185839cb12f02a843bd9ee02ee670/420/420/Hat/Png/noFilter"
   },
@@ -22,6 +30,14 @@
    "createdAt": "2026-11-16T16:20:07.461Z",
    "placeIds": [],
    "gameGuess": "The Takeback",
+   "games": [
+    {
+     "name": "The Block",
+     "placeId": 95047916580305,
+     "universeId": 8292068736,
+     "playing": 1231
+    }
+   ],
    "url": "https://www.roblox.com/catalog/108758317984059",
    "image": "https://tr.rbxcdn.com/180DAY-84b85ccc68f23e8377c4ea7314c56c01/420/420/BackAccessory/Png/noFilter"
   },
@@ -34,6 +50,14 @@
    "createdAt": "2026-11-16T16:19:36.199Z",
    "placeIds": [],
    "gameGuess": "The Takeback",
+   "games": [
+    {
+     "name": "The Block",
+     "placeId": 95047916580305,
+     "universeId": 8292068736,
+     "playing": 1231
+    }
+   ],
    "url": "https://www.roblox.com/catalog/106825313795697",
    "image": "https://tr.rbxcdn.com/180DAY-aff291af64fa22e60c30a24b7ec2c94c/420/420/FaceAccessory/Png/noFilter"
   },
@@ -46,6 +70,14 @@
    "createdAt": "2026-11-16T16:18:59.226Z",
    "placeIds": [],
    "gameGuess": "The Takeback",
+   "games": [
+    {
+     "name": "The Block",
+     "placeId": 95047916580305,
+     "universeId": 8292068736,
+     "playing": 1231
+    }
+   ],
    "url": "https://www.roblox.com/catalog/71234189482046",
    "image": "https://tr.rbxcdn.com/180DAY-dcb7bb317d7e5357999a82218dff7386/420/420/NeckAccessory/Png/noFilter"
   },
@@ -58,6 +90,7 @@
    "createdAt": "2026-10-30T02:52:29.066Z",
    "placeIds": [],
    "gameGuess": null,
+   "games": [],
    "url": "https://www.roblox.com/catalog/123100016173083",
    "image": "https://tr.rbxcdn.com/180DAY-cf31911408caf4435e843f4c2dc40685/420/420/Hat/Png/noFilter"
   },
@@ -70,6 +103,7 @@
    "createdAt": "2026-10-27T18:37:09.564Z",
    "placeIds": [],
    "gameGuess": null,
+   "games": [],
    "url": "https://www.roblox.com/catalog/133998533317702",
    "image": "https://tr.rbxcdn.com/180DAY-9534ec4fe95ddf1a4243792eac1c6ea3/420/420/Hat/Png/noFilter"
   },
@@ -82,6 +116,7 @@
    "createdAt": "2026-10-26T16:10:01.486Z",
    "placeIds": [],
    "gameGuess": null,
+   "games": [],
    "url": "https://www.roblox.com/catalog/130096248894073",
    "image": "https://tr.rbxcdn.com/180DAY-a2879fe817cc74add369a68af7f95a9c/420/420/Hat/Png/noFilter"
   },
@@ -94,6 +129,7 @@
    "createdAt": "2026-10-23T15:49:53.466Z",
    "placeIds": [],
    "gameGuess": null,
+   "games": [],
    "url": "https://www.roblox.com/catalog/108584054274957",
    "image": "https://tr.rbxcdn.com/180DAY-d01a8d05045a78af66151eb607252b50/420/420/BackAccessory/Png/noFilter"
   },
@@ -106,6 +142,7 @@
    "createdAt": "2026-10-21T21:40:08.912Z",
    "placeIds": [],
    "gameGuess": null,
+   "games": [],
    "url": "https://www.roblox.com/catalog/89873435761021",
    "image": "https://tr.rbxcdn.com/180DAY-fc990dc8ff359068de70196928568101/420/420/BackAccessory/Png/noFilter"
   },
@@ -117,7 +154,8 @@
    "description": "A duck in a jack-o'-lantern costume. Earn it through the Halloween quests in Duck Duck and Family Zone before Nov 8.",
    "createdAt": "2026-10-05T21:23:04.936Z",
    "placeIds": [],
-   "gameGuess": "Duck Duck and Family Zone before Nov 8",
+   "gameGuess": "Duck Duck",
+   "games": [],
    "url": "https://www.roblox.com/catalog/126884250250747",
    "image": "https://tr.rbxcdn.com/180DAY-baa04239534d61d7c0af44d2eefb8f10/420/420/Hat/Png/noFilter"
   }
