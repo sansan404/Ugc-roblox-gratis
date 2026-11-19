@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T22:18:04.142Z",
+ "updatedAt": "2026-11-19T22:20:36.618Z",
  "items": [
   {
    "key": "asset:84933653753631",
@@ -10,14 +10,7 @@
    "createdAt": "2026-11-17T18:11:03.772Z",
    "placeIds": [],
    "gameGuess": "The Takeback",
-   "games": [
-    {
-     "name": "The Block",
-     "placeId": 95047916580305,
-     "universeId": 8292068736,
-     "playing": 1231
-    }
-   ],
+   "games": [],
    "url": "https://www.roblox.com/catalog/84933653753631",
    "image": "https://tr.rbxcdn.com/180DAY-e80185839cb12f02a843bd9ee02ee670/420/420/Hat/Png/noFilter"
   },
@@ -29,13 +22,13 @@
    "description": "Complete the Jailbreak chapter of The Takeback",
    "createdAt": "2026-11-16T16:20:07.461Z",
    "placeIds": [],
-   "gameGuess": "The Takeback",
+   "gameGuess": "Complete the Jailbreak",
    "games": [
     {
-     "name": "The Block",
-     "placeId": 95047916580305,
-     "universeId": 8292068736,
-     "playing": 1231
+     "name": "Jailbreak ⛓️‍💥",
+     "placeId": 606849621,
+     "universeId": 245662005,
+     "playing": 7389
     }
    ],
    "url": "https://www.roblox.com/catalog/108758317984059",
@@ -49,15 +42,8 @@
    "description": "Complete the Notoriety chapter of The Takeback",
    "createdAt": "2026-11-16T16:19:36.199Z",
    "placeIds": [],
-   "gameGuess": "The Takeback",
-   "games": [
-    {
-     "name": "The Block",
-     "placeId": 95047916580305,
-     "universeId": 8292068736,
-     "playing": 1231
-    }
-   ],
+   "gameGuess": "Complete the Notoriety",
+   "games": [],
    "url": "https://www.roblox.com/catalog/106825313795697",
    "image": "https://tr.rbxcdn.com/180DAY-aff291af64fa22e60c30a24b7ec2c94c/420/420/FaceAccessory/Png/noFilter"
   },
@@ -69,13 +55,13 @@
    "description": "Complete the Emergency Hamburg chapter of The Takeback",
    "createdAt": "2026-11-16T16:18:59.226Z",
    "placeIds": [],
-   "gameGuess": "The Takeback",
+   "gameGuess": "Complete the Emergency Hamburg",
    "games": [
     {
-     "name": "The Block",
-     "placeId": 95047916580305,
-     "universeId": 8292068736,
-     "playing": 1231
+     "name": "Emergency Hamburg",
+     "placeId": 7711635737,
+     "universeId": 2992873140,
+     "playing": 9443
     }
    ],
    "url": "https://www.roblox.com/catalog/71234189482046",
@@ -155,9 +141,50 @@
    "createdAt": "2026-10-05T21:23:04.936Z",
    "placeIds": [],
    "gameGuess": "Duck Duck",
-   "games": [],
+   "games": [
+    {
+     "name": "Duck Duck (Tag) 🦆",
+     "placeId": 135486323963203,
+     "universeId": 9825259729,
+     "playing": 75
+    },
+    {
+     "name": "Family Zone",
+     "placeId": 100862092707544,
+     "universeId": 10036955953,
+     "playing": 99
+    }
+   ],
    "url": "https://www.roblox.com/catalog/126884250250747",
    "image": "https://tr.rbxcdn.com/180DAY-baa04239534d61d7c0af44d2eefb8f10/420/420/Hat/Png/noFilter"
   }
- ]
+ ],
+ "gameCache": {
+  "The Takeback": null,
+  "Complete the Jailbreak": {
+   "name": "Jailbreak ⛓️‍💥",
+   "placeId": 606849621,
+   "universeId": 245662005,
+   "playing": 7389
+  },
+  "Complete the Notoriety": null,
+  "Complete the Emergency Hamburg": {
+   "name": "Emergency Hamburg",
+   "placeId": 7711635737,
+   "universeId": 2992873140,
+   "playing": 9443
+  },
+  "Duck Duck": {
+   "name": "Duck Duck (Tag) 🦆",
+   "placeId": 135486323963203,
+   "universeId": 9825259729,
+   "playing": 75
+  },
+  "Family Zone": {
+   "name": "Family Zone",
+   "placeId": 100862092707544,
+   "universeId": 10036955953,
+   "playing": 99
+  }
+ }
 }
