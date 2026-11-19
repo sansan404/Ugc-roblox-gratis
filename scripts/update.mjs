@@ -441,7 +441,10 @@ async function updateEvents() {
       const created = new Date(it.itemCreatedUtc || 0).getTime();
       if (!off || created < cutoff) continue;
       const desc = cleanText(it.description, 800);
-      const m = desc.match(/(?:in|di|at|from|dari)\s+(?:the\s+)?([A-Z0-9][^.!\n]{2,40}?)(?:\s+(?:experience|game|event))?[.!\n]/);
+      // hanya yang deskripsinya menyebut cara dapat lewat misi/event (bukan item jualan yang sudah tutup)
+      const isReward = /(complete|earn|quest|unlock|chapter|obtain|collect|reward|challenge|mission|misi|dapatkan|selesaikan|\bplay\b|\bhunt\b|\bevent\b|experience)/i.test(desc) || gameIdsFromText(it.description).length;
+      if (!isReward || /(awarded (during|to)|thanks for|developers who|creators who)/i.test(desc)) continue;
+      const m = desc.match(/(?:chapters? of|quests? in|in|di|at|from|dari)\s+(?:the\s+)?([A-Z0-9][^.!,\n]{2,40}?)(?:\s+(?:experience|game|event))?(?:[.!,\n]|$)/);
       out.push({
         key: `${String(it.itemType).toLowerCase() === "bundle" ? "bundle" : "asset"}:${it.id}`,
         id: it.id,
