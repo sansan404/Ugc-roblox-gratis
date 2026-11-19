@@ -101,7 +101,8 @@
   .src { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
   .sheet .actions { padding: 6px 16px 0; }
   .sheet .btn { padding: 12px; font-size: 15px; }
-  .credit { font-size: 14px; color: var(--text); margin-bottom: 10px; display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap; }
+  .credit { font-size: 14px; color: var(--muted); margin-top: 8px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .credit b { color: var(--text); }
   .credit a { background: #ff0033; color: #fff; text-decoration: none; font-weight: 700; padding: 6px 12px; border-radius: 999px; font-size: 13px; }
   footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 30px; line-height: 1.6; }
   @media (min-width: 700px) { h1 { font-size: 30px; } .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
@@ -112,6 +113,7 @@
   <header>
     <h1 id="title">🎁 UGC Gratis Hari Ini</h1>
     <p class="tag" id="tagline">UGC gratis lewat misi, tanpa Robux. Dicek otomatis tiap 5 menit</p>
+    <div class="credit">Created by <b>Sans.inc</b><a id="yt" hidden target="_blank" rel="noopener">▶ YouTube Sans.inc</a></div>
     <div class="meta">
       <span class="pill"><span class="dot" id="dot"></span><span id="updated">Memuat…</span></span>
       <a class="pill cta" id="tg" hidden target="_blank" rel="noopener">📣 Notif UGC Gratis di Telegram</a>
@@ -131,7 +133,6 @@
   <main id="list" class="grid"></main>
 
   <footer>
-    <div class="credit">Created by <b>Sans.inc</b><a id="yt" hidden target="_blank" rel="noopener">▶ YouTube Sans.inc</a></div>
     Data diambil otomatis dari Marketplace Roblox. Stok bisa berubah cepat, jadi selalu cek di game.<br>
     Situs ini <b>tidak berafiliasi dengan Roblox Corporation</b>. Jangan pernah kasih password akunmu ke siapa pun.
   </footer>
