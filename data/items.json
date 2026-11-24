@@ -1,6 +1,366 @@
 {
- "updatedAt": "2026-11-24T01:42:49.719Z",
+ "updatedAt": "2026-11-24T02:42:35.993Z",
  "items": [
+  {
+   "key": "asset:81715066707851",
+   "id": 81715066707851,
+   "type": "asset",
+   "name": "liza",
+   "creator": "w3ary",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "40e56d6a-6932-4d00-ad6a-74e51de2d8a3",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "/w3ary",
+   "image": "https://tr.rbxcdn.com/180DAY-b184050f4e0693152898ce6d94624c68/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-23T23:55:55.651Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/81715066707851",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:77080756770305",
+   "id": 77080756770305,
+   "type": "asset",
+   "name": "SPRKfedW",
+   "creator": "RobIox ゙ ゙ ゙ ゙ ゙ ゙ ゙ ゙",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "0d70db8a-900d-4b80-9945-1a75a9c07d47",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "-",
+   "image": "https://tr.rbxcdn.com/180DAY-962a2524880d385830e32d28a6b40a79/420/420/Hat/Png/noFilter",
+   "createdAt": "2026-11-23T23:41:00.69Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/77080756770305",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:98304561327552",
+   "id": 98304561327552,
+   "type": "asset",
+   "name": "Trey Custom Chain 1.0 Glow",
+   "creator": "Offshore!",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 1,
+   "collectibleItemId": "143b1616-ac20-46e3-9282-7cc1eb1a8347",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": 1,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "/offshore\nMade by Ace",
+   "image": "https://tr.rbxcdn.com/180DAY-a22e9d87f0a64c9d6526b0937632a9cc/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-23T23:32:36.954Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": true,
+   "url": "https://www.roblox.com/catalog/98304561327552",
+   "sold": 0,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:82498730142314",
+   "id": 82498730142314,
+   "type": "asset",
+   "name": "fays ugc!!",
+   "creator": "66vew",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "3d5ca0e1-1dcd-4cb8-8cb3-8dfe629644f7",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "wow",
+   "image": "https://tr.rbxcdn.com/180DAY-4c5cb94aaa5f6218121f0d10ca4041fd/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-23T23:20:16.42Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/82498730142314",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:128189898617712",
+   "id": 128189898617712,
+   "type": "asset",
+   "name": "HRnsIrn",
+   "creator": "RobIox ゙ ゙ ゙ ゙ ゙ ゙ ゙ ゙",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "eb87c312-e23c-447b-ae48-91427ae71ffe",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "-",
+   "image": "https://tr.rbxcdn.com/180DAY-cdc828db547f9df17d32353e2ead0869/420/420/Hat/Png/noFilter",
+   "createdAt": "2026-11-23T23:16:41.809Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/128189898617712",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:109505305981208",
+   "id": 109505305981208,
+   "type": "asset",
+   "name": "ClWrkH",
+   "creator": "RobIox ゙ ゙ ゙ ゙ ゙ ゙ ゙ ゙",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "21db696d-7861-4c44-9132-551e2e2aa072",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "-",
+   "image": "https://tr.rbxcdn.com/180DAY-c33efa8e9c79ce1c85a3326cd42cf96e/420/420/Hat/Png/noFilter",
+   "createdAt": "2026-11-23T23:12:15.943Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/109505305981208",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:120344762324709",
+   "id": 120344762324709,
+   "type": "asset",
+   "name": "stella 3.0",
+   "creator": "/swened",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 1,
+   "collectibleItemId": "0f00a012-f31f-4a80-84ee-0f029be1cf69",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "/swened",
+   "image": "https://tr.rbxcdn.com/180DAY-69dbc56a3b83f17e7fc1bb48dea3a45f/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-23T22:50:53.274Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": true,
+   "url": "https://www.roblox.com/catalog/120344762324709",
+   "sold": 0,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:125604369891121",
+   "id": 125604369891121,
+   "type": "asset",
+   "name": "ANTns",
+   "creator": "RobIox ゙ ゙ ゙ ゙ ゙ ゙ ゙ ゙",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "c20c6630-56d0-4a29-88b1-efc091dc2aa6",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "-",
+   "image": "https://tr.rbxcdn.com/180DAY-562a7f0abcba78c3778849da1e252890/420/420/Hat/Png/noFilter",
+   "createdAt": "2026-11-23T22:50:21.133Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/125604369891121",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:72038637593819",
+   "id": 72038637593819,
+   "type": "asset",
+   "name": "kimora <3",
+   "creator": "Leni's Ugc",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 2,
+   "remaining": 2,
+   "collectibleItemId": "0e8c6b06-ffb9-4ac1-81c3-433bc321f8d2",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "/842",
+   "image": "https://tr.rbxcdn.com/180DAY-e8e4aeb42b7871b09d18d20b526cbf9f/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-23T22:36:23.048Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": true,
+   "url": "https://www.roblox.com/catalog/72038637593819",
+   "sold": 0,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
   {
    "key": "asset:98638977156293",
    "id": 98638977156293,
@@ -31,7 +391,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-86ff645c727933aec906ef3201b4fd58/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T22:28:56.489Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/98638977156293",
    "sold": 1,
@@ -71,7 +431,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-0c9acb45cc0dac158efcacd607257770/420/420/FrontAccessory/Png/noFilter",
    "createdAt": "2026-11-23T22:10:20.431Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/83965534361442",
    "sold": 1,
@@ -111,7 +471,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-981d7556a3f43e80054c38f9d6c356b8/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T22:01:41.774Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/110846452320217",
    "sold": 1,
@@ -151,7 +511,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-de6e3c119e7a4d06771aef129daf2f83/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T21:58:39.704Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/71167800728055",
    "sold": 1,
@@ -171,7 +531,7 @@
    "limited": true,
    "official": false,
    "total": 1,
-   "remaining": 1,
+   "remaining": 0,
    "collectibleItemId": "842c5d77-119b-49d1-be0a-c572a8928049",
    "universeIds": [
     5206433511
@@ -191,11 +551,11 @@
    "image": "https://tr.rbxcdn.com/180DAY-571a04936a363142aed7350d300837e7/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T21:46:31.751Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
-   "available": true,
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
    "url": "https://www.roblox.com/catalog/99284998377279",
-   "sold": 0,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -231,7 +591,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-5c949ef5dc575d5b8da40026e808f0a4/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T21:45:36.743Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/130542898496291",
    "sold": 1,
@@ -271,7 +631,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-825a53f4b7c969d256cc43451362c260/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T21:45:24.698Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/80897470476108",
    "sold": 1,
@@ -311,7 +671,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-4cacd352a03e5001c0d5c4b11ba3176a/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T21:41:18.987Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/73947053517470",
    "sold": 1,
@@ -351,7 +711,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-6afd546456ec424f768593d9d236aeb8/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T21:38:50.562Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/122834213331025",
    "sold": 1,
@@ -391,11 +751,91 @@
    "image": "https://tr.rbxcdn.com/180DAY-19798bf7b39d819073782ceab5626eb7/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T21:36:54.817Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/119775422318741",
    "sold": 1,
    "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:77245899871681",
+   "id": 77245899871681,
+   "type": "asset",
+   "name": "caden 3.0 :3",
+   "creator": "!deadwifi.exe",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "52f38227-8117-441b-98af-6888f6d25c95",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "made by aangeliqx",
+   "image": "https://tr.rbxcdn.com/180DAY-58fac59a819181d4c1a51fc9fea7aa16/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-23T21:32:43.728Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/77245899871681",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:124678960234654",
+   "id": 124678960234654,
+   "type": "asset",
+   "name": "alli ♡",
+   "creator": "limerenceforalex",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "c61ea9aa-cc6a-485e-9003-9c9e9a678007",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "prissy",
+   "image": "https://tr.rbxcdn.com/180DAY-8831b793fdf750d8baec28da1856ce07/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-23T21:22:27.059Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/124678960234654",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -431,7 +871,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-616e22eaddb9bd2cc7c401dace0a2666/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T20:49:20.486Z",
    "firstSeen": "2026-11-24T00:17:38.818Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/84715094179922",
    "sold": 1,
@@ -551,7 +991,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-42ca7f2371830f18b8642f9555b7acd6/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-23T20:32:08.081Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/140185629675613",
    "sold": 1,
@@ -591,7 +1031,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-ae18f248c20ef7d8bdcdef54e9bcef9b/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T20:30:22.48Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/84998244919435",
    "sold": 0,
@@ -631,7 +1071,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-e325c4e9ecdce3782435509f96b05624/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-23T20:29:00.469Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/89007431672312",
    "sold": 1,
@@ -711,7 +1151,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-fe41d6e640afd807c5fa4ac20e5a9db0/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T20:12:33.883Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/96211756319670",
    "sold": 1,
@@ -771,7 +1211,7 @@
    "limited": true,
    "official": false,
    "total": 19000,
-   "remaining": 19000,
+   "remaining": 0,
    "collectibleItemId": "90eb6ce9-c8f4-454d-811f-638527e0da0f",
    "universeIds": [
     8360859439
@@ -792,14 +1232,54 @@
    "createdAt": "2026-11-23T20:06:39.381Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
    "lastSeen": "2026-11-24T01:42:49.719Z",
-   "available": true,
+   "available": false,
    "url": "https://www.roblox.com/catalog/70847153315434",
    "sold": 0,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan"
+  },
+  {
+   "key": "asset:99508898504877",
+   "id": 99508898504877,
+   "type": "asset",
+   "name": "bunny hope",
+   "creator": ",so sweet",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "4983790c-6a9a-4c70-bca5-40923329dde1",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "itse for nf2u charm\npawbi for bow and nf2u charm\nsoften for ugc",
+   "image": "https://tr.rbxcdn.com/180DAY-e90d01b5d8347548d086727044176f58/420/420/Hat/Png/noFilter",
+   "createdAt": "2026-11-23T20:05:05.365Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/99508898504877",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
   },
   {
    "key": "asset:125546658398567",
@@ -811,7 +1291,7 @@
    "limited": true,
    "official": false,
    "total": 33000,
-   "remaining": 33000,
+   "remaining": 0,
    "collectibleItemId": "db4c9f04-bb44-4c79-bda1-af689c6c2b44",
    "universeIds": [
     8360859439
@@ -832,10 +1312,10 @@
    "createdAt": "2026-11-23T20:01:42.835Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
    "lastSeen": "2026-11-24T01:42:49.719Z",
-   "available": true,
+   "available": false,
    "url": "https://www.roblox.com/catalog/125546658398567",
    "sold": 0,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
@@ -951,7 +1431,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-165abfac951a67e1232a6d9857f9204b/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T19:36:31.669Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/133402096141476",
    "sold": 1,
@@ -991,7 +1471,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-9e7181daa9151a7a65f9fb6c54a06803/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T19:32:55.926Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/138674711379042",
    "sold": 1,
@@ -1071,7 +1551,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-77d493ae7fc25b501dc3058d624cad1b/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T19:17:36.189Z",
    "firstSeen": "2026-11-23T22:24:17.157Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/117426816392943",
    "sold": 1,
@@ -1118,7 +1598,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-5b5fa1bc868ae482f58dcaabae046c2c/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-23T18:59:27.082Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/101759222735482",
    "sold": 4,
@@ -1198,7 +1678,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-d02ac1fef4ece94681398d65e5f8ac35/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T17:34:04.582Z",
    "firstSeen": "2026-11-23T21:25:55.774Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/102865656572947",
    "sold": 1,
@@ -1238,7 +1718,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-e708508d4a34951e06d62b87e05aa82b/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T17:24:44.131Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/124845069129435",
    "sold": 1,
@@ -1278,7 +1758,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-8c04590951ed3d11d5adbc1aa926bded/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T17:16:29.593Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/92000663363077",
    "sold": 1,
@@ -1287,6 +1767,46 @@
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:80752328532572",
+   "id": 80752328532572,
+   "type": "asset",
+   "name": "Fairy Blossom Headpiece",
+   "creator": "Syops UGC",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 20,
+   "remaining": 19,
+   "collectibleItemId": "7479f841-fde9-4c3a-8fee-4d2de7a6f49b",
+   "universeIds": [
+    10061223546
+   ],
+   "perUser": 1,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 10061223546,
+     "name": "Rest for UGC [Free UGC]",
+     "placeId": 83343070132643,
+     "playing": 62
+    }
+   ],
+   "description": "Fairy Blossom Headpiece",
+   "image": "https://tr.rbxcdn.com/180DAY-9e887e763a6b8f0f27f3a0be44ca59fe/420/420/Hat/Png/noFilter",
+   "createdAt": "2026-11-23T17:14:06.756Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": true,
+   "url": "https://www.roblox.com/catalog/80752328532572",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": false,
+   "claimType": "misi",
+   "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan"
   },
   {
    "key": "asset:77608781919024",
@@ -1358,7 +1878,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-17c5d726929de2e456fd9b1b92299bed/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T16:41:45.975Z",
    "firstSeen": "2026-11-23T21:25:55.774Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/72253098313402",
    "sold": 1,
@@ -1438,7 +1958,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-55a1766a2ae67084a2f0df2bf9421854/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T16:21:34.944Z",
    "firstSeen": "2026-11-23T18:27:46.052Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/134268712803438",
    "sold": 1,
@@ -1478,7 +1998,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-c3ad920862d0fed335a0b5188cda274c/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T16:21:03.485Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/112358664263421",
    "sold": 1,
@@ -1518,7 +2038,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-91e58cadd051deb584e9181ade248b93/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T16:16:08.054Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/91912098244080",
    "sold": 1,
@@ -1558,7 +2078,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-f0f43e38204d3749c7ca596d66bd51c1/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T16:09:49.694Z",
    "firstSeen": "2026-11-23T18:27:46.052Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/84860158675428",
    "sold": 1,
@@ -1598,7 +2118,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-2ae7d1ac57a28e7757beb4bd2702bf2a/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T16:04:43.404Z",
    "firstSeen": "2026-11-23T18:27:46.052Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/137662303847400",
    "sold": 1,
@@ -1638,7 +2158,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-dfedd28f4173695f3f6dddad18b04cba/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T16:02:26.913Z",
    "firstSeen": "2026-11-23T18:27:46.052Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/137485389443724",
    "sold": 1,
@@ -2438,6 +2958,46 @@
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan"
   },
   {
+   "key": "asset:126273908291178",
+   "id": 126273908291178,
+   "type": "asset",
+   "name": "gabe and roni ♡",
+   "creator": "regret0362",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "7b3ae3f9-4070-4a85-8312-e8f70ca2372b",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": 1,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "bow charm\ncwutie base",
+   "image": "https://tr.rbxcdn.com/180DAY-7fae84459f9e6b4118037e4fe3a07ca7/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-23T12:38:17.987Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/126273908291178",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
    "key": "asset:107317890216351",
    "id": 107317890216351,
    "type": "asset",
@@ -2665,7 +3225,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-6d6fd34b80956beefb3039c27115cd80/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T11:17:32.273Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/136190057349835",
    "sold": 2,
@@ -2705,7 +3265,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-3c2916915a62b83bc813a86132365e6d/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T11:15:39.823Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/77787649058111",
    "sold": 1,
@@ -2725,7 +3285,7 @@
    "limited": true,
    "official": false,
    "total": 1,
-   "remaining": 1,
+   "remaining": 0,
    "collectibleItemId": "14550e74-f025-48cc-8ced-d45fb983f353",
    "universeIds": [
     5206433511
@@ -2745,11 +3305,11 @@
    "image": "https://tr.rbxcdn.com/180DAY-b2e941e160b2740ab32e022e7eb298ea/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T11:13:00.184Z",
    "firstSeen": "2026-11-23T18:27:46.052Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
-   "available": true,
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
    "url": "https://www.roblox.com/catalog/115505875286644",
-   "sold": 0,
-   "stockChangedAt": "2026-11-23T18:27:46.052Z",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -2985,7 +3545,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-7e534caf6b6f30dddf455d29920904d0/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T09:31:56.525Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/103832675709358",
    "sold": 1,
@@ -3145,7 +3705,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-609d8c65812caadbd5799733823c1215/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T08:12:29.069Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/103755904862590",
    "sold": 1,
@@ -3505,7 +4065,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-de14c8d1569c1ed325cdaec9bca4ef58/420/420/WaistAccessory/Png/noFilter",
    "createdAt": "2026-11-23T06:43:58.267Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/133123327700353",
    "sold": 10,
@@ -3585,7 +4145,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-d60e3b3121e341cde46114ea6b3c3c56/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-23T06:12:49.404Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/76350636299016",
    "sold": 4,
@@ -3816,7 +4376,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-9813667616a23c038f8ffbb28db42cfe/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T04:56:19.467Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/71778149889364",
    "sold": 1,
@@ -3896,7 +4456,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-2eba0dae8f1d7fe022f428db8ec9cd15/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T04:48:21.392Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/121449555277693",
    "sold": 1,
@@ -3936,7 +4496,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-2d98b998e943b4d1713db428b53bd83e/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T04:48:20.29Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/127983509796390",
    "sold": 1,
@@ -3976,7 +4536,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-5310501cbc726f4a9b9fb216bf1561dc/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T04:47:51.595Z",
    "firstSeen": "2026-11-23T20:29:04.697Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/131944660271672",
    "sold": 0,
@@ -3996,7 +4556,7 @@
    "limited": true,
    "official": false,
    "total": 1,
-   "remaining": 1,
+   "remaining": 0,
    "collectibleItemId": "e7f943bb-cad2-438c-ad48-36c191600c2a",
    "universeIds": [
     5206433511
@@ -4016,11 +4576,11 @@
    "image": "https://tr.rbxcdn.com/180DAY-bcb72ffa9688ebcf712ab9073a724d04/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T04:45:54.982Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
-   "available": true,
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
    "url": "https://www.roblox.com/catalog/112584520443010",
-   "sold": 0,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -4096,7 +4656,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-8d1d94040957e01127cae3fb81defb17/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T04:33:35.747Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/129750908071448",
    "sold": 1,
@@ -4416,7 +4976,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-b5686627f0b1a4aa0d1aa8fb9a149f44/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-23T03:25:59.847Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/79448846515212",
    "sold": 0,
@@ -4736,7 +5296,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-d96fd5d59091a36b4e0ff0fcd2002acb/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T02:59:29.376Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/70375513680117",
    "sold": 1,
@@ -4976,7 +5536,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-97f56f1f750f64550a7c591f863e8bdc/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T02:29:40.469Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/93134239046118",
    "sold": 2,
@@ -5016,7 +5576,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-2736803e64dd1a9618d3e226a22d78ac/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T02:26:09.175Z",
    "firstSeen": "2026-11-23T18:27:46.052Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/104481322969166",
    "sold": 1,
@@ -5176,7 +5736,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-ea08ae0eb66fb9945afb3968d66da497/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T02:08:22.616Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/120883120345696",
    "sold": 1,
@@ -5296,7 +5856,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-7ee6a6a2bf8ba0498e9082f64b809773/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:56:15.267Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/131175827974595",
    "sold": 1,
@@ -5336,7 +5896,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-be640ae65ff8ac1530cc3527bd31820e/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:55:14.046Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/116843824078273",
    "sold": 1,
@@ -5376,7 +5936,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-cbabd303945925833591c53a222c1d5d/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:54:06.09Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/78737871682296",
    "sold": 1,
@@ -5416,7 +5976,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-59330b71ba3a8156d0883ddd594be8e8/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:52:43.356Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/106268024398587",
    "sold": 0,
@@ -5456,7 +6016,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-b2db7d135ebf2f45815979941ca0e006/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:51:11.712Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/84350083032680",
    "sold": 1,
@@ -5496,7 +6056,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-df1fd4b36d7c08eefc440fbf5fc0bbd4/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:50:05.594Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/123155547330813",
    "sold": 1,
@@ -5536,7 +6096,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-548652948860c5cdea6dfc6a6dc5733e/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:48:28.51Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/88678307133926",
    "sold": 1,
@@ -5576,7 +6136,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-4527bc1ecc26ca206027ef4ad6444967/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:43:29.369Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/122240695616413",
    "sold": 1,
@@ -5616,7 +6176,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-6dc30c22e58fdd12201446ac385d3a18/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-23T01:42:23.928Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/133928423596659",
    "sold": 1,
@@ -5656,7 +6216,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-0fe9ca72bd55aba524a274c5a7124824/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-23T01:35:20.137Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/123384677554476",
    "sold": 0,
@@ -5696,7 +6256,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-07701fb2d1058a36dd74bd2eb3dca684/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-23T01:28:39.307Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/98464317791717",
    "sold": 0,
@@ -5736,7 +6296,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-6094a47b58622d03a70d790df1b09de3/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-23T01:26:48.196Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/96561042627314",
    "sold": 0,
@@ -5776,7 +6336,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-88efa08678a6aca975c65f51d52f33f7/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-23T01:25:35.412Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/79554980837846",
    "sold": 0,
@@ -5996,7 +6556,7 @@
    "limited": true,
    "official": false,
    "total": 15,
-   "remaining": 7,
+   "remaining": 6,
    "collectibleItemId": "80064a7f-01de-4811-8366-7ca1aadd095a",
    "universeIds": [
     5206433511
@@ -6016,11 +6576,11 @@
    "image": "https://tr.rbxcdn.com/180DAY-a41430610bb62250a29e59dc0cbcbb99/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-23T00:49:35.103Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/75566878263215",
-   "sold": 8,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 9,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "kode",
@@ -6336,7 +6896,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-03f0d092abe30501c75e982afdf1e006/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-22T23:52:04.299Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/76497233612322",
    "sold": 1,
@@ -6416,7 +6976,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-659adf19b3249eb8b81c4da1383e84a4/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T23:33:46.957Z",
    "firstSeen": "2026-11-23T22:24:17.157Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/90088448186412",
    "sold": 0,
@@ -6527,7 +7087,7 @@
      "universeId": 9936107566,
      "name": "Aeteris Sanctuary: SideQuest 🪎",
      "placeId": 100418051760534,
-     "playing": 5
+     "playing": 4
     }
    ],
    "description": "MORE: https://www.roblox.com/catalog?Category=1&CreatorName=Aeteris+Fantasy%2B&CreatorType=Group&salesTypeFilter=1\n\nConsider join our community and the official group: https://www.roblox.com/communities/34864442/Aeteris-Fantasy#!/about",
@@ -6694,7 +7254,7 @@
      "universeId": 9936107566,
      "name": "Aeteris Sanctuary: SideQuest 🪎",
      "placeId": 100418051760534,
-     "playing": 5
+     "playing": 4
     }
    ],
    "description": "MORE: https://www.roblox.com/catalog?Category=1&CreatorName=Aeteris+Fantasy%2B&CreatorType=Group&salesTypeFilter=1\n\nConsider join our community and the official group: https://www.roblox.com/communities/34864442/Aeteris-Fantasy#!/about",
@@ -6981,7 +7541,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-0c25d40fefd3ffa272cb1bfa81ea81fa/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T22:27:01.6Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/86896524858166",
    "sold": 2,
@@ -7041,7 +7601,7 @@
    "limited": true,
    "official": false,
    "total": 1,
-   "remaining": 1,
+   "remaining": 0,
    "collectibleItemId": "b872c95c-93c3-405e-83ce-f488a6ccfea5",
    "universeIds": [
     5206433511
@@ -7061,11 +7621,11 @@
    "image": "https://tr.rbxcdn.com/180DAY-c78828db488ee0dc2cdcbd9523d57302/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T22:14:33.562Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
-   "available": true,
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
    "url": "https://www.roblox.com/catalog/121944695907090",
-   "sold": 0,
-   "stockChangedAt": "2026-11-23T19:36:22.871Z",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -7701,7 +8261,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-3ca666a39edff58fd42aa67cfc8e06d0/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T21:25:54.643Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/89147539369194",
    "sold": 1,
@@ -7781,7 +8341,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-a02d0501eb0cefb2c28c6c6a548621fb/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T21:22:35.284Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/136294611124112",
    "sold": 1,
@@ -7941,7 +8501,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-8b3cae2e52f175e3b89716a4322e4c8b/420/420/HairAccessory/Png/noFilter",
    "createdAt": "2026-11-22T21:07:59.176Z",
    "firstSeen": "2026-11-23T22:24:17.157Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/111888381398394",
    "sold": 5,
@@ -8141,7 +8701,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-97ad5be512aacee45134fa9b414a6e72/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T20:22:09.817Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/97017121610838",
    "sold": 2,
@@ -8487,7 +9047,7 @@
      "universeId": 10775999929,
      "name": "🛍️ Avatar Haven",
      "placeId": 74254807962761,
-     "playing": 74
+     "playing": 114
     }
    ],
    "description": "Game is Avatar Haven",
@@ -8654,7 +9214,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-708986a39a4fedcdb50c0d6d8e264a6c/420/420/FaceAccessory/Png/noFilter",
    "createdAt": "2026-11-22T19:48:13.235Z",
    "firstSeen": "2026-11-23T22:24:17.157Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/88273768143802",
    "sold": 0,
@@ -8847,7 +9407,7 @@
      "universeId": 10775999929,
      "name": "🛍️ Avatar Haven",
      "placeId": 74254807962761,
-     "playing": 74
+     "playing": 114
     }
    ],
    "description": "Please favorite so others can see!",
@@ -8967,7 +9527,7 @@
      "universeId": 10775999929,
      "name": "🛍️ Avatar Haven",
      "placeId": 74254807962761,
-     "playing": 74
+     "playing": 114
     }
    ],
    "description": "Game is Avatar Haven!",
@@ -9007,7 +9567,7 @@
      "universeId": 10775999929,
      "name": "🛍️ Avatar Haven",
      "placeId": 74254807962761,
-     "playing": 74
+     "playing": 114
     }
    ],
    "description": "Game is Avatar Haven!",
@@ -9394,7 +9954,7 @@
    "limited": true,
    "official": false,
    "total": 1,
-   "remaining": 1,
+   "remaining": 0,
    "collectibleItemId": "c196d40e-ca70-4cae-bd9f-fbfccae73d52",
    "universeIds": [
     5206433511
@@ -9415,10 +9975,10 @@
    "createdAt": "2026-11-22T19:12:46.922Z",
    "firstSeen": "2026-11-23T15:24:00.108Z",
    "lastSeen": "2026-11-24T01:42:49.719Z",
-   "available": true,
+   "available": false,
    "url": "https://www.roblox.com/catalog/119243807786919",
-   "sold": 0,
-   "stockChangedAt": "2026-11-23T15:24:00.108Z",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -9905,6 +10465,46 @@
    "claimWhy": "Game kode redeem"
   },
   {
+   "key": "asset:77211495306517",
+   "id": 77211495306517,
+   "type": "asset",
+   "name": "jordi",
+   "creator": "/kazi",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "da1412cc-e5e9-40b4-b142-559906431c3f",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "candi\ncreds - droswi & cereza",
+   "image": "https://tr.rbxcdn.com/180DAY-dccd2a6fe104637be6a85a662220b7e6/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-22T18:10:41.781Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/77211495306517",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
    "key": "asset:91767023052377",
    "id": 91767023052377,
    "type": "asset",
@@ -9979,6 +10579,46 @@
    "url": "https://www.roblox.com/catalog/92209155416535",
    "sold": 1,
    "stockChangedAt": "2026-11-23T02:55:20.244Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:101984045809266",
+   "id": 101984045809266,
+   "type": "asset",
+   "name": "ant",
+   "creator": "/kazi",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "d35a50d4-acc5-493a-8e28-841e48df810a",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "candi\ncreds - droswi",
+   "image": "https://tr.rbxcdn.com/180DAY-c4f9b851b2f637b651c0306051c60a8e/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-22T18:08:29.816Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/101984045809266",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -10185,6 +10825,86 @@
    "claimWhy": "Game kode redeem"
   },
   {
+   "key": "asset:132655953388359",
+   "id": 132655953388359,
+   "type": "asset",
+   "name": "lexie xmas 1.0",
+   "creator": "nuestracancion",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 1,
+   "collectibleItemId": "7a640c65-23c8-4491-b714-67ce8309370d",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": 1,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "made by nuestracancion",
+   "image": "https://tr.rbxcdn.com/180DAY-4c97279eb780b08270c8373e7b53db27/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-22T17:28:46.399Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": true,
+   "url": "https://www.roblox.com/catalog/132655953388359",
+   "sold": 0,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:111618137397277",
+   "id": 111618137397277,
+   "type": "asset",
+   "name": "ray xmas 3.0",
+   "creator": "nuestracancion",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 1,
+   "collectibleItemId": "d608894c-8b68-4958-b8c7-d2e328d95eb5",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": 1,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "made by nuestracancion",
+   "image": "https://tr.rbxcdn.com/180DAY-5fe655ed0cb810fd275db797b1f7e068/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-22T17:16:01.339Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": true,
+   "url": "https://www.roblox.com/catalog/111618137397277",
+   "sold": 0,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
    "key": "asset:120395437721227",
    "id": 120395437721227,
    "type": "asset",
@@ -10345,7 +11065,7 @@
    "limited": true,
    "official": false,
    "total": 20,
-   "remaining": 10,
+   "remaining": 8,
    "collectibleItemId": "12ad8b4a-0fcc-4787-902d-5594a10c66fb",
    "universeIds": [
     5206433511
@@ -10368,12 +11088,43 @@
    "lastSeen": "2026-11-23T14:10:40.935Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/129648301952399",
-   "sold": 10,
-   "stockChangedAt": "2026-11-23T18:27:46.052Z",
+   "sold": 12,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:129158881199310",
+   "id": 129158881199310,
+   "type": "asset",
+   "name": "FRAN 4.0",
+   "creator": "ALCALDIA STORE",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "68c26be8-362f-4cbd-b31d-b99ec558a0bc",
+   "universeIds": [],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "both",
+   "games": [],
+   "description": "ALCALDE",
+   "image": "https://tr.rbxcdn.com/180DAY-b889212b9027fe4729121c6331857e0b/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-22T16:49:20.784Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/129158881199310",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "?",
+   "claimWhy": "Belum jelas cara dapatnya"
   },
   {
    "key": "asset:128495994776950",
@@ -10485,7 +11236,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-688bdcca09e2f9391a5364137336a914/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T16:42:58.898Z",
    "firstSeen": "2026-11-23T21:25:55.774Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/98905324855318",
    "sold": 1,
@@ -11176,7 +11927,7 @@
    "limited": true,
    "official": false,
    "total": 20,
-   "remaining": 18,
+   "remaining": 17,
    "collectibleItemId": "32656ff6-3ea3-4581-a6d1-a1084a8aa8ff",
    "universeIds": [
     10777612953
@@ -11199,8 +11950,8 @@
    "lastSeen": "2026-11-23T14:10:40.935Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/102901813000944",
-   "sold": 2,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 3,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
@@ -11607,7 +12358,7 @@
    "limited": true,
    "official": false,
    "total": 15,
-   "remaining": 10,
+   "remaining": 9,
    "collectibleItemId": "78d1aef2-d11f-47c0-854a-66302715bc50",
    "universeIds": [
     10777612953
@@ -11630,8 +12381,8 @@
    "lastSeen": "2026-11-23T14:10:40.935Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/128162632826491",
-   "sold": 5,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 6,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
@@ -11767,7 +12518,7 @@
    "limited": true,
    "official": false,
    "total": 1,
-   "remaining": 1,
+   "remaining": 0,
    "collectibleItemId": "329f0e2b-a052-4229-9bf9-f11b595c483f",
    "universeIds": [
     5206433511
@@ -11788,11 +12539,11 @@
    "createdAt": "2026-11-22T12:04:20.399Z",
    "firstSeen": "2026-11-22T21:21:12.814Z",
    "lastSeen": "2026-11-23T12:46:33.240Z",
-   "available": true,
+   "available": false,
    "url": "https://www.roblox.com/catalog/95080532488801",
-   "sold": 0,
-   "stockChangedAt": "2026-11-22T21:21:12.814Z",
-   "stale": true,
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -13282,7 +14033,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-7f0842433e03229c618fd9db6ac52e58/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T07:42:45.336Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/111230800099943",
    "sold": 1,
@@ -14382,7 +15133,7 @@
    "limited": true,
    "official": false,
    "total": 1,
-   "remaining": 1,
+   "remaining": 0,
    "collectibleItemId": "94913d13-2f03-48ea-94e8-6e209755c3fc",
    "universeIds": [
     5206433511
@@ -14403,11 +15154,11 @@
    "createdAt": "2026-11-22T06:15:32.085Z",
    "firstSeen": "2026-11-22T23:41:38.846Z",
    "lastSeen": "2026-11-23T14:10:40.935Z",
-   "available": true,
+   "available": false,
    "url": "https://www.roblox.com/catalog/121104993722841",
-   "sold": 0,
-   "stockChangedAt": "2026-11-22T23:41:38.846Z",
-   "stale": true,
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -14633,7 +15384,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-8c72ddc0caaa5f1751baa5fc580f90a3/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-22T05:31:13.564Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/138045569538369",
    "sold": 2,
@@ -16692,7 +17443,7 @@
    "url": "https://www.roblox.com/catalog/76095123573803",
    "sold": 0,
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false,
+   "stale": true,
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -16732,7 +17483,7 @@
    "url": "https://www.roblox.com/catalog/131260847497924",
    "sold": 0,
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false,
+   "stale": true,
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -16772,7 +17523,7 @@
    "url": "https://www.roblox.com/catalog/113543600609518",
    "sold": 0,
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false,
+   "stale": true,
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -16852,7 +17603,7 @@
    "url": "https://www.roblox.com/catalog/113221098237510",
    "sold": 0,
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false,
+   "stale": true,
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -16892,7 +17643,7 @@
    "url": "https://www.roblox.com/catalog/136157601477839",
    "sold": 0,
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false,
+   "stale": true,
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -16932,7 +17683,7 @@
    "url": "https://www.roblox.com/catalog/85211102233986",
    "sold": 0,
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false,
+   "stale": true,
    "tiny": true,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -17247,7 +17998,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-c5399339aa4c581cf1223bd51823f42d/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T03:12:10.388Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/126794487997905",
    "sold": 2,
@@ -19255,7 +20006,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-0823941317df95176f475de3420839d4/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-22T01:58:35.853Z",
    "firstSeen": "2026-11-23T22:24:17.157Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/104641871064112",
    "sold": 1,
@@ -22055,7 +22806,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-877867df9bbbc625cbc4cd955249a3b6/420/420/FaceAccessory/Png/noFilter",
    "createdAt": "2026-11-21T22:10:08.851Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/97245505330165",
    "sold": 1,
@@ -22286,11 +23037,51 @@
    "image": "https://tr.rbxcdn.com/180DAY-67ec2734481a115d930aa2b6cb0d9eb5/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-21T21:57:19.983Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/128181220337878",
    "sold": 1,
    "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:138323344582737",
+   "id": 138323344582737,
+   "type": "asset",
+   "name": "✿ ︵ purple match   ˚ ♡ ｡˚ ",
+   "creator": "/rinari",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "d4ad06b0-b056-476d-9050-ce4e3854ba28",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "✿ ︵ creds   ˚ ♡ ｡˚ \n   donut steal ask me to inspo! - /kyna \n╰ ・ commission made by pfuppys ♡\njoin /rinari & /softsie for cute & cheap ugcs ✿",
+   "image": "https://tr.rbxcdn.com/180DAY-0ae700629b9ac39e83a980b873e6628a/420/420/FaceAccessory/Png/noFilter",
+   "createdAt": "2026-11-21T21:56:20.716Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/138323344582737",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -22417,6 +23208,46 @@
    "claimWhy": "Game kode redeem"
   },
   {
+   "key": "asset:116912359402391",
+   "id": 116912359402391,
+   "type": "asset",
+   "name": "✿ ︵ kept matching   ˚ ♡ ｡˚ ",
+   "creator": "/rinari",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "bb74b1de-0e76-4d4f-8958-b11a14ee9b7e",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "✿ ︵ creds   ˚ ♡ ｡˚ \n   donut steal ask me to inspo! - /kyna /bow\n╰ ・ commission made by pfuppys ♡\njoin /rinari & /softsie for cute & cheap ugcs ✿",
+   "image": "https://tr.rbxcdn.com/180DAY-f3fb3bda72170f0492d85e08e245ec1d/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-21T21:50:03.003Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/116912359402391",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
    "key": "asset:104072929748833",
    "id": 104072929748833,
    "type": "asset",
@@ -22451,6 +23282,46 @@
    "url": "https://www.roblox.com/catalog/104072929748833",
    "sold": 1,
    "stockChangedAt": "2026-11-22T15:29:05.474Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:100578456184725",
+   "id": 100578456184725,
+   "type": "asset",
+   "name": "✿ ︵ totalfed matching   ˚ ♡ ｡˚ ",
+   "creator": "/rinari",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "d09f0ba5-455b-40b6-8f29-4f6923c8a984",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "✿ ︵ creds   ˚ ♡ ｡˚ \n   donut steal ask me to inspo! - /kyna \n╰ ・ commission made by pfuppys ♡\njoin /rinari & /softsie for cute & cheap ugcs ✿",
+   "image": "https://tr.rbxcdn.com/180DAY-6071a58c637db784539a3c6ed202c24c/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-21T21:49:00.404Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/100578456184725",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -22506,7 +23377,7 @@
    "limited": true,
    "official": false,
    "total": 50,
-   "remaining": 47,
+   "remaining": 45,
    "collectibleItemId": "55e2c8b0-fb6c-401d-b627-78fc48e16134",
    "universeIds": [
     10777857056
@@ -22529,8 +23400,8 @@
    "lastSeen": "2026-11-23T06:33:18.197Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/131913910820027",
-   "sold": 3,
-   "stockChangedAt": "2026-11-24T00:17:38.818Z",
+   "sold": 5,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
@@ -22657,6 +23528,46 @@
    "claimWhy": "Game kode redeem"
   },
   {
+   "key": "asset:121813495549464",
+   "id": 121813495549464,
+   "type": "asset",
+   "name": "✿ ︵ nous 3.0   ˚ ♡ ｡˚ ",
+   "creator": "/rinari",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "1825e179-61db-4512-b83c-c857dba7a5b8",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "✿ ︵ creds   ˚ ♡ ｡˚ \n   donut steal ask me to inspo! - /kyna \n╰ ・ commission made by pfuppys ♡\njoin /rinari & /softsie for cute & cheap ugcs ✿",
+   "image": "https://tr.rbxcdn.com/180DAY-3e3834afd374691f30fc1f69c5d143a6/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-21T21:42:28.756Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/121813495549464",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
    "key": "asset:135199087470943",
    "id": 135199087470943,
    "type": "asset",
@@ -22771,6 +23682,46 @@
    "url": "https://www.roblox.com/catalog/72161725179449",
    "sold": 1,
    "stockChangedAt": "2026-11-22T17:12:00.609Z",
+   "stale": false,
+   "tiny": true,
+   "claimType": "kode",
+   "claimWhy": "Game kode redeem"
+  },
+  {
+   "key": "asset:89829170031932",
+   "id": 89829170031932,
+   "type": "asset",
+   "name": "✿ ︵ nous 1.0   ˚ ♡ ｡˚",
+   "creator": "/rinari",
+   "creatorVerified": false,
+   "limited": true,
+   "official": false,
+   "total": 1,
+   "remaining": 0,
+   "collectibleItemId": "68ccdd1a-5925-4bac-ab95-0255bd8c5905",
+   "universeIds": [
+    5206433511
+   ],
+   "perUser": null,
+   "offSaleDeadline": null,
+   "where": "game",
+   "games": [
+    {
+     "universeId": 5206433511,
+     "name": "Flex UGC Codes",
+     "placeId": 15108736400,
+     "playing": 343
+    }
+   ],
+   "description": "✿ ︵ creds   ˚ ♡ ｡˚ \n   donut steal ask me to inspo! - /kyna \n╰ ・ commission made by pfuppys ♡\njoin /rinari & /softsie for cute & cheap ugcs ✿",
+   "image": "https://tr.rbxcdn.com/180DAY-f2a92af38730162bdb892590a9569aca/420/420/NeckAccessory/Png/noFilter",
+   "createdAt": "2026-11-21T21:36:56.986Z",
+   "firstSeen": "2026-11-24T02:42:35.993Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
+   "available": false,
+   "url": "https://www.roblox.com/catalog/89829170031932",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": true,
    "claimType": "kode",
@@ -23762,7 +24713,7 @@
    "url": "https://www.roblox.com/catalog/93227340845211",
    "sold": 4,
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false,
+   "stale": true,
    "tiny": false,
    "claimType": "kode",
    "claimWhy": "Game kode redeem"
@@ -24701,7 +25652,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-65f9e759aa4662edb1d2deae5cc0885b/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-21T19:03:26.156Z",
    "firstSeen": "2026-11-24T00:17:38.818Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/82483205395369",
    "sold": 0,
@@ -24781,7 +25732,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-80ddd3af21720d0061d52e5660292167/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-21T18:55:00.597Z",
    "firstSeen": "2026-11-24T00:17:38.818Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/105466703788635",
    "sold": 0,
@@ -26842,7 +27793,7 @@
    "limited": true,
    "official": false,
    "total": 50,
-   "remaining": 37,
+   "remaining": 35,
    "collectibleItemId": "7f19be11-8589-4b87-b495-1e41d54b5872",
    "universeIds": [
     10767056884
@@ -26865,8 +27816,8 @@
    "lastSeen": "2026-11-22T20:28:58.067Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/126165316738769",
-   "sold": 13,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 15,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -26895,7 +27846,7 @@
      "universeId": 3198546127,
      "name": "Indo Voice",
      "placeId": 8356562067,
-     "playing": 256
+     "playing": 171
     }
    ],
    "description": "Reward for Halloween 2026 Contest in Indo Voice",
@@ -27962,7 +28913,7 @@
    "limited": true,
    "official": false,
    "total": 250,
-   "remaining": 148,
+   "remaining": 146,
    "collectibleItemId": "6d0871c5-2adb-431d-8856-4fbc8f644ae1",
    "universeIds": [
     5339656333
@@ -27975,7 +28926,7 @@
      "universeId": 5339656333,
      "name": "[FREE UGC⭐] Anime Outfits",
      "placeId": 15474504316,
-     "playing": 28
+     "playing": 39
     }
    ],
    "description": "FREE UGC, get at Anime Outfits: https://www.roblox.com/games/15474504316/Anime-Outfits",
@@ -27985,8 +28936,8 @@
    "lastSeen": "2026-11-21T23:23:37.694Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/106516044051458",
-   "sold": 102,
-   "stockChangedAt": "2026-11-23T22:24:17.157Z",
+   "sold": 104,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -28382,7 +29333,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-a1bf4e18d61222aab140d1ec85dd1a3d/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-21T14:11:01.688Z",
    "firstSeen": "2026-11-23T21:25:55.774Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/132295478767416",
    "sold": 1,
@@ -32767,7 +33718,7 @@
    "limited": true,
    "official": false,
    "total": 20,
-   "remaining": 15,
+   "remaining": 14,
    "collectibleItemId": "e70a5b34-ea3c-4b48-aa9d-cb74f1439853",
    "universeIds": [
     10061223546
@@ -32790,8 +33741,8 @@
    "lastSeen": "2026-11-21T19:35:19.588Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/126883287671173",
-   "sold": 5,
-   "stockChangedAt": "2026-11-23T09:37:30.093Z",
+   "sold": 6,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
@@ -35773,7 +36724,7 @@
    "limited": true,
    "official": false,
    "total": 500,
-   "remaining": 274,
+   "remaining": 271,
    "collectibleItemId": "7387c0ff-3644-46a8-a448-12658b59fd18",
    "universeIds": [
     10765281597
@@ -35796,8 +36747,8 @@
    "lastSeen": "2026-11-21T22:41:26.714Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/116352970270869",
-   "sold": 226,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 229,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -35813,7 +36764,7 @@
    "limited": true,
    "official": false,
    "total": 500,
-   "remaining": 389,
+   "remaining": 388,
    "collectibleItemId": "0d95fe0f-022d-417e-a1eb-9da1ec9e0b13",
    "universeIds": [
     10765281597
@@ -35836,8 +36787,8 @@
    "lastSeen": "2026-11-23T10:45:07.531Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/112995145201636",
-   "sold": 111,
-   "stockChangedAt": "2026-11-24T00:17:38.818Z",
+   "sold": 112,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -35853,7 +36804,7 @@
    "limited": true,
    "official": false,
    "total": 500,
-   "remaining": 393,
+   "remaining": 390,
    "collectibleItemId": "c8de208b-deca-4c5e-a880-e2472e4f8730",
    "universeIds": [
     10765281597
@@ -35876,8 +36827,8 @@
    "lastSeen": "2026-11-23T14:10:40.935Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/122512226692768",
-   "sold": 107,
-   "stockChangedAt": "2026-11-23T23:23:46.037Z",
+   "sold": 110,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -35893,7 +36844,7 @@
    "limited": true,
    "official": false,
    "total": 500,
-   "remaining": 160,
+   "remaining": 159,
    "collectibleItemId": "d5a0f900-9957-4792-a70a-2543db082fb8",
    "universeIds": [
     10765281597
@@ -35916,8 +36867,8 @@
    "lastSeen": "2026-11-21T21:58:38.514Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/71290784913846",
-   "sold": 340,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 341,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -35973,7 +36924,7 @@
    "limited": true,
    "official": false,
    "total": 500,
-   "remaining": 130,
+   "remaining": 129,
    "collectibleItemId": "7ff6138f-0b0f-43c1-af69-084d0a9670f0",
    "universeIds": [
     10765281597
@@ -35996,8 +36947,8 @@
    "lastSeen": "2026-11-21T22:41:26.714Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/109183292163511",
-   "sold": 370,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 371,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -36013,7 +36964,7 @@
    "limited": true,
    "official": false,
    "total": 500,
-   "remaining": 400,
+   "remaining": 399,
    "collectibleItemId": "2cc322a7-68bd-4aeb-9eb2-72dae87629b6",
    "universeIds": [
     10765281597
@@ -36036,8 +36987,8 @@
    "lastSeen": "2026-11-23T14:10:40.935Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/81567517544670",
-   "sold": 100,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 101,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -36053,7 +37004,7 @@
    "limited": true,
    "official": false,
    "total": 500,
-   "remaining": 373,
+   "remaining": 370,
    "collectibleItemId": "1c0699e2-6938-47a1-89be-789e89bc62e4",
    "universeIds": [
     10765281597
@@ -36076,8 +37027,8 @@
    "lastSeen": "2026-11-23T11:39:07.193Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/123673357013330",
-   "sold": 127,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 130,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -36173,7 +37124,7 @@
    "limited": true,
    "official": false,
    "total": 500,
-   "remaining": 221,
+   "remaining": 215,
    "collectibleItemId": "fa7e21ca-5999-41ee-9207-38357def3900",
    "universeIds": [
     10765281597
@@ -36196,8 +37147,8 @@
    "lastSeen": "2026-11-23T10:45:07.531Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/89373876934738",
-   "sold": 279,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 285,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -39849,7 +40800,7 @@
      "universeId": 8604469342,
      "name": "Town Empire Tycoon [UGC]",
      "placeId": 72861162533502,
-     "playing": 27
+     "playing": 29
     }
    ],
    "description": "Click EVENT in Town Empire here https://www.roblox.com/games/72861162533502 The Christmas Reindeer Aura with Snowflakes and Stars is limited to the top 30 players. Devise the best money-earning strategy in the Town Empire Tournament, and you'll have this Limited UGC to show your win!",
@@ -41911,7 +42862,7 @@
      "universeId": 9401398195,
      "name": "[EVENT UGC] PARTY SHELL",
      "placeId": 110172784379358,
-     "playing": 325
+     "playing": 398
     }
    ],
    "description": "📌 Other UGC : https://www.roblox.com/id/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=YB_Studio&salesTypeFilter=1&SortType=3",
@@ -43964,7 +44915,7 @@
      "universeId": 10775260976,
      "name": "FREE REWARDS UGC OBBY (NEW)",
      "placeId": 95578627187012,
-     "playing": 127
+     "playing": 56
     }
    ],
    "description": "Claim item here and like the game: https://www.roblox.com/games/95578627187012/FREE-REWARDS-UGC-OBBY",
@@ -49179,7 +50130,7 @@
      "universeId": 10775260976,
      "name": "FREE REWARDS UGC OBBY (NEW)",
      "placeId": 95578627187012,
-     "playing": 127
+     "playing": 56
     }
    ],
    "description": "Claim item here and like the game: https://www.roblox.com/games/95578627187012/FREE-REWARDS-UGC-OBBY",
@@ -53986,7 +54937,7 @@
      "universeId": 10768554609,
      "name": "Abyssal UGC / AFK",
      "placeId": 83546214578212,
-     "playing": 7
+     "playing": 6
     }
    ],
    "description": "The angel who has fellen has used this to reap the souls of the abyss\n\nFind more of our items in our group and here\nhttps://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=",
@@ -54146,7 +55097,7 @@
      "universeId": 10766510142,
      "name": "[UGC Event] KEETA Party",
      "placeId": 83871127009579,
-     "playing": 94
+     "playing": 126
     }
    ],
    "description": "V1",
@@ -55253,7 +56204,7 @@
      "universeId": 10771033908,
      "name": "🌸Sakura Avatar World: Mini-Games",
      "placeId": 93342964651030,
-     "playing": 19
+     "playing": 21
     }
    ],
    "description": "試作的熙櫻雫同款香香制服!!\n有一點瑕疵~\n長長的袖子特別可愛!!\n\n遊戲中能免費獲得\nhttps://www.roblox.com/games/93342964651030/UGC",
@@ -56603,7 +57554,7 @@
      "universeId": 10774314331,
      "name": "[CHRISTMAS🎄] AFK FOR UGC",
      "placeId": 86073223609175,
-     "playing": 6
+     "playing": 3
     },
     {
      "universeId": 5206433511,
@@ -61118,7 +62069,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 1000,
-   "remaining": 937,
+   "remaining": 936,
    "collectibleItemId": "8deda367-3e67-4bd0-81f8-b04581370099",
    "universeIds": [
     10013986416
@@ -61131,7 +62082,7 @@
      "universeId": 10013986416,
      "name": "✨ EMISSIVE UGC Homestore | Outfit Shopping Spree",
      "placeId": 101824922502044,
-     "playing": 63
+     "playing": 68
     }
    ],
    "description": "Merry Christmas from UOSS",
@@ -61141,11 +62092,11 @@
    "lastSeen": "2026-11-20T09:04:15.725Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/118317019812055",
-   "sold": 63,
+   "sold": 64,
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-23T22:24:17.157Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "official": false
   },
@@ -61867,7 +62818,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 75,
-   "remaining": 54,
+   "remaining": 53,
    "collectibleItemId": "521a2836-67b1-4ee6-ba1c-1d7271342e4d",
    "universeIds": [
     10770857830
@@ -61890,12 +62841,12 @@
    "lastSeen": "2026-11-21T00:04:25.111Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/90908442216037",
-   "sold": 21,
+   "sold": 22,
    "tiny": false,
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan",
-   "stockChangedAt": "2026-11-22T22:09:50.265Z",
-   "stale": true,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false,
    "official": false
   },
   {
@@ -62279,7 +63230,7 @@
      "universeId": 10775339471,
      "name": "Steal A Meal",
      "placeId": 73981721158793,
-     "playing": 1
+     "playing": 0
     }
    ],
    "description": "Mix'n Kitch'n Rush! A cute little chef monster pet that rides on your shoulder!",
@@ -62319,7 +63270,7 @@
      "universeId": 10775339471,
      "name": "Steal A Meal",
      "placeId": 73981721158793,
-     "playing": 1
+     "playing": 0
     }
    ],
    "description": "Mix'n Kitch'n Rush! A cute little chef mushroom pet that rides on your shoulder!",
@@ -62399,7 +63350,7 @@
      "universeId": 10775339471,
      "name": "Steal A Meal",
      "placeId": 73981721158793,
-     "playing": 1
+     "playing": 0
     }
    ],
    "description": "Mix'n Kitch'n Rush! A cute little chef tomato pet that rides on your shoulder!",
@@ -62679,7 +63630,7 @@
      "universeId": 10775339471,
      "name": "Steal A Meal",
      "placeId": 73981721158793,
-     "playing": 1
+     "playing": 0
     }
    ],
    "description": "Mix'n Kitch'n Rush! Shoulder Pet.",
@@ -64322,7 +65273,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-ea330cd45089b4ae5f92bb7eb50da139/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-18T12:40:08.593Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/76570768568654",
    "sold": 5,
@@ -64449,7 +65400,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-c150807e7dcb93472ac9d0444914a997/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-18T12:25:50.201Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/97147266425338",
    "sold": 5,
@@ -64867,7 +65818,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 1000,
-   "remaining": 766,
+   "remaining": 765,
    "collectibleItemId": "9980344d-c03d-4965-aca6-cec7b6937c56",
    "universeIds": [
     9164570436
@@ -64890,11 +65841,11 @@
    "lastSeen": "2026-11-19T22:21:25.831Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/91041526373862",
-   "sold": 234,
+   "sold": 235,
    "tiny": false,
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan",
-   "stockChangedAt": "2026-11-23T23:23:46.037Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "official": false
   },
@@ -68415,7 +69366,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-eb2810fd9f3226fa47ab3cc294113ff6/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-11-18T01:43:41.344Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/73848000045877",
    "sold": 1,
@@ -68596,7 +69547,7 @@
    "claimType": "beli",
    "claimWhy": "Deskripsi menyebut Robux/beli",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:95987622335328",
@@ -72035,7 +72986,7 @@
      "universeId": 5751018738,
      "name": "[UPD ⚽️ + 🥓NEW ACCESSORY] Purina Arena Pet Racing",
      "placeId": 16733022263,
-     "playing": 23
+     "playing": 13
     }
    ],
    "description": "Capybara Hat (Purina Arena UGC)",
@@ -73163,7 +74114,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-472e928511afb9ff21fcafea8d1a86bf/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-17T14:30:22.888Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/107305022311972",
    "sold": 0,
@@ -73444,7 +74395,7 @@
    "claimType": "kode",
    "claimWhy": "Game kode redeem",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:82827378960239",
@@ -73663,7 +74614,7 @@
      "universeId": 10771033908,
      "name": "🌸Sakura Avatar World: Mini-Games",
      "placeId": 93342964651030,
-     "playing": 19
+     "playing": 21
     }
    ],
    "description": "試作的天之棄者同款衣服 天選之人才能獲得!!\n\n遊戲中能免費獲得\nhttps://www.roblox.com/games/93342964651030/UGC",
@@ -74842,7 +75793,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-214e64aa668a95b418a32f762e5c318e/420/420/Hat/Png/noFilter",
    "createdAt": "2026-11-17T06:46:43.162Z",
    "firstSeen": "2026-11-23T23:23:46.037Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/120077365466731",
    "sold": 16,
@@ -74913,7 +75864,7 @@
      "universeId": 10775538559,
      "name": "[VC] TITIK TEMU",
      "placeId": 89187637881332,
-     "playing": 4
+     "playing": 15
     }
    ],
    "description": "An elegant fantasy crown featuring golden details, beautiful blue crystals, and a majestic royal design. Perfect for adding a magical and luxurious look to your character.",
@@ -78593,7 +79544,7 @@
      "universeId": 10766862745,
      "name": "Asahi Smile Party Simulator",
      "placeId": 125052955608568,
-     "playing": 21
+     "playing": 42
     }
    ],
    "description": "Asahi Smile Party Cap",
@@ -81648,7 +82599,7 @@
      "universeId": 9401398195,
      "name": "[EVENT UGC] PARTY SHELL",
      "placeId": 110172784379358,
-     "playing": 325
+     "playing": 398
     }
    ],
    "description": "📌 Other UGC : https://www.roblox.com/id/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=YB_Studio&salesTypeFilter=1&SortType=3",
@@ -82124,7 +83075,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-d714e7d2c3b68a65190fd8b1fed11ab1/420/420/JacketAccessory/Png/noFilter",
    "createdAt": "2026-11-16T19:08:38.685Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/80030336944079",
    "sold": 4,
@@ -84091,7 +85042,7 @@
      "universeId": 10771033908,
      "name": "🌸Sakura Avatar World: Mini-Games",
      "placeId": 93342964651030,
-     "playing": 19
+     "playing": 21
     }
    ],
    "description": "遊戲迎來v2.0所以繼v1.0製作第二個版本惡魔套裝送給大家~\n讓大家都能成為大惡魔?!\n\n遊戲中能免費獲取\nhttps://www.roblox.com/games/93342964651030/UGC",
@@ -85445,7 +86396,7 @@
    "limited": true,
    "official": false,
    "total": 75,
-   "remaining": 3,
+   "remaining": 2,
    "collectibleItemId": "c8940bac-3338-425d-a494-93217619376b",
    "universeIds": [
     10775999929
@@ -85458,7 +86409,7 @@
      "universeId": 10775999929,
      "name": "🛍️ Avatar Haven",
      "placeId": 74254807962761,
-     "playing": 74
+     "playing": 114
     }
    ],
    "description": "a",
@@ -85468,8 +86419,8 @@
    "lastSeen": "2026-11-22T07:43:09.180Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/99072785748093",
-   "sold": 72,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 73,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -87113,7 +88064,7 @@
      "universeId": 10775260976,
      "name": "FREE REWARDS UGC OBBY (NEW)",
      "placeId": 95578627187012,
-     "playing": 127
+     "playing": 56
     }
    ],
    "description": "Get Here and Like the Game : https://www.roblox.com/games/95578627187012/FREE-REWARDS-UGC-OBBY",
@@ -93744,7 +94695,7 @@
      "universeId": 10775260976,
      "name": "FREE REWARDS UGC OBBY (NEW)",
      "placeId": 95578627187012,
-     "playing": 127
+     "playing": 56
     }
    ],
    "description": "Get Here: https://www.roblox.com/games/95578627187012/FREE-REWARDS-UGC-OBBY",
@@ -94640,7 +95591,7 @@
      "universeId": 10771033908,
      "name": "🌸Sakura Avatar World: Mini-Games",
      "placeId": 93342964651030,
-     "playing": 19
+     "playing": 21
     }
    ],
    "description": "大家都很熱情的歡迎著你~\n這就是恐怖的櫻花學園!!\n\n遊戲中可以免費獲取\n\nhttps://www.roblox.com/games/93342964651030/UGC",
@@ -96053,7 +97004,7 @@
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:118230404102671",
@@ -99043,7 +99994,7 @@
      "universeId": 10771033908,
      "name": "🌸Sakura Avatar World: Mini-Games",
      "placeId": 93342964651030,
-     "playing": 19
+     "playing": 21
     }
    ],
    "description": "大家都很熱情的歡迎著你~\n這不是恐怖的櫻花學園!!\n\n遊戲中可以免費獲取\n\nhttps://www.roblox.com/games/93342964651030/UGC",
@@ -112843,7 +113794,7 @@
      "universeId": 5339656333,
      "name": "[FREE UGC⭐] Anime Outfits",
      "placeId": 15474504316,
-     "playing": 28
+     "playing": 39
     }
    ],
    "description": "FREE UGC, get at Anime Outfits: https://www.roblox.com/games/15474504316/Anime-Outfits",
@@ -113116,7 +114067,7 @@
      "universeId": 10768554609,
      "name": "Abyssal UGC / AFK",
      "placeId": 83546214578212,
-     "playing": 7
+     "playing": 6
     }
    ],
    "description": "Glacier Sword\n\nFind more of our items in our group and here\nhttps://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=",
@@ -113351,7 +114302,7 @@
      "universeId": 10768554609,
      "name": "Abyssal UGC / AFK",
      "placeId": 83546214578212,
-     "playing": 7
+     "playing": 6
     }
    ],
    "description": "Find more of our items in our group and here\nhttps://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=",
@@ -113469,7 +114420,7 @@
      "universeId": 10768554609,
      "name": "Abyssal UGC / AFK",
      "placeId": 83546214578212,
-     "playing": 7
+     "playing": 6
     }
    ],
    "description": "The Frigidus Noobs Choice!\n\nFind more of our items in our group and here\nhttps://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=",
@@ -115964,7 +116915,7 @@
      "universeId": 9073831848,
      "name": "[🎭 NEW EMOTES🎭] The Splat Games [BETA]",
      "placeId": 99444403612127,
-     "playing": 33
+     "playing": 15
     },
     {
      "universeId": 10770502371,
@@ -117661,7 +118612,7 @@
      "universeId": 10771033908,
      "name": "🌸Sakura Avatar World: Mini-Games",
      "placeId": 93342964651030,
-     "playing": 19
+     "playing": 21
     }
    ],
    "description": "虛擬歌姬型態的熙櫻雫娃娃...\n\n遊戲中可以免費獲取\n也可以參與音樂心得活動免費獲取\n\nhttps://www.roblox.com/games/93342964651030/UGC",
@@ -117739,7 +118690,7 @@
      "universeId": 10771033908,
      "name": "🌸Sakura Avatar World: Mini-Games",
      "placeId": 93342964651030,
-     "playing": 19
+     "playing": 21
     }
    ],
    "description": "熙櫻雫型態的虛擬歌姬娃娃...\n\n遊戲中可以免費獲取\n也可以參與音樂心得活動免費獲取\n\nhttps://www.roblox.com/games/93342964651030/UGC",
@@ -119519,7 +120470,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 50,
-   "remaining": 12,
+   "remaining": 11,
    "collectibleItemId": "09a4fb51-6fba-4660-955b-18d0dc69d211",
    "universeIds": [
     10776146791
@@ -119532,7 +120483,7 @@
      "universeId": 10776146791,
      "name": "[FREE UGC⭐] Jojo Outfits",
      "placeId": 77520749214305,
-     "playing": 6
+     "playing": 7
     }
    ],
    "description": "Jotaro's Hat",
@@ -119542,11 +120493,11 @@
    "lastSeen": "2026-11-17T01:00:28.274Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/105135858778006",
-   "sold": 38,
+   "sold": 39,
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -120974,7 +121925,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-26b48c06650deab060a7d253004638b4/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-12T23:32:45.91Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": false,
    "url": "https://www.roblox.com/catalog/131376559121791",
    "sold": 1,
@@ -122536,7 +123487,7 @@
    "claimType": "kode",
    "claimWhy": "Game kode redeem",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:75141501745580",
@@ -122694,7 +123645,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 50,
-   "remaining": 39,
+   "remaining": 38,
    "collectibleItemId": "8d265f0e-8c37-4e53-b947-d608941cca6d",
    "universeIds": [
     10775731153,
@@ -122724,12 +123675,12 @@
    "lastSeen": "2026-11-14T06:14:35.928Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/85284896240522",
-   "sold": 11,
+   "sold": 12,
    "tiny": false,
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan",
-   "stockChangedAt": "2026-11-21T07:38:13.727Z",
-   "stale": true
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false
   },
   {
    "key": "asset:136750702325575",
@@ -123143,7 +124094,7 @@
      "universeId": 10771938158,
      "name": "[🍂] Break and Steal A Kitty Egg",
      "placeId": 88139827763026,
-     "playing": 130
+     "playing": 153
     }
    ],
    "description": "Sleepy golden pup who carries all your secrets! 🍮\n\nThis cozy backpack comes with a little brown beret, floppy ears, rosy cheeks and the sweetest smile — on the front AND the back, so he's always looking out for you.\n\nPeek into the clear front pocket to find his journal and a polka-dot pouch, finished with a chocolate bow, a shiny buckle and a pink pin.\n\nFree for our most dedicated players: finish all 10 days of quests in Break and Steal A Kitty Egg to earn yours. Limited stock, so don't nap too long! 💛",
@@ -124609,7 +125560,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 10000,
-   "remaining": 8144,
+   "remaining": 8140,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -124629,14 +125580,14 @@
    "url": "https://www.roblox.com/catalog/107516267836070",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "6d3efffe-659f-4440-b1d1-682089e5ba5f",
-   "sold": 1856,
+   "sold": 1860,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -124960,7 +125911,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 5000,
-   "remaining": 1728,
+   "remaining": 1719,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -124980,14 +125931,14 @@
    "url": "https://www.roblox.com/catalog/75795936320886",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "2eb7d8a7-d50e-47b5-9b12-8e8a045987da",
-   "sold": 3272,
+   "sold": 3281,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -125575,7 +126526,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 5000,
-   "remaining": 4832,
+   "remaining": 4831,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -125595,14 +126546,14 @@
    "url": "https://www.roblox.com/catalog/111726121433362",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "223ed047-b17b-49e2-8be2-280bc32d9a49",
-   "sold": 168,
+   "sold": 169,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T00:17:38.818Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -125614,7 +126565,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 10000,
-   "remaining": 9316,
+   "remaining": 9307,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -125634,14 +126585,14 @@
    "url": "https://www.roblox.com/catalog/97358877444542",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "c83802e8-f417-4e0f-a3d7-a7cf56da1ba9",
-   "sold": 684,
+   "sold": 693,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -125692,7 +126643,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 10000,
-   "remaining": 9520,
+   "remaining": 9517,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -125712,14 +126663,14 @@
    "url": "https://www.roblox.com/catalog/100057637343110",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "9ff79463-e23c-4d42-b751-6018f550ee4f",
-   "sold": 480,
+   "sold": 483,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -125731,7 +126682,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 5000,
-   "remaining": 4974,
+   "remaining": 4973,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -125751,14 +126702,14 @@
    "url": "https://www.roblox.com/catalog/125012764421067",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "f792e4ba-b996-4f72-bc2b-3c4b588762f9",
-   "sold": 26,
+   "sold": 27,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-23T22:24:17.157Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -125887,7 +126838,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 5000,
-   "remaining": 4976,
+   "remaining": 4974,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -125907,14 +126858,14 @@
    "url": "https://www.roblox.com/catalog/76920525061812",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "24548cf5-749d-4ae0-8f16-d8a1e53c0fc6",
-   "sold": 24,
+   "sold": 26,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -125926,7 +126877,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 5000,
-   "remaining": 3387,
+   "remaining": 3383,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -125946,14 +126897,14 @@
    "url": "https://www.roblox.com/catalog/79215920972766",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "5d04b78c-50e5-45cd-b01c-248059a5a39d",
-   "sold": 1613,
+   "sold": 1617,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -126082,7 +127033,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 5000,
-   "remaining": 4541,
+   "remaining": 4539,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -126102,14 +127053,14 @@
    "url": "https://www.roblox.com/catalog/118230968744955",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "1dde5320-553e-46e3-a68d-eeae65e33df0",
-   "sold": 459,
+   "sold": 461,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -126121,7 +127072,7 @@
    "creatorVerified": true,
    "limited": true,
    "total": 5000,
-   "remaining": 4247,
+   "remaining": 4246,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -126141,14 +127092,14 @@
    "url": "https://www.roblox.com/catalog/102723250200129",
    "description": "Unlock in My Avatar: https://www.roblox.com/games/75387700043737",
    "collectibleItemId": "e09d683e-442f-4493-b24e-7c645fe42be3",
-   "sold": 753,
+   "sold": 754,
    "universeIds": [
     7554119808
    ],
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -133662,7 +134613,7 @@
    "limited": true,
    "official": false,
    "total": 19849,
-   "remaining": 7551,
+   "remaining": 7512,
    "collectibleItemId": "b1b522d1-fe36-4eb2-b346-72d89e907eca",
    "universeIds": [
     10766720492
@@ -133685,8 +134636,8 @@
    "lastSeen": "2026-11-21T00:04:25.111Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/128226596587905",
-   "sold": 12298,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 12337,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
@@ -133740,7 +134691,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 16509,
-   "remaining": 2356,
+   "remaining": 2332,
    "collectibleItemId": "2f655201-93c7-445c-ba79-04cc7afd3a80",
    "universeIds": [
     10766720492
@@ -133763,11 +134714,11 @@
    "lastSeen": "2026-11-13T23:00:56.550Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/110831775297202",
-   "sold": 14153,
+   "sold": 14177,
    "tiny": false,
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -136631,7 +137582,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 50,
-   "remaining": 41,
+   "remaining": 40,
    "collectibleItemId": "a40d71a9-4134-444b-82f4-87955ae15a88",
    "universeIds": [
     5206433511
@@ -136654,11 +137605,11 @@
    "lastSeen": "2026-11-20T09:04:15.725Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/82719739369328",
-   "sold": 9,
+   "sold": 10,
    "tiny": false,
    "claimType": "kode",
    "claimWhy": "Game kode redeem",
-   "stockChangedAt": "2026-11-23T21:25:55.774Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "official": false
   },
@@ -138405,7 +139356,7 @@
    "limited": true,
    "official": false,
    "total": 300,
-   "remaining": 102,
+   "remaining": 101,
    "collectibleItemId": "f5c0688d-6522-4a91-b7a2-48d4d7c5b782",
    "universeIds": [
     5206433511,
@@ -138435,8 +139386,8 @@
    "lastSeen": "2026-11-21T11:57:41.288Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/136152426152779",
-   "sold": 198,
-   "stockChangedAt": "2026-11-23T23:23:46.037Z",
+   "sold": 199,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "kode",
@@ -140327,7 +141278,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 250,
-   "remaining": 94,
+   "remaining": 93,
    "collectibleItemId": "e9705ab6-721d-477f-8582-18fb258098e4",
    "universeIds": [
     7819330645
@@ -140350,11 +141301,11 @@
    "lastSeen": "2026-11-14T00:24:23.096Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/94376088439132",
-   "sold": 156,
+   "sold": 157,
    "tiny": false,
    "claimType": "beli",
    "claimWhy": "Deskripsi menyebut Robux/beli",
-   "stockChangedAt": "2026-11-23T23:23:46.037Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -143253,7 +144204,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-399af494da6f466c382a09cd97b43ade/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-07T18:36:28.752Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/109327997218337",
    "sold": 0,
@@ -144335,7 +145286,7 @@
    "limited": true,
    "official": false,
    "total": 36,
-   "remaining": 36,
+   "remaining": 35,
    "collectibleItemId": "008bbe9b-b466-4796-a7dd-4e317f854370",
    "universeIds": [
     10764676017
@@ -144358,8 +145309,8 @@
    "lastSeen": "2026-11-24T01:42:49.719Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/79653298377645",
-   "sold": 0,
-   "stockChangedAt": "2026-11-23T16:29:14.803Z",
+   "sold": 1,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
@@ -144395,7 +145346,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-5c1b141409efa2f6391656a582c1c51d/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-06T21:52:27.907Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/75370787511284",
    "sold": 0,
@@ -144435,7 +145386,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-425a2701c5d2c70febe30223e1f35424/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-06T21:50:14.404Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/104275690309018",
    "sold": 0,
@@ -144475,7 +145426,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-def81ce3545e99905fbac8f01d693ab6/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-06T21:32:11.292Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/96655150977959",
    "sold": 0,
@@ -144515,7 +145466,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-53a2ca1ed103c6b13d1506e06990b18b/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-11-06T21:20:44.261Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/127760795100945",
    "sold": 2,
@@ -144534,7 +145485,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 50,
-   "remaining": 31,
+   "remaining": 30,
    "collectibleItemId": "768af12d-86a3-4673-8b0d-d289944399e7",
    "universeIds": [
     10764676017
@@ -144557,11 +145508,11 @@
    "lastSeen": "2026-11-17T01:00:28.274Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/138570783225074",
-   "sold": 19,
+   "sold": 20,
    "tiny": false,
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -145921,7 +146872,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 20,
-   "remaining": 13,
+   "remaining": 12,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -145947,7 +146898,7 @@
    "url": "https://www.roblox.com/catalog/109418713890270",
    "description": "The ultimate defense against trolls, bots and spam. Keeping guard over over the wearer wherever they end up.\n\nExclusive To TwitchCon 2026, Find Shayph and Ask for a Code!",
    "collectibleItemId": "c59a0246-ff01-45f3-8c19-07c2401f8ba1",
-   "sold": 7,
+   "sold": 8,
    "universeIds": [
     5257363081,
     5206433511
@@ -145955,8 +146906,8 @@
    "tiny": false,
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan",
-   "stockChangedAt": "2026-11-15T19:29:56.000Z",
-   "stale": true
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false
   },
   {
    "key": "asset:134556335828467",
@@ -146271,7 +147222,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-4f56f5418e78fdc71dcfc6257e5ff663/420/420/Hat/Png/noFilter",
    "createdAt": "2026-10-29T03:05:54.779Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/125579187332595",
    "sold": 0,
@@ -146311,7 +147262,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-007d5fd2450083501ba4ae4b747a3aa5/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2026-10-29T03:03:16.895Z",
    "firstSeen": "2026-11-23T19:36:22.871Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/91767714362419",
    "sold": 0,
@@ -146543,7 +147494,7 @@
      "universeId": 6353751159,
      "name": "Main Street 🏡RP",
      "placeId": 18753889337,
-     "playing": 5124
+     "playing": 3501
     }
    ],
    "description": "Tamagotchi 30th Aniv. Cake Hat Type B from TamagotchiParty\n\n【Tamagotchi Official】Shop\nhttps://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Tamagotchi+Official&salesTypeFilter=1",
@@ -146668,7 +147619,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-327fdf32faff16e075283fb782083f70/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-10-26T00:13:02.727Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/118955683664865",
    "sold": 0,
@@ -147147,7 +148098,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-340bc11fecfafe8374e5eeb3719173e7/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2026-10-21T16:56:17.865Z",
    "firstSeen": "2026-11-24T01:42:49.719Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/104150181735415",
    "sold": 0,
@@ -147443,7 +148394,7 @@
    "limited": true,
    "official": false,
    "total": 5000,
-   "remaining": 4275,
+   "remaining": 4264,
    "collectibleItemId": "780c88f6-b1a7-4825-91d9-ef603000c6cf",
    "universeIds": [
     10415411777
@@ -147466,8 +148417,8 @@
    "lastSeen": "2026-11-24T01:42:49.719Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/128265652913139",
-   "sold": 725,
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "sold": 736,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "misi",
@@ -147774,7 +148725,7 @@
    "claimType": "kode",
    "claimWhy": "Game kode redeem",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:126680902620589",
@@ -147785,7 +148736,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 150,
-   "remaining": 18,
+   "remaining": 17,
    "perUser": 1,
    "offSaleDeadline": null,
    "where": "game",
@@ -147811,7 +148762,7 @@
    "url": "https://www.roblox.com/catalog/126680902620589",
    "description": "Free",
    "collectibleItemId": "b6d6e9f6-6969-4e94-87a4-7922a010e222",
-   "sold": 132,
+   "sold": 133,
    "universeIds": [
     5206433511,
     10692141195
@@ -147819,7 +148770,7 @@
    "tiny": false,
    "claimType": "kode",
    "claimWhy": "Game kode redeem",
-   "stockChangedAt": "2026-11-23T18:27:46.052Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false
   },
   {
@@ -147879,7 +148830,7 @@
    "limited": true,
    "official": false,
    "total": 50,
-   "remaining": 43,
+   "remaining": 42,
    "collectibleItemId": "55ba1461-0030-4f7e-ba90-3142f7a4f9fb",
    "universeIds": [
     10775999929
@@ -147892,7 +148843,7 @@
      "universeId": 10775999929,
      "name": "🛍️ Avatar Haven",
      "placeId": 74254807962761,
-     "playing": 74
+     "playing": 114
     }
    ],
    "description": "Please favorite so others can see!",
@@ -147902,8 +148853,8 @@
    "lastSeen": "2026-11-23T14:10:40.935Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/72245351543076",
-   "sold": 7,
-   "stockChangedAt": "2026-11-23T15:24:00.108Z",
+   "sold": 8,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "beli",
@@ -148349,7 +149300,7 @@
      "universeId": 9509550840,
      "name": "Collect Blind Box Toys",
      "placeId": 103161374110587,
-     "playing": 4
+     "playing": 0
     }
    ],
    "description": "A glowy shirt for awesome people.",
@@ -148454,7 +149405,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 15,
-   "remaining": 14,
+   "remaining": 13,
    "collectibleItemId": "7c7f7fd9-374f-4e70-85fd-da75fa4407c3",
    "universeIds": [
     10773565307,
@@ -148484,12 +149435,12 @@
    "lastSeen": "2026-11-17T01:00:28.274Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/126739213476461",
-   "sold": 1,
+   "sold": 2,
    "tiny": false,
    "claimType": "misi",
    "claimWhy": "Deskripsi menyebut misi/stage/kumpulkan",
-   "stockChangedAt": "2026-11-20T23:13:01.225Z",
-   "stale": true
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
+   "stale": false
   },
   {
    "key": "asset:92615356095119",
@@ -148696,7 +149647,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 75,
-   "remaining": 33,
+   "remaining": 32,
    "collectibleItemId": "278217f4-5fc6-4417-9750-bfc3e66cea60",
    "universeIds": [
     5257363081,
@@ -148726,11 +149677,11 @@
    "lastSeen": "2026-11-20T09:04:15.725Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/117712763633540",
-   "sold": 42,
+   "sold": 43,
    "tiny": false,
    "claimType": "?",
    "claimWhy": "Belum jelas cara dapatnya",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "official": false
   },
@@ -148743,7 +149694,7 @@
    "creatorVerified": false,
    "limited": true,
    "total": 150,
-   "remaining": 21,
+   "remaining": 19,
    "collectibleItemId": "0e2591cd-1aee-429d-90e5-7f8e3fe1b2da",
    "universeIds": [
     5257363081,
@@ -148773,11 +149724,11 @@
    "lastSeen": "2026-11-20T09:04:15.725Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/98691021081013",
-   "sold": 129,
+   "sold": 131,
    "tiny": false,
    "claimType": "?",
    "claimWhy": "Belum jelas cara dapatnya",
-   "stockChangedAt": "2026-11-24T01:42:49.719Z",
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "official": false
   },
@@ -149579,7 +150530,7 @@
    "limited": true,
    "official": false,
    "total": 150,
-   "remaining": 107,
+   "remaining": 106,
    "collectibleItemId": "9a2ce496-de63-412c-a57c-5ff9096bd8a1",
    "universeIds": [
     5206433511,
@@ -149609,8 +150560,8 @@
    "lastSeen": "2026-11-24T00:17:38.818Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/119485730268665",
-   "sold": 43,
-   "stockChangedAt": "2026-11-24T00:17:38.818Z",
+   "sold": 44,
+   "stockChangedAt": "2026-11-24T02:42:35.993Z",
    "stale": false,
    "tiny": false,
    "claimType": "kode",
@@ -150289,7 +151240,7 @@
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:100853642494286",
@@ -150368,7 +151319,7 @@
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:132592636159820",
@@ -150407,7 +151358,7 @@
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:106953945382429",
@@ -150446,7 +151397,7 @@
    "claimType": "beli",
    "claimWhy": "Game toko/katalog avatar",
    "stockChangedAt": "2026-11-23T01:56:05.900Z",
-   "stale": false
+   "stale": true
   },
   {
    "key": "asset:121508812159450",
@@ -152590,7 +153541,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-6088faceca2d217315faad50b0054232/420/420/TshirtAccessory/Png/noFilter",
    "createdAt": "2025-06-26T15:47:51.287Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/135140990251255",
    "sold": 0,
@@ -152630,7 +153581,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-ced4e513210d146e97988e3fb7d97481/420/420/NeckAccessory/Png/noFilter",
    "createdAt": "2025-06-26T15:46:31.933Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/107016726530712",
    "sold": 0,
@@ -152670,7 +153621,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-e6d317415a24ad4f186641927e6c55da/420/420/Hat/Png/noFilter",
    "createdAt": "2025-06-26T15:46:08.467Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/73806172412277",
    "sold": 0,
@@ -152710,7 +153661,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-1ea198a1d0b71c73c5381559a84ff308/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2025-06-26T15:45:35.07Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/71409823493730",
    "sold": 0,
@@ -152750,7 +153701,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-dd8c2134dd530a010875f336323e7608/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2025-06-26T15:45:11.063Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/106228206889859",
    "sold": 0,
@@ -152790,7 +153741,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-b9caac848aff82ee4e73fdf23b308523/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2025-06-26T15:44:23.58Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/115223868209681",
    "sold": 0,
@@ -152830,7 +153781,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-155e5d25f955cac67176014bd8743292/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2025-06-26T15:43:52.073Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/117627132830661",
    "sold": 0,
@@ -152870,7 +153821,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-8c13555f39d8149a4cf0b3a83429dfd8/420/420/FaceAccessory/Png/noFilter",
    "createdAt": "2025-06-26T15:39:40.88Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/99390776933762",
    "sold": 0,
@@ -152950,7 +153901,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-6b7576fb65f70459475151feccdd6a2a/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2025-04-08T17:27:00.007Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/100061531345826",
    "sold": 0,
@@ -153031,7 +153982,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-516937cadbc36d209eb339d07e9111d5/420/420/BackAccessory/Png/noFilter",
    "createdAt": "2024-12-18T00:01:30.59Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/98752422639730",
    "sold": 0,
@@ -153071,7 +154022,7 @@
    "image": "https://tr.rbxcdn.com/180DAY-e8c784f7c11851ac2d8398f3b97c947e/420/420/Hat/Png/noFilter",
    "createdAt": "2024-12-18T00:00:31.317Z",
    "firstSeen": "2026-11-19T21:27:51.509Z",
-   "lastSeen": "2026-11-24T01:42:49.719Z",
+   "lastSeen": "2026-11-24T02:42:35.993Z",
    "available": true,
    "url": "https://www.roblox.com/catalog/114702108643191",
    "sold": 0,
@@ -153102,7 +154053,7 @@
    "placeId": 6309078258,
    "playing": 0,
    "description": "Hello! This game is a extremely difficult game so if you do not enjoy difficult obby's then you should go play something else. Can you beat a super hard obby that has 83 stages?\n\nCheck out my group for a free skip!\nhttps://www.roblox.com/groups/13833464/Impossible-Obby-The-Group#!/about\n\n✨Group members get:✨\n- ✨Green name tags✨\n- ✨1 Free skip✨\n\n⚠️Shutdown = update/fix⚠️\n\nNew Update!\n- FREE LIMITEDS!\n- 2M visits special!\n- Added a free skip to the game!\n- 🐈New Badge has been added!🐈\n- Thanks for 2M visits!\n- Added Anti Water Hack\n\nTags: Impossible , obby , difficult ,chart obby , high , jump , highjump , hard",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "2711375305": {
    "name": "Catalog Avatar Creator",
@@ -153114,9 +154065,9 @@
   "3198546127": {
    "name": "Indo Voice",
    "placeId": 8356562067,
-   "playing": 256,
+   "playing": 171,
    "description": "Welcome to Indo Voice!\n\nEnter a colorful social world where your voice is the center of attention! Indo Voice is our 4th creation, continuing a long tradition of delivering the best social experience. As the pioneer of hangout games in Indonesia since 2014, we have dedicated more than a decade to perfecting the art of play and socialization.\n\n💖 Features & Activities:\n- Connect - Meet and chat with friends from all over Indonesia! 🇮🇩\n- Voice Chat - Real-time chat for a more realistic experience! 🗣️\n- Appreciate - Give & Receive Hearts to share a positive aura!\n- Express - Share stories, jokes, or sing your favorite song! 🎶\n- Fish & Play - Be on the edge while fishing or playing mini-games! 🎣🎮\n- Customize - Look different with exclusive Aura, Trail, Pet, and Tools! ✨\n- Vibe - Show off your style with a variety of dance emotes and movements! 🕺",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "3494556606": {
    "name": "[Event] My Hello Kitty Cafe(Build)",
@@ -153130,7 +154081,7 @@
    "placeId": 9720006946,
    "playing": 0,
    "description": "This is your very first Roblox creation. Check it out, then make it your own with Roblox Studio!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "5206433511": {
    "name": "Flex UGC Codes",
@@ -153254,16 +154205,16 @@
   "10771938158": {
    "name": "[🍂] Break and Steal A Kitty Egg",
    "placeId": 88139827763026,
-   "playing": 130,
+   "playing": 153,
    "description": "Welcome to Steal A Kitty Egg 🎀🥚\n\n🎮 How to Play:\n\n⛏️ Break eggs to hatch rare kitties\n🐾 Steal them and escape the giant guardians\n💰 Place them in your pen to earn cash\n⚡ Upgrade your speed and pickaxe\n🔁 Rebirth for even more cash\n🏆 Collect them all in the Index!\n\n❤️ Like the game and join the group for a free daily reward!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "9509550840": {
    "name": "Collect Blind Box Toys",
    "placeId": 103161374110587,
-   "playing": 4,
+   "playing": 0,
    "description": "CODES FOR FREE STUFF:\nALIENS - Free Glorplings Box with a guaranteed rare!\nPOPSTAR - $2500!\nHALLOWEEN - Free Halloween Box of your choice!\n--\nShake and 'pop' collectible blind box toys so you can collect them all and earn money from people who love your displayed collections!\n\n🧸 Collect toys from blind box collections of cats, dogs, aliens and all kinds of kawaii cuteness to discover!\n🛍️ Display your toys and earn money every second from visitors to your store!\n🎨 Customize your store front to display your collection and color style everything to your tastes!\n🌟 Merge your duplicates to create shiny versions that earn more money!\n💵 Earn money while offline to collect when you come back!\n\nPlease like and favorite my game if you have fun. It means and helps a lot! 💙",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10767056884": {
    "name": "Roll To Earn UGC",
@@ -153282,9 +154233,9 @@
   "10771033908": {
    "name": "🌸Sakura Avatar World: Mini-Games",
    "placeId": 93342964651030,
-   "playing": 19,
+   "playing": 21,
    "description": "🌸Xiying Droplet Dress-up Doll Game World [✨Avatar🎮Games💤AFK]\nShowcase and pair outfits in the beautiful cherry blossom world for everyone to rate!\n🎁 Unlock your free UGC skin!\n\n📢Code\n[WELCOME_500]\n[IDEA_SURVIVAL]\n\n🤖 AI Noob will join you on a wild treasure hunt in the game!\n🎟️UGC Lucky Draw |💡Join the AI Player for Survival Games!\n🌸Spooky Cherry Blossom Academy | 🃏Card Dungeon | 🎮Daily Trial\n🌾Daily Farm|😈Roguelike Survivor|🕹️Roguelike Claw Machine\n🎣Fishing | ⛳Golf | ⚫Gomoku | 🎟️Lucky Draws | Various fun mini-games and daily rewards!\n \nAFK Auto-Hunt for Noobs – let it hunt treasures for you while you relax and get rich!\nLuck is also part of strength! If you're lucky enough, you'll graduate at light speed!\n\n😈 Little demon trespasses into the robot base... turning it into an exciting \"bullet-storm treasure hunt\"!\nThere seems to be a secret hidden grand prize behind this, waiting for you to discover!\n\n🌟 [How to earn 💰 UGC Coins?]\n• 💤 AFK Zone - 🌸 Various mini-games | 🎮 Daily game missions | Take care of the farm. Delegate treasure hunting to a NOOB helper. Pick up fallen petals!\n• 🎟️ Lucky Draw - 🍀 Test your luck and challenge for the ultimate grand prize!\n• 🎁 Treasure Hunt Game - 🔎 Test your eyesight and luck by finding the correct robot among many!\n• ⚔️ Challenge Boss - 💥 Engage in intense battles and team up to defeat rogue robots!\n\n🎉 Collect tokens and bring home your limited free UGC items!\n\n💡 Helpful Tip: If you don't see the reward immediately, logging back into the game will automatically bring up a window to claim it!\n⚠️ (Note: If you are kicked out due to network lag or anti-cheat mechanisms, simply rejoin the game to play normally!)",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "7819330645": {
    "name": "Roll to Claim UGC",
@@ -153326,14 +154277,14 @@
    "placeId": 103800137211886,
    "playing": 0,
    "description": "A concealed DZA logistics facility in [REDACTED], facilitating the distribution of equipment and supplies to authorized personnel.\n\nSubmit requisitions and secure equipment for your next mission in the Darkzone.",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "9073831848": {
    "name": "[🎭 NEW EMOTES🎭] The Splat Games [BETA]",
    "placeId": 99444403612127,
-   "playing": 33,
+   "playing": 15,
    "description": "❗Dive into The Splat Games, a high-stakes experience inspired by Netflix’s Squid Game (오징어 게임)❗\n\n- NEW UPDATE\nAdded 14 new emotes\n\n⚠️ Warning: This game contains flashing lights and visual effects and may not be suitable for photosensitive players. ⚠️\n\nThe game receives updates almost daily, ranging from minor tweaks to major changes. Not all updates will be listed here.\nPlay Now:\n-🚦Red Light, Green Light🚦\n- 🎠 Mingle 🎠\n- 🚽 Bathroom Fight 🚽\n-🌙 Lights Out 🌙\n- 🙈 Hide and Seek 🙈\n- 🦘 Jump Rope 🦘\n- 🦑 Sky Squid Game 🦑\n\nPC Controls:\nCTRL to Shift Lock\nShift to Sprint\nF to Push\nC to Crawl\n\n⛔ EXPLOITING = PERMANENT BAN ⛔\n\nThumbnail art by @mrfuncake76 & @Kael_Spok",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10776483583": {
    "name": "[TOURNY]FREE UGC Classic Sword Fighting Underwater",
@@ -153347,21 +154298,21 @@
    "placeId": 134470994948321,
    "playing": 0,
    "description": "",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "5339656333": {
    "name": "[FREE UGC⭐] Anime Outfits",
    "placeId": 15474504316,
-   "playing": 28,
+   "playing": 39,
    "description": "Welcome to Anime Outfits! 👘\n\n👒 5,500+ anime outfits & cosplays - from JJK, One Piece, Demon Slayer & every anime you love. Walk up to any mannequin and try it on instantly.\n\n🛒 Wear them for real! Every outfit is made of real Roblox catalog items - anything you buy in-game is added to your avatar and yours to keep forever.\n\n🎁 FREE UGC! Earn coins by playing, finishing quests and buying outfits (1 Robux spent = 3 coins). Trade your coins for UGC items. New items drop every Week!\n\n👥 Play with friends to earn coins faster: +10% for every friend in your server!\n\n📌 Updated almost weekly with new outfits & sections.\n👍 Like & ⭐ Favorite to support us - it really helps!\n\n💬 Group for updates & support: https://www.roblox.com/groups/32031558/Outfitable/\n\nAnime Outfits, Anime Cosplay, Anime Cosplay Outfits, Anime Avatars, Anime Outfit Ideas, Anime Avatar Ideas",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10776610853": {
    "name": "Claim Organizer UGC",
    "placeId": 72907834958362,
    "playing": 0,
    "description": "",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10775120138": {
    "name": "Strongest Survial",
@@ -153429,9 +154380,9 @@
   "8604469342": {
    "name": "Town Empire Tycoon [UGC]",
    "placeId": 72861162533502,
-   "playing": 27,
+   "playing": 29,
    "description": "NEW: Town Empire Tournaments are here! Click JOIN EVENT button to join the event.\n\nTop 30 players for the weekly event will get a LIMITED UGC.\nTop 10 players get a bonus LIMITED UGC.\nGood Luck!\n\nSeason 1 - Top 10 Get a LIMITED UGC too!\n\nWelcome to Town Empire, the ultimate Town Builder Tycoon.\n\nBUGS: We are squashing bugs and improving the tutorial experience based on your suggestions.\n\nDevelop your town and create the Best Town Tycoon.  \nChoose Farming, Ranching or Industrial buildings or thrive with a combination of all of them.\nEarn Money to unlock new town building options.\nMake money by selling products your town produces.\nTip: Be sure to balance your money wisely so you can pay your wages. And don't run out of Diesel.\n\nPremium Players get 10% Bonus when Selling Goods",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10765783365": {
    "name": "FREE Rewards Obby ⭐",
@@ -153445,7 +154396,7 @@
    "placeId": 116566160130737,
    "playing": 0,
    "description": "🔥 Welcome to Exclusive UGC Designs Showcase 🔥\n\nStep into a world made from creativity, style, and innovation. \n\n👑  What’s inside the game\n\n🔥 Try on all Exclusive UGC items\n\n🔥 Ingame Headless and Korblox\n\n/Headless /Korblox\n\n🔥 Exclusive deals and item info\n\n🔥 Preview newest releases before anyone else\n\nEvery item is crafted with passion by: \n\nExclusive Pink & MrExclusiveDesigns",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10772152631": {
    "name": "Grow a Town 🌾",
@@ -153464,9 +154415,9 @@
   "10775260976": {
    "name": "FREE REWARDS UGC OBBY (NEW)",
    "placeId": 95578627187012,
-   "playing": 127,
+   "playing": 56,
    "description": "🎉 WELCOME TO THE FREE REWARDS UGC OBBY! 🎉\n\n🏃‍♂️ Jump, climb, dodge, and complete fun obby challenges to earn FREE UGC REWARDS! 🎁\n\n✨ HOW TO GET YOUR REWARDS:\n\n🏁 Complete the obby and make it all the way to the END!\n🎁 Claim your FREE UGC rewards!\n⏳ Wait patiently for your rewards!\n👍 LIKE the game to show your support!\n🔥 The more you play, the more fun you have!\n\n💖 Don't give up! Keep going until the finish line!\n\n⭐ GOOD LUCK & HAVE FUN! ⭐\n\n🎮 Play with friends and enjoy the adventure! 🚀",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10394763470": {
    "name": "FREE UGC Grind 2 (Obby • PvP • AFK) ",
@@ -153499,9 +154450,9 @@
   "10776146791": {
    "name": "[FREE UGC⭐] Jojo Outfits",
    "placeId": 77520749214305,
-   "playing": 6,
+   "playing": 7,
    "description": "⭐ JoJo Outfits\n\nExplore 1,100+ outfits across 126 characters from JoJo’s Bizarre Adventure, including Jotaro, DIO, Giorno, Jolyne, and Johnny. Try on your favorite looks, save them for later, and shop for the items you want.\n\n💫 Teleport straight to your favorite character’s platform\n🧠 Test your knowledge in the JoJo Quiz\n⚔️ Challenge other players in the SwordFight arena\n💎 Earn Shards through daily quests and activities\n👑 Play for 15 minutes to unlock free VIP for your session  \n\nFind your next look and strike your best JoJo pose!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10768420227": {
    "name": "[TRADING] Unpack A Brainrot",
@@ -153557,14 +154508,14 @@
    "placeId": 73662797962513,
    "playing": 0,
    "description": "Climb your way to the top in EASY TOWER, the ultimate obby tower adventure!\n\nJump, dodge obstacles, and test your skills as you make your way up the colorful tower. Can you reach the top and become the ultimate tower champion?\n\n- 🏗️ Climb an exciting tower filled with fun challenges.\n- 🦘 Jump across platforms and overcome tricky obstacles.\n- 🌈 Explore colorful stages and different tower sections.\n- 🏆 Reach the top and prove your obby skills.\n- 🎁 Unlock exclusive rewards and FREE UGC items!\n- ⭐ Complete challenges and collect amazing rewards.\n- 👥 Play with friends and race to the finish!\n\n🚀 Jump higher. Climb faster. Reach the top!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "9401398195": {
    "name": "[EVENT UGC] PARTY SHELL",
    "placeId": 110172784379358,
-   "playing": 325,
+   "playing": 398,
    "description": "🔥 SHELL PARTY 24/7 🔥\nWelcome to the ultimate gas station party!\n🎶 Live music\n💃 Dance together\n🤝 Make new friends\n📸 Create amazing content\n🌙 Open 24 hours — Party anytime!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10776777076": {
    "name": "Demonic Chicken or sum idk?!",
@@ -153583,23 +154534,23 @@
   "10775538559": {
    "name": "[VC] TITIK TEMU",
    "placeId": 89187637881332,
-   "playing": 4,
+   "playing": 15,
    "description": "🌳 Welcome to TITIK TEMU [VC]!\n\nYour place to meet, connect, and make memories.\n\nStep into Titik Temu, a cozy hangout experience where every meeting can turn into a new friendship!\n\nExplore the beautiful surroundings, chill with your friends, meet new people, and enjoy good vibes together. Whether you want to have fun conversations, listen to music, or simply relax, there's always a place for you here.\n\n✨ FEATURES\n- 🎙️ Voice Chat – Talk and connect with other players.\n- 🌿 Beautiful Environment – Explore and enjoy the atmosphere.\n- 👥 Meet New Friends – Make connections and create memories.\n- 🎵 Music & Chill – Relax and enjoy the vibes.\n- 💬 Social Hangout – Spend quality time with your friends.\n\n📱 SUPPORTED PLATFORMS\nPC • Mobile • Console • VR\n\n💡 RECOMMENDED SETTINGS\nSet your graphics quality to High for the best visual experience.\n\nTitik Temu — Every journey begins with a meeting.\n\nCome hang out, make friends, and find your place!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "9969498083": {
    "name": "My Place!",
    "placeId": 129637507938368,
    "playing": 0,
    "description": "Welcome to my personal place! Here you can find:\n> My art gallery (2D and 3D)\n> Donations zone, to donate me money cuz I'm beautiful\n\n*Recommended graphics 7-10.",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "7191742346": {
    "name": "event games if they were good",
    "placeId": 95259308007676,
    "playing": 0,
    "description": "hello welcome to my event game\nmade by foot lettuce ok thanks\ncrazybee3d based on crazycattle3d\ngubby made by amonim and concept by milenaxxy\n\nthis game uses Age Group Asistant, made by Florianne10, you can find the model here: https://create.roblox.com/store/asset/121742540385949/Age-Group-Assistant",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10689417995": {
    "name": "Piez! - Beans Place [Free UGC] ",
@@ -153641,21 +154592,21 @@
    "placeId": 138101744561060,
    "playing": 11,
    "description": "Hello, hello! Welcome to Toritolandia! 💙\nThis is just the beginning! Work, earn, grow, and build your city alongside Torito. Get your car, your house, your pet, your businesses… and everything that comes next!\n \nAnd as in every adventure, things can happen, so have your TORIESCURO ready. Torito will let you know when something is approaching so you can continue playing peacefully.\n \n🚗 Get your car and upgrade it.\n🍗 Open your businesses and grow them.\n🐶 Adopt and care for your pet.\n🛡️ Activate your shield.\n💸 Take advantage of days when they pay more.\n👕 Unlock exclusive and limited UGC items.\n \nNow we go for gold!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "5751018738": {
    "name": "[UPD ⚽️ + 🥓NEW ACCESSORY] Purina Arena Pet Racing",
    "placeId": 16733022263,
-   "playing": 23,
+   "playing": 13,
    "description": "🥓 NEW Beggin' Skateboard!\n❤️NEW WAY to interact with your pets\n🌈NEW soccer ball upgrades!\n \nU.S. Soccer has taken over the Arena–get ready to show off your juggling and put your pet’s pawsome skills to the test in a new soccer challenge. Then race back to the track with your furry MVP, because every good boy and good girl knows it’s all about the finish line!\n \nHOW TO PLAY:\n⚽Juggle your way to exclusive U.S. Soccer rewards: 👕 +  🩳 + 🧢 \n🐶 Adopt Cleat, the ultimate soccer pup! \n🏁 Race with your furry friends \n🛝Complete the obby and claim NEW rewards!\n🐾 Adopt your favorite dog and cat breeds \n🏆 Compete with friends\n🔓 Unlock elite courses \n🍗 Feed your pets\n🛍️ Collect accessories for you and your pets \n🎁 Claim daily rewards\n \n⭐ New Releases and Expansions: Click Notify or tap the 🔔 to stay updated! ⭐\n \nThis experience is brought to you by Purina — because even virtual pets make the greatest companions. Built by Paradowski Creative.",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10775339471": {
    "name": "Steal A Meal",
    "placeId": 73981721158793,
-   "playing": 1,
+   "playing": 0,
    "description": "Mix, cook and serve the weirdest dishes in town!\n\nRace your trolley through the supermarket during the Shopping Frenzy, grab ingredients from 10 wild stores, and dodge (or bash!) other shoppers on the way. Back in your kitchen, throw them into the Mutant Mixer to discover secret recipes, then cook them on your Stove, Oven and Blender.\n\n Serve hungry customers and VIPs, and make the Food Critic happy\n Discover hundreds of recipes, from simple to mythical\n Expand and decorate your kitchen your way\n Upgrade your stations, hire robot waiters and prestige for big bonuses\n Daily rewards, free gifts and crates full of surprises\n\n Enjoying it? Leave a like!\n Join the group for +10% coins!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10776969724": {
    "name": "SG Event Game",
@@ -153674,16 +154625,16 @@
   "10013986416": {
    "name": "✨ EMISSIVE UGC Homestore | Outfit Shopping Spree",
    "placeId": 101824922502044,
-   "playing": 63,
+   "playing": 68,
    "description": "🚨💄 NEW ROBLOX FEATURE — CREATE YOUR OWN MAKEUP! 💄🚨\n\n✨ DESIGN IT • PUBLISH IT • WEAR IT! ✨\n\n💋 Introducing UOSS BEAUTY STUDIO! Create your own Eye, Lip & Face Makeup, publish it as REAL Roblox makeup assets and wear your creations on your avatar once approved!\n\n💕 YOUR FACE. YOUR ART. YOUR MAKEUP.\n\n✨ EMISSIVE UGC HOMESTORE ✨\n\n🌟 ALL THE GLOW. ONE PLACE.\n\nDiscover glowing Emissive UGC from across the Roblox Marketplace — all brought together in one place.\n\n💫 Explore hundreds of glowing items including clothing, accessories, hats, shoes, heads, bodies and more.\n\nFrom subtle glow to full neon — explore the Homestore, try everything on, and discover your next avatar look.\n\n🔥 NEW EMISSIVE UGC ADDED REGULARLY\nCome back to see what's new.\n\n✨ EMISSIVE UGC. ALL IN ONE PLACE. ✨",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10774314331": {
    "name": "[CHRISTMAS🎄] AFK FOR UGC",
    "placeId": 86073223609175,
-   "playing": 6,
+   "playing": 3,
    "description": "🎉 WELCOME TO AFK FOR UGC! 🎉\n\n🪙 **EARN POINTS** – Play and collect points to redeem exclusive UGC rewards!\n\n❓ **SHARE YOUR FEEDBACK** – Let us know what you think and help us improve the game!\n\n🔥 **COMPLETE MISSIONS** – Finish missions to unlock powerful multipliers and boost your earnings!\n\n⚡ ADMIN ABUSES & EXCLUSIVE REWARDS\n\nThere's even more to earn during our **ADMIN ABUSES!** You can get your hands on:\n\n- 🚀 Special point multipliers\n- 🎁 FREE UGC REWARDS\n- 🪙 Bonus points and extra playtime\n\n🎁 FREE UGC EVERY WEEK!\n\nThat's right! We release **NEW FREE UGC EVERY SINGLE WEEK**, so make sure to stay active and keep an eye out for new releases!\n\n📅 **ADMIN ABUSES HAPPEN EVERY SATURDAY!**\n\nDon't miss out on the fun, rewards, and exclusive opportunities!\n\nGOOD LUCK, HAVE FUN, AND HAPPY GRINDING! 🏆",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10774485985": {
    "name": "[⭐️STARFALL] +1 Sprout a Shroom",
@@ -153697,21 +154648,21 @@
    "placeId": 138860010562006,
    "playing": 0,
    "description": "🎲 ROLL FOR UGC 🎲\nClear obbies, earn SPINS 🌀, roll cases and claim a FREE limited UGC! 👑\n\n🏃 HOW TO PLAY\n🟢 Clear the EASY / MEDIUM / HARD obbies to earn SPINS\n🎲 Roll cases to win CASH 💵 and rare TICKETS 🎟\n👑 Collect 12 TICKETS and redeem a FREE UGC\n⏰ Get a FREE spin every 2 minutes just for playing!\n\n👑 CURRENT UGC: SPIN CROWN\n🔥 Limited stock - 1 per player!\n🔒 Fair play: every redeem goes through a short safety review.\n\n💎 VIP OBBY - earn 5 spins every clear!\n🎁 CODE: RELEASE = 5 free spins!\n\n👍 Like and ⭐ Favorite to get notified about new UGC and updates!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10768554609": {
    "name": "Abyssal UGC / AFK",
    "placeId": 83546214578212,
-   "playing": 7,
+   "playing": 6,
    "description": "Grind UGC!\nCode: NoobAce! 5000 gems and 4 pilot skins in sky noob minigame!\n\nThis place is a homestore for my ugc free ugc is a bonus nothing more or less i can decide at any time to remove or revoke access to the free limiteds \n\nThere is minigames that act like full fledged games that reward you with gems and relics much faster than afk!!!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10766510142": {
    "name": "[UGC Event] KEETA Party",
    "placeId": 83871127009579,
-   "playing": 94,
+   "playing": 126,
    "description": "Welcome to KEETA PARTY\n\nopen 24 hours\n\n🎵 Original track - Breakbeat\n📈 Integrated System Level\n🏷️ customize your own title\n\nSupports 24/7 AFK without interruption\n\nDon't forget to invite your friends to join too!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10769593089": {
    "name": "Chinese Leisure Park",
@@ -153760,28 +154711,28 @@
    "placeId": 70622416705829,
    "playing": 0,
    "description": "",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10766862745": {
    "name": "Asahi Smile Party Simulator",
    "placeId": 125052955608568,
-   "playing": 21,
+   "playing": 42,
    "description": "Run through the obby and collect rare NPCs!\n\n👋 Welcome to \"Asahi Smile Party Simulator\"! Have fun with Asahi Soft Drinks!\n\nHow to Play:\n🏃 Run through the obby!\n🥤 Buy water from vending machines\n🙌 Talk to random NPCs\n   (Give them water to make friends!)\n🤝 Bring NPCs back to base\n💎 NPCs generate \"wakuwaku\"\n   (Buy drinks with \"wakuwaku\")\n💪 Buy drinks to boost your skills\n🔄 Rebirth for base upgrades!\n\n👥 Play with friends to get more \"wakuwaku\"\n👍️ Like the game & join the group for rare NPCs! 🎁\n\n* Note: Drink skill-ups (such as increased speed and jump height) refer solely to in-game player progression and do not imply any real-world health or physical benefits.",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10777418105": {
    "name": "cosmo's GLITTER PALACE!@!!!!!!!!!",
    "placeId": 83992836022071,
    "playing": 0,
    "description": "such a lovely experience! such a beautiful place!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "6353751159": {
    "name": "Main Street 🏡RP",
    "placeId": 18753889337,
-   "playing": 5124,
+   "playing": 3501,
    "description": "🧡 Welcome to Main Street! 🧡\nRoleplay with other people, build a community, and be who you want to be!\n\n🛸 Tamagotchi Update 🛸\n- Tamagotchi has entered Main Street! Can you collect all the shards and meet all the different Tamas?\n\nPet Update\n🐈 Added cat\n🐕 Added labrador retriever\n🎨 Added pet customization\n🍔Added BigBurger restaurant\n🪑 Added baby and pet blueprints\n\nBaby Update\n🍼 Added items\n🕺 Added dances\n🏫 Improved daycare\n👶 Implemented baby adoption\n\nVehicle Update\n🚗 Added muscle car\n🚙 Added SUV\n🏎️ Added 4 hypercars\n🔨 Improvements to police station\n\nLeave a like 👍 and favorite ⭐!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10777950488": {
    "name": "Glow RNG Lite: Ultimate Luck",
@@ -153865,7 +154816,7 @@
    "placeId": 112094764493528,
    "playing": 0,
    "description": "BLOXTOBER 2026 was a community event created by NITESTAR. that focused on introducing challenging surprises and bossfights into UGC Events.\nas well as implementing high-detail hub environments to showcase what the engine is capable of.\n\nThis community event ended on November 30th at 6PM CST / 7PM EST.\n\nIt ran from October 1st to November 30th and many showed up and celebrated their excitement for UGC and Community Events in general \nand some came out with cool gear to show off to friends and family. this is history for NITESTAR. and we're just getting started. Stay tuned.\n\nCreated by NITESTAR.",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10777405312": {
    "name": "崩壊するObby",
@@ -153891,9 +154842,9 @@
   "10775999929": {
    "name": "🛍️ Avatar Haven",
    "placeId": 74254807962761,
-   "playing": 74,
+   "playing": 114,
    "description": "⭐  FREE items at 93% likes!! Likes and favorites are always appreciated. \n\n🌍 Avatar Haven is a creation hub for avatar enthusiasts of all genres. Explore the immense Roblox catalog, put together outfit combinations, and share your work with players from any part of the world! \n\n🕛 Spend time in our game, get enough points to eventually claim FREE avatar items!\n🛍️ Purchasing items also gains points, this is the quickest way to get free items!\n\n✅ All items purchased inside of Avatar Haven will carry over to your Roblox inventory, where you can wear them in any Roblox game!",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10464191449": {
    "name": "AFK FOR UGC STRAWBERRY",
@@ -153961,9 +154912,9 @@
   "9936107566": {
    "name": "Aeteris Sanctuary: SideQuest 🪎",
    "placeId": 100418051760534,
-   "playing": 5,
+   "playing": 4,
    "description": "🌸 WELCOME TO AETERIS SANCTUARY SIDEQUEST! 🌸\nEarn rewards, play minigames, find secrets and collect unique UGCs. Dont forget to join our group and community! \n\n💎 Earn Shards every 5 minutes!\n🎁 Get FREE Limiteds using your Shards!\n🎮 Play Minigames to earn even more Shards!\n🔥 Discover and grab our exclusive paid UGC drops!\n\nLike ❤️ and favorite ⭐ to get notified with latest updates!\n\n﹌﹌﹌﹌﹌﹌﹌﹌Update Pre-Release 1.0﹌﹌﹌﹌﹌﹌﹌﹌\n\n- Shards for EVERYONE, you dont longer need a plus supscription for obtain!\n- x2 Multiplier in Shards for Roblox Plus members\n- Marketplace Area; Obtain 50% of the Item buy back in Tokens currency!\n- Exchange your Tokens for Shards; 1 Token = 5 Shards\n- Daily Rewards; Obtain by joining the game for 7 consecutive days",
-   "fetchedAt": "2026-11-23T20:29:50.570Z"
+   "fetchedAt": "2026-11-24T02:43:19.003Z"
   },
   "10772020380": {
    "name": "Epic place ",
@@ -154020,13 +154971,6 @@
    "playing": 24,
    "description": "The village is empty.\nThe gate was left open.\nThe candles in the mansion are still lit.\n\nNobody lives here anymore.\n\nCome inside.\n\nJoin our group!\nhttps://www.roblox.com/communities/34309807/DOOMs#!/about",
    "fetchedAt": "2026-11-23T23:24:30.493Z"
-  },
-  "8360859439": {
-   "name": "Gold Hunters 2.0",
-   "placeId": 107175140535005,
-   "playing": 63,
-   "description": "⛏️ Gold Hunters is back, and this time the hunt reaches all the way to space! 🚀\n\nDig your way across some of Roblox's most popular games, smelt your haul into gold bars, and unlock seven exclusive limited-edition golden avatar items. 💛\n\nHere's what's waiting for you in Gold Hunters 2.0:\n🪏 Scan, find and dig for as much gold ore as possible\n🔥 Bring it back to the smelter and turn it into gold bars\n📜 Hunt for rare Blueprints to upgrade your smelter and earn even more gold\n🚀 Upgrade your gear to scan longer, carry more, and dig deeper\n🛸 Ride the Space Elevator up to the Museum of Gold, high above the Hub\n🧠 Ace the quizzes in all six Museum rooms to unlock the rarest rewards\n🏆 Climb the leaderboard and see how you stack up against your friends\n💎 Earn EXCLUSIVE UGC items, with new drops every week. The more you smelt, the rarer they get!\n\n🌟 GRAND FINALE WEEK - STARTS DECEMBER 14TH 🌟\n\nBe quick! When they're gone they're gone. Two of the rarest items are only for the to",
-   "fetchedAt": "2026-11-24T01:43:35.998Z"
   }
  }
 }
