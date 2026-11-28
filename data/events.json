@@ -1,6 +1,19 @@
 {
- "updatedAt": "2026-11-27T10:05:50.840Z",
+ "updatedAt": "2026-11-28T08:03:15.403Z",
  "items": [
+  {
+   "key": "asset:112123491456726",
+   "id": 112123491456726,
+   "type": "asset",
+   "name": "Wings of Ascension",
+   "description": "Climb to the top of Doom Mountain in the RB Battles event to earn these legendary wings!",
+   "createdAt": "2026-11-27T16:56:14.871Z",
+   "placeIds": [],
+   "gameGuess": "RB Battles event to earn these legendary wings",
+   "games": [],
+   "url": "https://www.roblox.com/catalog/112123491456726",
+   "image": "https://tr.rbxcdn.com/180DAY-1b5cead1e77a96277d4acfd24138601e/420/420/BackAccessory/Png/noFilter"
+  },
   {
    "key": "asset:84933653753631",
    "id": 84933653753631,
@@ -210,6 +223,7 @@
    "placeId": 21532277,
    "universeId": 16680835,
    "playing": 5737
-  }
+  },
+  "RB Battles event to earn these legendary wings": null
  }
 }
